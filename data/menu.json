@@ -36,7 +36,23 @@
       "ar": "المأكولات"
      },
      "groups": [],
-     "items": []
+     "items": [
+      {
+       "id": "pe918223d1c",
+       "photo": "images/24-north/pe918223d1c-mwbak04i.jpg",
+       "group": "",
+       "title": {
+        "en": "test pasta",
+        "ar": ""
+       },
+       "desc": {
+        "en": "pasta test 1",
+        "ar": ""
+       },
+       "price": 99,
+       "available": true
+      }
+     ]
     },
     {
      "id": "beverage",
@@ -1703,5 +1719,6 @@
     }
    ]
   }
- ]
+ ],
+ "updated": "2026-11-10T22:58:25.274Z"
 }
