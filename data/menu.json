@@ -85,7 +85,23 @@
       "ar": "المأكولات"
      },
      "groups": [],
-     "items": []
+     "items": [
+      {
+       "id": "pa5552127d8",
+       "photo": "images/the-4-regions/pa5552127d8-mwbale4f.jpg",
+       "group": "",
+       "title": {
+        "en": "pasta test 2",
+        "ar": ""
+       },
+       "desc": {
+        "en": "test 2",
+        "ar": ""
+       },
+       "price": 100,
+       "available": true
+      }
+     ]
     },
     {
      "id": "beverage",
@@ -1720,5 +1736,5 @@
    ]
   }
  ],
- "updated": "2026-11-10T22:58:25.274Z"
+ "updated": "2026-11-10T22:59:30.162Z"
 }
