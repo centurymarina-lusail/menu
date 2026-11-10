@@ -246,6 +246,11 @@
       if (zoom.showModal) zoom.showModal(); else zoom.setAttribute('open', '');
     }
   });
+  /* a photo that has not been published yet (or was removed) simply does not show */
+  view.addEventListener('error', function (e) {
+    var ph = e.target.tagName === 'IMG' && e.target.closest('.item-ph');
+    if (ph) ph.remove();
+  }, true);
   document.getElementById('zoomClose').addEventListener('click', function () { zoom.close(); });
   zoom.addEventListener('click', function (e) { if (e.target === zoom) zoom.close(); });
 

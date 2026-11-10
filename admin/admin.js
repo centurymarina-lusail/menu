@@ -118,7 +118,10 @@
   function filePath(p) { return '/contents/' + p.split('/').map(encodeURIComponent).join('/'); }
   GitHub.prototype.read = async function (path) {
     var j = await this.call('GET', filePath(path) + '?ref=' + encodeURIComponent(this.branch));
-    return { sha: j.sha, bytes: fromB64(j.content || '') };
+    var content = j.content || '';
+    /* GitHub leaves the content out for files over 1 MB: fetch it by its id instead */
+    if (!content && j.size > 0) content = (await this.call('GET', '/git/blobs/' + j.sha)).content || '';
+    return { sha: j.sha, bytes: fromB64(content) };
   };
   GitHub.prototype.write = function (path, bytes, message, sha) {
     var body = { message: message, content: toB64(bytes), branch: this.branch };
@@ -173,7 +176,41 @@
     state.menu = JSON.parse(dec.decode(f.bytes));
   }
   var queue = Promise.resolve();
-  /* every change goes through here, one at a time, so two quick edits never collide */
+  function wait(ms) { return new Promise(function (ok) { setTimeout(ok, ms); }); }
+  /* every write to GitHub goes through this queue, one at a time, so two quick
+     edits (or a save and a photo clean-up) never collide on the branch */
+  function enqueue(job) {
+    var p = queue.then(job, job);
+    queue = p.catch(function () {});
+    return p;
+  }
+  /* a write that does not touch the menu file (photos, the login file) */
+  function writeFile(path, bytes, message) {
+    return enqueue(async function () {
+      for (var attempt = 0; ; attempt++) {
+        try {
+          var sha = null;
+          try { sha = (await state.gh.read(path)).sha; } catch (e) { if (e.status !== 404) throw e; }
+          return await state.gh.write(path, bytes, message, sha);
+        } catch (e) {
+          if (e.status === 409 && attempt < 3) { await wait(700 * (attempt + 1)); continue; }
+          throw e;
+        }
+      }
+    });
+  }
+  function removeFile(path, message) {
+    return enqueue(async function () {
+      for (var attempt = 0; ; attempt++) {
+        try { return await state.gh.remove(path, message); }
+        catch (e) {
+          if (e.status === 409 && attempt < 3) { await wait(700 * (attempt + 1)); continue; }
+          if (e.status === 404) return null;
+          throw e;
+        }
+      }
+    }).catch(function () { /* a leftover photo is harmless */ });
+  }
   function commit(message, change) {
     var run = async function () {
       var draft = JSON.parse(JSON.stringify(state.menu));
@@ -185,22 +222,25 @@
       });
       draft.updated = new Date().toISOString();
       var bytes = enc.encode(JSON.stringify(draft, null, 1) + '\n');
-      try {
-        var res = await state.gh.write(MENU_PATH, bytes, message, state.sha);
-        state.sha = res.content.sha;
-        state.menu = draft;
-      } catch (e) {
-        if (e.status === 409 || e.status === 422) {
-          await loadMenu();
+      for (var attempt = 0; ; attempt++) {
+        try {
+          var res = await state.gh.write(MENU_PATH, bytes, message, state.sha);
+          state.sha = res.content.sha;
+          state.menu = draft;
+          return;
+        } catch (e) {
+          if (e.status !== 409 && e.status !== 422) throw e;
+          var now = await state.gh.read(MENU_PATH);
+          /* same file as before: GitHub was only busy with another commit, so try again */
+          if (now.sha === state.sha && attempt < 3) { await wait(700 * (attempt + 1)); continue; }
+          state.sha = now.sha;
+          state.menu = JSON.parse(dec.decode(now.bytes));
           render();
           throw UserError('The menu was changed from another device, so this page has been refreshed. Make your change again.');
         }
-        throw e;
       }
     };
-    var p = queue.then(run, run);
-    queue = p.catch(function () {});
-    return p;
+    return enqueue(run);
   }
   function findRest(m, rid) { return m.restaurants.filter(function (r) { return r.id === rid; })[0] || null; }
   function findSec(r, sid) { return r ? r.sections.filter(function (s) { return s.id === sid; })[0] || null : null; }
@@ -307,9 +347,7 @@
           throw e;
         }
         var sealed = await seal(user, pass, token);
-        var sha = null;
-        try { sha = (await state.gh.read(AUTH_PATH)).sha; } catch (e) { if (e.status !== 404) throw e; }
-        try { await state.gh.write(AUTH_PATH, enc.encode(JSON.stringify(sealed, null, 1) + '\n'), 'Set the admin login', sha); }
+        try { await writeFile(AUTH_PATH, enc.encode(JSON.stringify(sealed, null, 1) + '\n'), 'Set the admin login'); }
         catch (e) {
           if (e.status === 403 || e.status === 404) throw UserError('This key can read the repository but cannot write to it. Give it “Contents: Read and write”.');
           throw e;
@@ -474,33 +512,38 @@
     $('productSave').disabled = on; $('productDelete').disabled = on;
     if (label) $('productSave').textContent = label;
   }
+  var saving = false;
   $('productForm').addEventListener('submit', async function (ev) {
     ev.preventDefault();
-    if (!editing) return;
+    if (!editing || saving) return;
     var e = editing, err = $('productError');
-    var titleEn = $('fTitleEn').value.trim(), priceRaw = $('fPrice').value.trim(), price = Number(priceRaw);
-    var group = $('fGroup').value, newEn = $('fGroupEn').value.trim(), newAr = $('fGroupAr').value.trim();
+    var titleEn = $('fTitleEn').value.trim(), priceRaw = $('fPrice').value.trim(), price = Math.round(Number(priceRaw) * 100) / 100;
+    var picked = $('fGroup').value, group = picked, newEn = $('fGroupEn').value.trim(), newAr = $('fGroupAr').value.trim();
+    var titleAr = $('fTitleAr').value.trim(), descEn = $('fDescEn').value.trim(), descAr = $('fDescAr').value.trim(), avail = $('fAvail').checked;
     var problem = '';
     if (!titleEn) problem = 'Enter a title for the product.';
     else if (priceRaw === '' || !isFinite(price) || price < 0) problem = 'Enter the price as a number, for example 65.';
-    else if (group === '__new' && !newEn) problem = 'Enter a name for the new group, or pick an existing group.';
+    else if (picked === '__new' && !newEn) problem = 'Enter a name for the new group, or pick an existing group.';
     err.hidden = true;
     if (problem) { err.textContent = problem; err.hidden = false; return; }
     var doneLabel = e.id ? 'Save changes' : 'Publish';
+    var newPath = null, oldPath = null;
+    saving = true;
     productBusy(true, e.id ? 'Saving…' : 'Publishing…');
     try {
       var id = e.id || uid('p');
-      var newPath = null, oldPath = null;
+      newPath = null; oldPath = null;
       if (e.photo === 'new') {
         var small = await shrinkPhoto(e.file);
         newPath = 'images/' + e.rid + '/' + id + '-' + Date.now().toString(36) + '.jpg';
-        await state.gh.write(newPath, small.bytes, 'Add photo for ' + titleEn);
+        await writeFile(newPath, small.bytes, 'Add photo for ' + titleEn);
         freshPhotos[newPath] = small.url;
       }
       await commit((e.id ? 'Update ' : 'Add ') + titleEn, function (m) {
         var s = findSec(findRest(m, e.rid), e.sid);
         if (!s) throw UserError('This section no longer exists. Go back and try again.');
-        if (group === '__new') {
+        group = picked;
+        if (picked === '__new') {
           var existing = (s.groups || []).filter(function (g) { return en(g.name).toLowerCase() === newEn.toLowerCase(); })[0];
           if (existing) group = existing.id;
           else {
@@ -515,21 +558,24 @@
         if (!it) { it = { id: id, photo: '' }; s.items.push(it); }
         oldPath = it.photo || null;
         it.group = group;
-        it.title = { en: titleEn, ar: $('fTitleAr').value.trim() };
-        it.desc = { en: $('fDescEn').value.trim(), ar: $('fDescAr').value.trim() };
+        it.title = { en: titleEn, ar: titleAr };
+        it.desc = { en: descEn, ar: descAr };
         it.price = price;
-        it.available = $('fAvail').checked;
+        it.available = avail;
         if (e.photo === 'new') it.photo = newPath;
         else if (e.photo === 'remove') it.photo = '';
       });
       lastGroup[e.rid + '/' + e.sid] = group;
-      if (oldPath && e.photo !== 'keep') state.gh.remove(oldPath, 'Remove old photo').catch(function () {});
+      if (oldPath && e.photo !== 'keep') removeFile(oldPath, 'Remove old photo');
       $('productDlg').close();
       render();
       toast(e.id ? 'Saved. The menu updates in about a minute.' : 'Published. It appears on the menu in about a minute.');
     } catch (x) {
       err.textContent = explain(x); err.hidden = false;
+      /* the photo was uploaded but the product was not saved: do not leave the file behind */
+      if (newPath && !(findSec(findRest(state.menu, e.rid), e.sid) || { items: [] }).items.some(function (i) { return i.photo === newPath; })) removeFile(newPath, 'Remove unused photo');
     }
+    saving = false;
     productBusy(false, doneLabel);
   });
   $('productDelete').addEventListener('click', async function () {
@@ -545,7 +591,7 @@
         var sec = findSec(findRest(m, e.rid), e.sid);
         sec.items = sec.items.filter(function (x) { return x.id !== e.id; });
       });
-      if (it.photo) state.gh.remove(it.photo, 'Remove photo').catch(function () {});
+      if (it.photo) removeFile(it.photo, 'Remove photo');
       $('productDlg').close();
       render();
       toast('Deleted.');
@@ -605,7 +651,7 @@
         var rest = findRest(m, rid);
         rest.sections = rest.sections.filter(function (x) { return x.id !== sid; });
       });
-      s.items.forEach(function (it) { if (it.photo) state.gh.remove(it.photo, 'Remove photo').catch(function () {}); });
+      s.items.forEach(function (it) { if (it.photo) removeFile(it.photo, 'Remove photo'); });
       render();
       toast('Section deleted.');
     } catch (x) { toast(explain(x), 'error'); }
@@ -655,9 +701,7 @@
     btn.disabled = true; btn.textContent = 'Saving…';
     try {
       var sealed = await seal(state.user, a, state.gh.token);
-      var sha = null;
-      try { sha = (await state.gh.read(AUTH_PATH)).sha; } catch (e) { if (e.status !== 404) throw e; }
-      await state.gh.write(AUTH_PATH, enc.encode(JSON.stringify(sealed, null, 1) + '\n'), 'Change the admin password', sha);
+      await writeFile(AUTH_PATH, enc.encode(JSON.stringify(sealed, null, 1) + '\n'), 'Change the admin password');
       $('passDlg').close();
       toast('Password changed. Use the new one next time you log in.');
     } catch (x) { err.textContent = explain(x); err.hidden = false; }
@@ -683,9 +727,11 @@
     var box = ev.target.closest('input[data-act="toggle"]');
     if (!box) return;
     var rt = route(), id = box.dataset.id, on = box.checked;
+    var cur = findSec(findRest(state.menu, rt.rid), rt.sid);
+    var curIt = cur && cur.items.filter(function (x) { return x.id === id; })[0];
     box.disabled = true;
     try {
-      await commit((on ? 'Mark available: ' : 'Mark unavailable: ') + id, function (m) {
+      await commit((on ? 'Mark available: ' : 'Mark unavailable: ') + (curIt ? en(curIt.title) : id), function (m) {
         var s = findSec(findRest(m, rt.rid), rt.sid);
         var it = s && s.items.filter(function (x) { return x.id === id; })[0];
         if (!it) throw UserError('This product was deleted from another device.');
@@ -698,7 +744,16 @@
       toast(explain(x), 'error');
     }
   });
-  window.addEventListener('hashchange', function () { if (state.menu) { render(); window.scrollTo(0, 0); } });
+  window.addEventListener('hashchange', function () {
+    if (!state.menu) return;
+    Array.prototype.forEach.call(document.querySelectorAll('dialog[open]'), function (d) { d.close(); });
+    render();
+    window.scrollTo(0, 0);
+  });
+  document.addEventListener('click', function (ev) {
+    var open = document.querySelector('.more[open]');
+    if (open && !open.contains(ev.target)) open.open = false;
+  });
 
   /* ---------- start ---------- */
   async function boot() {
@@ -714,7 +769,13 @@
     var saved = getSession();
     if (saved && saved.token && !/[?&]setup\b/.test(location.search)) {
       try { await connect(saved.token, saved.user); startApp(); return; }
-      catch (e) { setSession(null); }
+      catch (e) {
+        if (e.status !== 401 && e.status !== 403 && e.status !== 404) {
+          app.innerHTML = shell('<h1>Menu manager</h1><p class="sub">' + esc(explain(e)) + '</p><button class="btn btn--primary btn--wide" type="button" onclick="location.reload()">Try again</button>');
+          return;
+        }
+        setSession(null);
+      }
     }
     var auth = null;
     try { auth = await loadAuth(); }
