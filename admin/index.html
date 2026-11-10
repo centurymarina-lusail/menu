@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Menu manager · Century Marina Hotel</title>
+<link rel="icon" href="../assets/logos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/fonts.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div id="app"><p class="boot">Opening the menu manager…</p></div>
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+<dialog class="dlg" id="productDlg" aria-labelledby="productTitle">
+  <form id="productForm" novalidate>
+    <header class="dlg-head"><h2 id="productTitle">Add product</h2><button class="x" type="button" data-close aria-label="Close">&times;</button></header>
+    <div class="dlg-body">
+      <div class="photo" id="photoBox">
+        <img id="photoPreview" alt="" hidden>
+        <div class="photo-empty" id="photoEmpty"><strong>Add a photo</strong><span>JPG or PNG. It is resized automatically.</span></div>
+        <input type="file" id="photoInput" accept="image/*" aria-label="Product photo">
+      </div>
+      <div class="photo-actions"><button class="link" type="button" id="photoRemove" hidden>Remove photo</button></div>
+      <label class="field"><span>Title</span><input id="fTitleEn" type="text" maxlength="120" required autocomplete="off"></label>
+      <label class="field"><span>Description</span><textarea id="fDescEn" rows="3" maxlength="600"></textarea></label>
+      <label class="field field--price"><span>Price (<span id="fCur">QAR</span>)</span><input id="fPrice" type="number" inputmode="decimal" min="0" step="0.01" required></label>
+      <label class="field"><span>Menu group</span><select id="fGroup"></select><small>Groups are the headings inside a section, like Salads or Hot Drinks.</small></label>
+      <div class="newgroup" id="newGroup" hidden>
+        <label class="field"><span>New group name</span><input id="fGroupEn" type="text" maxlength="60" autocomplete="off"></label>
+        <label class="field"><span>New group name in Arabic (optional)</span><input id="fGroupAr" type="text" maxlength="60" dir="rtl" lang="ar" autocomplete="off"></label>
+      </div>
+      <details class="arabic" id="arabicBox">
+        <summary>Arabic text (optional)</summary>
+        <label class="field"><span>Title in Arabic</span><input id="fTitleAr" type="text" maxlength="120" dir="rtl" lang="ar" autocomplete="off"></label>
+        <label class="field"><span>Description in Arabic</span><textarea id="fDescAr" rows="3" maxlength="600" dir="rtl" lang="ar"></textarea></label>
+      </details>
+      <label class="check"><input id="fAvail" type="checkbox" checked><span>Available today</span></label>
+      <p class="form-error" id="productError" role="alert" hidden></p>
+    </div>
+    <footer class="dlg-foot">
+      <button class="btn btn--danger-ghost" type="button" id="productDelete" hidden>Delete product</button>
+      <span class="grow"></span>
+      <button class="btn btn--ghost" type="button" data-close>Cancel</button>
+      <button class="btn btn--primary" type="submit" id="productSave">Publish</button>
+    </footer>
+  </form>
+</dialog>
+
+<dialog class="dlg dlg--small" id="sectionDlg" aria-labelledby="sectionTitle">
+  <form id="sectionForm" novalidate>
+    <header class="dlg-head"><h2 id="sectionTitle">Add section</h2><button class="x" type="button" data-close aria-label="Close">&times;</button></header>
+    <div class="dlg-body">
+      <label class="field"><span>Section name</span><input id="sNameEn" type="text" maxlength="40" required autocomplete="off" placeholder="For example: Breakfast"></label>
+      <label class="field"><span>Section name in Arabic (optional)</span><input id="sNameAr" type="text" maxlength="40" dir="rtl" lang="ar" autocomplete="off"></label>
+      <p class="form-error" id="sectionError" role="alert" hidden></p>
+    </div>
+    <footer class="dlg-foot"><span class="grow"></span><button class="btn btn--ghost" type="button" data-close>Cancel</button><button class="btn btn--primary" type="submit" id="sectionSave">Add section</button></footer>
+  </form>
+</dialog>
+
+<dialog class="dlg dlg--small" id="confirmDlg" aria-labelledby="confirmTitle">
+  <header class="dlg-head"><h2 id="confirmTitle"></h2></header>
+  <div class="dlg-body"><p id="confirmText"></p></div>
+  <footer class="dlg-foot"><span class="grow"></span><button class="btn btn--ghost" type="button" id="confirmNo">Cancel</button><button class="btn btn--danger" type="button" id="confirmYes">Delete</button></footer>
+</dialog>
+
+<dialog class="dlg dlg--small" id="qrDlg" aria-labelledby="qrTitle">
+  <header class="dlg-head"><h2 id="qrTitle">QR code</h2><button class="x" type="button" data-close aria-label="Close">&times;</button></header>
+  <div class="dlg-body qr">
+    <label class="field"><span>Guests who scan it will open</span><select id="qrTarget"></select></label>
+    <canvas id="qrCanvas" width="1200" height="1200" aria-label="QR code"></canvas>
+    <p class="qr-url" id="qrUrl"></p>
+  </div>
+  <footer class="dlg-foot"><span class="grow"></span><button class="btn btn--ghost" type="button" id="qrCopy">Copy link</button><button class="btn btn--primary" type="button" id="qrDownload">Download PNG</button></footer>
+</dialog>
+
+<dialog class="dlg dlg--small" id="passDlg" aria-labelledby="passTitle">
+  <form id="passForm" novalidate>
+    <header class="dlg-head"><h2 id="passTitle">Change password</h2><button class="x" type="button" data-close aria-label="Close">&times;</button></header>
+    <div class="dlg-body">
+      <label class="field"><span>New password</span><input id="pNew" type="password" autocomplete="new-password" required></label>
+      <label class="field"><span>Repeat new password</span><input id="pNew2" type="password" autocomplete="new-password" required></label>
+      <small class="hint">Use at least 10 characters. A long password is what keeps this page safe.</small>
+      <p class="form-error" id="passError" role="alert" hidden></p>
+    </div>
+    <footer class="dlg-foot"><span class="grow"></span><button class="btn btn--ghost" type="button" data-close>Cancel</button><button class="btn btn--primary" type="submit" id="passSave">Change password</button></footer>
+  </form>
+</dialog>
+
+<script src="config.js"></script>
+<script src="vendor/qrcode.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

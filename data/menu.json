@@ -1,0 +1,1707 @@
+{
+ "version": 1,
+ "hotel": {
+  "name": {
+   "en": "Century Marina Hotel",
+   "ar": "فندق سنشري مارينا"
+  },
+  "place": {
+   "en": "Lusail",
+   "ar": "لوسيل"
+  },
+  "logo": "assets/logos/century-marina.svg"
+ },
+ "currency": {
+  "en": "QAR",
+  "ar": "ر.ق"
+ },
+ "restaurants": [
+  {
+   "id": "24-north",
+   "theme": "north",
+   "name": {
+    "en": "24 North",
+    "ar": "24 نورث"
+   },
+   "tagline": {
+    "en": "Lobby Lounge",
+    "ar": "لوبي لاونج"
+   },
+   "logo": "assets/logos/24-north.svg",
+   "sections": [
+    {
+     "id": "food",
+     "name": {
+      "en": "Food",
+      "ar": "المأكولات"
+     },
+     "groups": [],
+     "items": []
+    },
+    {
+     "id": "beverage",
+     "name": {
+      "en": "Beverage",
+      "ar": "المشروبات"
+     },
+     "groups": [],
+     "items": []
+    }
+   ]
+  },
+  {
+   "id": "the-4-regions",
+   "theme": "regions",
+   "name": {
+    "en": "The 4 Regions",
+    "ar": "ذا فور ريجنز"
+   },
+   "tagline": {
+    "en": "",
+    "ar": ""
+   },
+   "logo": "assets/logos/the-4-regions.svg",
+   "sections": [
+    {
+     "id": "food",
+     "name": {
+      "en": "Food",
+      "ar": "المأكولات"
+     },
+     "groups": [],
+     "items": []
+    },
+    {
+     "id": "beverage",
+     "name": {
+      "en": "Beverage",
+      "ar": "المشروبات"
+     },
+     "groups": [],
+     "items": []
+    }
+   ]
+  },
+  {
+   "id": "knife",
+   "theme": "knife",
+   "name": {
+    "en": "Knife",
+    "ar": "نايف"
+   },
+   "tagline": {
+    "en": "Steak & Cigar",
+    "ar": "ستيك وسيجار"
+   },
+   "logo": "assets/logos/knife.svg",
+   "sections": [
+    {
+     "id": "food",
+     "name": {
+      "en": "Food",
+      "ar": "المأكولات"
+     },
+     "groups": [
+      {
+       "id": "salads",
+       "name": {
+        "en": "Salads",
+        "ar": "السلطات"
+       }
+      },
+      {
+       "id": "soups",
+       "name": {
+        "en": "Soups",
+        "ar": "شوربات"
+       }
+      },
+      {
+       "id": "hot-appetizers",
+       "name": {
+        "en": "Hot Appetizers",
+        "ar": "مقبلات ساخنة"
+       }
+      },
+      {
+       "id": "burgers",
+       "name": {
+        "en": "Burgers",
+        "ar": "برجر"
+       }
+      },
+      {
+       "id": "main-courses",
+       "name": {
+        "en": "Main Courses",
+        "ar": "الأطباق الرئيسية"
+       }
+      },
+      {
+       "id": "steaks",
+       "name": {
+        "en": "Steaks",
+        "ar": "ستيك"
+       }
+      },
+      {
+       "id": "dessert",
+       "name": {
+        "en": "Dessert",
+        "ar": "الحلويات"
+       }
+      },
+      {
+       "id": "other-selections",
+       "name": {
+        "en": "Other Selections",
+        "ar": "أصناف أخرى"
+       }
+      }
+     ],
+     "items": [
+      {
+       "id": "f001",
+       "group": "salads",
+       "title": {
+        "en": "Caesar Salad",
+        "ar": "سلطة سيزر"
+       },
+       "desc": {
+        "en": "Romaine lettuce, Caesar dressing, parmesan cheese, croutons.",
+        "ar": "خس روماني، صوص سيزر، جبن بارميزان وخبز محمص"
+       },
+       "price": 65,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f002",
+       "group": "salads",
+       "title": {
+        "en": "Rocca",
+        "ar": "سلطة جرجير"
+       },
+       "desc": {
+        "en": "Baby rocca, apple, grilled apricot, pears, pomegranate, blackberry, balsamic dressing, caramelized walnuts, feta cheese.",
+        "ar": "أوراق الجرجير الصغيرة، شرائح التفاح، مشمش مشوي، شرائح الإجاص، رمان، كرز أسود، صلصة البلسمك الخاصة، الجوز المكرمل، جبنة فيتا"
+       },
+       "price": 70,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f003",
+       "group": "salads",
+       "title": {
+        "en": "Carpaccio Beetroot with Goat Cheese",
+        "ar": "سلطة شمندر مع جبن الماعز"
+       },
+       "desc": {
+        "en": "Beetroot carpaccio, walnut crumble, balsamic glaze, goat cheese, baby spinach.",
+        "ar": "شمندر كارباتشيو، جوز مفتت، بلسميك جليز، جبن الماعز، سبانخ صغيرة"
+       },
+       "price": 75,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f004",
+       "group": "salads",
+       "title": {
+        "en": "Quinoa Avocado Salmon Salad",
+        "ar": "سلطة الكينوا والأفوكادو والسلمون"
+       },
+       "desc": {
+        "en": "Steamed quinoa, guacamole dip, avocado slices, feta cheese. Served with lemon dressing.",
+        "ar": "كينوا مطهو على البخار، غواكامولي، شريحة أفوكادو، جبنة فيتا. تقدم مع صلصة الليمون"
+       },
+       "price": 80,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f005",
+       "group": "soups",
+       "title": {
+        "en": "Soup of the Day",
+        "ar": "حساء اليوم"
+       },
+       "desc": {
+        "en": "Chef's soup special of the day.",
+        "ar": "حساء الشيف المميز لهذا اليوم"
+       },
+       "price": 45,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f006",
+       "group": "soups",
+       "title": {
+        "en": "Onion Soup",
+        "ar": "شوربة بصل"
+       },
+       "desc": {
+        "en": "Served with baked French bread and Monterey Jack.",
+        "ar": "يقدم مع خبز فرنسي مخبوز مونتيري جاك"
+       },
+       "price": 50,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f007",
+       "group": "hot-appetizers",
+       "title": {
+        "en": "Shrimp Benedict",
+        "ar": "جمبري بنديك"
+       },
+       "desc": {
+        "en": "Pan-seared shrimp with hollandaise sauce and toasted brioche.",
+        "ar": "روبيان مع صلصة هولنديز وبريوش محمص"
+       },
+       "price": 90,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f008",
+       "group": "hot-appetizers",
+       "title": {
+        "en": "Bruschetta",
+        "ar": "بروشيتا"
+       },
+       "desc": {
+        "en": "Roasted brisket melted in BBQ sauce, topped onto baguette, served with parmesan.",
+        "ar": "بريسكيت محمص مذاب في صلصة باربيكيو، مغطى بخبز فرنسي، يقدم مع جبن بارميزان"
+       },
+       "price": 90,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f009",
+       "group": "hot-appetizers",
+       "title": {
+        "en": "Crunchy Chicken Tender",
+        "ar": "دجاج التندر المقرمش"
+       },
+       "desc": {
+        "en": "Marinated fresh chicken tenders with our chef's seasoning, crispy style, with skinny potatoes.",
+        "ar": "دجاج طري متبل طازج مع توابل الشيف بأسلوب مقرمش مع بطاطس رفيعة"
+       },
+       "price": 75,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f010",
+       "group": "burgers",
+       "title": {
+        "en": "Knife Angus Beef Burger 185g",
+        "ar": "نايف أنجوس بيف برجر 185 جرام"
+       },
+       "desc": {
+        "en": "Angus beef burger, brioche bun, caramelized shallots, dill pickle, eggs, cheddar cheese, lollo rosso, tomato. Served with Knife sauce and choice of fries.",
+        "ar": "برجر لحم أنجوس، خبز البريوش، كراث كراميل، مخلل شبت، بيض، جبنة شيدر، لولو روسو، طماطم. يقدم مع نايف صوص وبطاطا مقلية"
+       },
+       "price": 110,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f011",
+       "group": "burgers",
+       "title": {
+        "en": "Tix Mix Burger",
+        "ar": "تيكس ميكس برجر"
+       },
+       "desc": {
+        "en": "Angus beef burger, brioche bun, Tix Mix sauce, guacamole, jalapeño pickle, Monterey Jack cheese, lollo rosso, tomato. Served with Knife sauce and skinny fries.",
+        "ar": "بيف برغر أنجوس، خبز بريوش، صلصة تيكس ميكس، جواكامولي الأفوكادو، مخلل هالبينو، جبنة مونتيري جاك، لولو روسو، طماطم. يقدم مع نايف صوص وبطاطا مقلية رفيعة"
+       },
+       "price": 110,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f012",
+       "group": "burgers",
+       "title": {
+        "en": "Louisiana Chicken Burger",
+        "ar": "برجر دجاج لويزيانا"
+       },
+       "desc": {
+        "en": "Fried chicken breast, red sauerkraut, chili mayonnaise, lollo rosso, tomato. Served with Knife sauce and skinny fries.",
+        "ar": "صدر دجاج مقلي، مخلل ملفوف أحمر، مايونيز مع الفلفل الحار، لولو روسو، طماطم. يقدم مع نايف صوص وبطاطا مقلية رفيعة"
+       },
+       "price": 110,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f013",
+       "group": "burgers",
+       "title": {
+        "en": "BBQ Ribs Burger",
+        "ar": "برغر ضلوع الشواء"
+       },
+       "desc": {
+        "en": "Angus beef burger, slow-cooked beef ribs with barbecue sauce, golden fried onion, brioche bun, lollo rosso, tomato. Served with Knife sauce and skinny fries.",
+        "ar": "برغر لحم البقر، أضلاع لحم البقر المطبوخة ببطء مع صلصة الباربكيو، بصل مقلي ذهبي، خبز بريوش، لولو روسو، طماطم. يقدم مع نايف صوص وبطاطا مقلية رفيعة"
+       },
+       "price": 110,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f014",
+       "group": "burgers",
+       "title": {
+        "en": "Steak Sandwich",
+        "ar": "ساندوتش ستيك"
+       },
+       "desc": {
+        "en": "Brioche bun, BBQ hoisin sauce, dill pickle, coleslaw, onion, cheddar cheese, lettuce. Served with smoked mashed potato.",
+        "ar": "خبز البريوش، صوص الباربيكيو هويسن، مخلل شبت، كول سلو، بصل، جبنة شيدر، خس. يقدم مع بطاطا مهروسة مدخنة"
+       },
+       "price": 135,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f015",
+       "group": "main-courses",
+       "title": {
+        "en": "Golden Chicken Breast",
+        "ar": "صدر دجاج ذهبي"
+       },
+       "desc": {
+        "en": "Carefully roasted chicken breast to preserve its tenderness, seasoned with a blend of herbs and spices, served with a creamy mushroom sauce. A balanced and light dish that suits all tastes.",
+        "ar": "صدر دجاج مشوي بعناية ليحافظ على طراوته، يتبل بتوليفة من الأعشاب والبهارات، ويقدم مع صوص كريمي ماشروم. طبق متوازن وخفيف يناسب جميع الأذواق"
+       },
+       "price": 90,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f016",
+       "group": "main-courses",
+       "title": {
+        "en": "Wagyu Lasagna",
+        "ar": "واغيو لازانيا"
+       },
+       "desc": {
+        "en": "Layers of fresh pasta stuffed with slow-cooked premium Wagyu beef in a rich Italian tomato sauce, combined with melted cheese and aromatic spices. A classic dish with a luxurious twist that melts in the mouth.",
+        "ar": "طبقات من الباستا الطازجة محشوة بلحم واغيو الفاخر المطهو ببطء مع صلصة طماطم إيطالية غنية، ومزيج من الجبن الذائب والبهارات العطرية. طبق كلاسيكي بلمسة فاخرة يذوب في الفم"
+       },
+       "price": 110,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f017",
+       "group": "main-courses",
+       "title": {
+        "en": "Truffle Mushroom Risotto",
+        "ar": "ريزوتو الترافل"
+       },
+       "desc": {
+        "en": "Creamy risotto with wild mushroom, black truffle and parmesan, finished with fresh herbs.",
+        "ar": "ريزوتو كريمي بالفطر البري والكمأة السوداء وجبن البارميزان، مزين بالفطر الطازج"
+       },
+       "price": 80,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f018",
+       "group": "main-courses",
+       "title": {
+        "en": "Vegetarian Lasagna",
+        "ar": "لازانيا نباتية"
+       },
+       "desc": {
+        "en": "Layers of tender lasagna sheets with rich tomato sauce, creamy béchamel and a delicious selection of fresh vegetables, topped with melted cheese and baked to golden perfection.",
+        "ar": "طبقات من رقائق اللازانيا الطرية مع صلصة الطماطم الغنية، وصلصة البشاميل الكريمية، وتشكيلة لذيذة من الخضروات الطازجة، تعلوها طبقة من الجبن الذائب وتخبز حتى تكتسب لونا ذهبيا مثاليا"
+       },
+       "price": 80,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f019",
+       "group": "main-courses",
+       "title": {
+        "en": "Rigatoni Saffron",
+        "ar": "راغاتوني زعفران"
+       },
+       "desc": {
+        "en": "Rigatoni pasta cooked in a rich creamy sauce infused with pure saffron, adding a luxurious aromatic flavor and a distinctive golden color. Served with a touch of parmesan cheese and carefully selected seasonal vegetables.",
+        "ar": "مكرونة ريجاتوني مطهوة في صلصة كريمية غنية مشبعة بالزعفران النقي، مما يضيف نكهة عطرية فاخرة ولونا ذهبيا مميزا. يقدم الطبق مع لمسة من جبن بارميزان وخضروات موسمية مختارة بعناية"
+       },
+       "price": 80,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f020",
+       "group": "main-courses",
+       "title": {
+        "en": "Grilled Salmon Fillet",
+        "ar": "فيليه السلمون المشوي"
+       },
+       "desc": {
+        "en": "Grilled marinated salmon fillet with sautéed vegetables and creamy pesto sauce. Served with mashed potato.",
+        "ar": "فيليه السلمون المتبل والمشوي، مع خضار سوتيه وصلصة البيستو الكريمية، ويقدم مع البطاطس المهروسة"
+       },
+       "price": 120,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f021",
+       "group": "main-courses",
+       "title": {
+        "en": "Seabass Delight",
+        "ar": "متعة السيباس"
+       },
+       "desc": {
+        "en": "Fresh sea bass fillet, cooked to perfection to maintain its tender texture and marine flavor, served with French ratatouille vegetables. A light, elegant and rich dish.",
+        "ar": "فيليه سمك سيباس طازج، يطهى بطريقة مثالية ليحافظ على قوامه الطري ونكهته البحرية، ويقدم مع خضار الراتاتوي الفرنسية. طبق خفيف، راق، وغني"
+       },
+       "price": 120,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f022",
+       "group": "main-courses",
+       "title": {
+        "en": "Ribs Risotto",
+        "ar": "ريبس ريزوتو"
+       },
+       "desc": {
+        "en": "Creamy risotto cooked slowly with rich broth, served with tender, fall-apart beef short ribs cooked for 12 hours and seasoned with special spices that add a deep and distinctive flavor to every bite.",
+        "ar": "ريزوتو كريمي مطهو ببطء مع مرق غني، يقدم مع لحم أضلاع بقرية طرية ومتفككة مطهية لمدة 12 ساعة، تتبل بتوابل خاصة تضيف نكهة عميقة ومميزة لكل قضمة. مزيج مثالي بين الطراوة والنعومة"
+       },
+       "price": 150,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f023",
+       "group": "steaks",
+       "title": {
+        "en": "Black Angus Beef Tenderloin Steak",
+        "ar": "بلاك أنجوس بيف تندرلوين ستيك"
+       },
+       "desc": {
+        "en": "The most delicious and tender piece of meat available. 250 grams with a marbling score of 5+ (natural grains).",
+        "ar": "أكثر قطعة لحم لذيذة وطرية متاحة، 250 جرام بدرجة تداخل +5 (حبوب طبيعية)"
+       },
+       "price": 190,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f024",
+       "group": "steaks",
+       "title": {
+        "en": "Black Angus Ribeye Steak",
+        "ar": "بلاك أنجوس ريب آي ستيك"
+       },
+       "desc": {
+        "en": "Black Angus rib eye steak. 350 grams with a marbling score of 5+ (natural grains).",
+        "ar": "بلاك أنجوس ريب آي، 350 جرام مع درجة تداخل دهنية +5 (حبوب طبيعية)"
+       },
+       "price": 175,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f025",
+       "group": "steaks",
+       "title": {
+        "en": "Wagyu Beef Tenderloin Steak MB 7-8",
+        "ar": "ستيك لحم واغيو تندرلوين MB 7-8"
+       },
+       "desc": {
+        "en": "The most delicious and tender piece of meat, with a balanced intermingling of fat and muscle fibers that gives it a marbled appearance and rich flavor.",
+        "ar": "أشهى قطعة لحم طرية تحتوي على تداخل متوازن من الدهون ونسج العضلات، مما يمنحها مظهرا رخاميا ونكهة غنية"
+       },
+       "price": 330,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f026",
+       "group": "steaks",
+       "title": {
+        "en": "Wagyu Beef Ribeye Steak MB 7-8",
+        "ar": "ستيك ريب آي لحم واغيو MB 7-8"
+       },
+       "desc": {
+        "en": "A piece of meat rich in juiciness and perfectly distributed fat, grilled over flames to enhance the flavor and served at the cooking level of your choice. Known for its tenderness and strong taste.",
+        "ar": "قطعة لحم غنية بالعصارة والدهون المتوزعة بشكل مثالي، تشوى على اللهب لتعزيز النكهة وتقدم بدرجة الطهي التي تختارها. تتميز بطراوتها وطعمها القوي"
+       },
+       "price": 320,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f027",
+       "group": "dessert",
+       "title": {
+        "en": "Cheesecake",
+        "ar": "تشيزكيك"
+       },
+       "desc": {
+        "en": "Raspberry cheesecake served with raspberry sauce.",
+        "ar": "تشيزكيك التوت البري يقدم مع صلصة التوت البري"
+       },
+       "price": 60,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f028",
+       "group": "dessert",
+       "title": {
+        "en": "Tiramisu",
+        "ar": "تراميسو"
+       },
+       "desc": {
+        "en": "Elegant oval-shaped tiramisu with rich espresso and mascarpone, finished with chocolate and cocoa.",
+        "ar": "تراميسو فاخر بنكهة الإسبريسو والماسكاربوني، مغطى بالشوكولاتة والكاكاو، بتقديم أنيق"
+       },
+       "price": 60,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f029",
+       "group": "dessert",
+       "title": {
+        "en": "London Cake",
+        "ar": "لندن كيك"
+       },
+       "desc": {
+        "en": "Indulgent cake layered with rich chocolate, caramel and nuts, creating a perfect harmony of smoothness.",
+        "ar": "كيك فاخر بطبقات غنية من الشوكولاتة والكراميل والمكسرات، بتوازن متناغم بين النعومة"
+       },
+       "price": 60,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f030",
+       "group": "dessert",
+       "title": {
+        "en": "Chocolate Fondant",
+        "ar": "فوندان الشوكولاتة"
+       },
+       "desc": {
+        "en": "Baked fondant served with vanilla ice cream.",
+        "ar": "فوندان الشوكولاتة المخبوز يقدم مع آيس كريم الفانيليا"
+       },
+       "price": 60,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f031",
+       "group": "other-selections",
+       "title": {
+        "en": "Sweet Potato Fries",
+        "ar": "بطاطا حلوة مقلية"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 25,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f032",
+       "group": "other-selections",
+       "title": {
+        "en": "Sautéed Mushrooms",
+        "ar": "سوتيد ماشروم"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 25,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f033",
+       "group": "other-selections",
+       "title": {
+        "en": "Baby Potato",
+        "ar": "بطاطا صغيرة"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 25,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f034",
+       "group": "other-selections",
+       "title": {
+        "en": "Creamy Mashed Potato",
+        "ar": "بطاطا مهروسة كريمية"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 25,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f035",
+       "group": "other-selections",
+       "title": {
+        "en": "French Fries",
+        "ar": "بطاطا مقلية"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 25,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f036",
+       "group": "other-selections",
+       "title": {
+        "en": "Creamed Spinach",
+        "ar": "سبانخ كريمي"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 25,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "f037",
+       "group": "other-selections",
+       "title": {
+        "en": "Garlic Mashed Potato",
+        "ar": "بطاطا مهروسة مع الثوم"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 25,
+       "photo": "",
+       "available": true
+      }
+     ]
+    },
+    {
+     "id": "beverage",
+     "name": {
+      "en": "Beverage",
+      "ar": "المشروبات"
+     },
+     "groups": [
+      {
+       "id": "signatures",
+       "name": {
+        "en": "Signatures",
+        "ar": "اختصاصنا"
+       }
+      },
+      {
+       "id": "relaxing",
+       "name": {
+        "en": "Relaxing",
+        "ar": "استرخاء"
+       }
+      },
+      {
+       "id": "soft-drinks",
+       "name": {
+        "en": "Soft Drinks",
+        "ar": "مشروبات غازية"
+       }
+      },
+      {
+       "id": "energy-drinks",
+       "name": {
+        "en": "Energy Drinks",
+        "ar": "مشروبات الطاقة"
+       }
+      },
+      {
+       "id": "fresh-juices",
+       "name": {
+        "en": "Fresh Juices",
+        "ar": "عصائر"
+       }
+      },
+      {
+       "id": "mineral-water",
+       "name": {
+        "en": "Mineral Water",
+        "ar": "مياه معدنية"
+       }
+      },
+      {
+       "id": "sparkling-water",
+       "name": {
+        "en": "Sparkling Water",
+        "ar": "مياه غازية"
+       }
+      },
+      {
+       "id": "non-alcoholic-drinks",
+       "name": {
+        "en": "Non-Alcoholic Drinks",
+        "ar": "مشروبات غير كحولية"
+       }
+      },
+      {
+       "id": "hot-drinks",
+       "name": {
+        "en": "Hot Drinks",
+        "ar": "مشروبات ساخنة"
+       }
+      },
+      {
+       "id": "tea",
+       "name": {
+        "en": "Tea",
+        "ar": "شاي"
+       }
+      }
+     ],
+     "items": [
+      {
+       "id": "b038",
+       "group": "signatures",
+       "title": {
+        "en": "Fennel Colada",
+        "ar": "كولادا فينيل"
+       },
+       "desc": {
+        "en": "Fennel seeds blended with fresh pineapple and lemon juice over ice. Finished with a top-up of soda and a rose water spray.",
+        "ar": "بذور الشمر ممزوجة مع الأناناس الطازج وعصير الليمون فوق الثلج، مع إضافة الصودا ورذاذ ماء الورد"
+       },
+       "price": 45,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b039",
+       "group": "signatures",
+       "title": {
+        "en": "Strawberry Feez",
+        "ar": "فراولة فييز"
+       },
+       "desc": {
+        "en": "Muddled strawberry with fresh orange and pineapple juice, with a splash of peach.",
+        "ar": "فراولة مخلوطة مع برتقال طازج وعصير أناناس مع طعم خوخ"
+       },
+       "price": 45,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b040",
+       "group": "relaxing",
+       "title": {
+        "en": "Mangosto",
+        "ar": "مانجوستو"
+       },
+       "desc": {
+        "en": "Fresh mango juice blended with banana and lemon juice, with a splash of mint leaves.",
+        "ar": "عصير مانجا طازج ممزوج بالموز وعصير الليمون مع قطع أوراق النعناع"
+       },
+       "price": 35,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b041",
+       "group": "soft-drinks",
+       "title": {
+        "en": "Coca-Cola",
+        "ar": "كوكاكولا"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 25,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b042",
+       "group": "soft-drinks",
+       "title": {
+        "en": "Coca-Cola Light",
+        "ar": "كوكاكولا لايت"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 25,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b043",
+       "group": "soft-drinks",
+       "title": {
+        "en": "Coca-Cola Zero",
+        "ar": "كوكاكولا زيرو"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 25,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b044",
+       "group": "soft-drinks",
+       "title": {
+        "en": "Sprite",
+        "ar": "سبرايت"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 25,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b045",
+       "group": "soft-drinks",
+       "title": {
+        "en": "Sprite Lite",
+        "ar": "سبرايت لايت"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 25,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b046",
+       "group": "soft-drinks",
+       "title": {
+        "en": "Fanta",
+        "ar": "فانتا"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 25,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b047",
+       "group": "soft-drinks",
+       "title": {
+        "en": "Ginger Ale",
+        "ar": "زنجبيل"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 25,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b048",
+       "group": "soft-drinks",
+       "title": {
+        "en": "Tonic Water",
+        "ar": "مياه تونيك"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 25,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b049",
+       "group": "soft-drinks",
+       "title": {
+        "en": "Soda Water",
+        "ar": "مياه صودا"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 25,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b050",
+       "group": "energy-drinks",
+       "title": {
+        "en": "Red Bull",
+        "ar": "رد بل"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 35,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b051",
+       "group": "energy-drinks",
+       "title": {
+        "en": "Red Bull Sugarfree",
+        "ar": "رد بل بدون سكر"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 35,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b052",
+       "group": "fresh-juices",
+       "title": {
+        "en": "Orange",
+        "ar": "برتقال"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 30,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b053",
+       "group": "fresh-juices",
+       "title": {
+        "en": "Lemon",
+        "ar": "ليمون"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 30,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b054",
+       "group": "fresh-juices",
+       "title": {
+        "en": "Mango",
+        "ar": "مانجا"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 30,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b055",
+       "group": "fresh-juices",
+       "title": {
+        "en": "Pineapple",
+        "ar": "أناناس"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 30,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b056",
+       "group": "fresh-juices",
+       "title": {
+        "en": "Strawberry",
+        "ar": "فراولة"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 30,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b057",
+       "group": "mineral-water",
+       "title": {
+        "en": "Voss (Large)",
+        "ar": "فوس (كبير)"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 28,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b058",
+       "group": "mineral-water",
+       "title": {
+        "en": "Voss (Small)",
+        "ar": "فوس (صغير)"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 18,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b059",
+       "group": "sparkling-water",
+       "title": {
+        "en": "Voss (Large)",
+        "ar": "فوس (كبير)"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 28,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b060",
+       "group": "sparkling-water",
+       "title": {
+        "en": "Voss (Small)",
+        "ar": "فوس (صغير)"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 18,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b061",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "Glass",
+        "ar": "كوب"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 40,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b062",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "Bottle",
+        "ar": "زجاجة"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 250,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b063",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "Gin",
+        "ar": "جن"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 40,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b064",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "Whisky Amarito",
+        "ar": "اميرتو ويسكي"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 40,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b065",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "Whisky Black Reserve",
+        "ar": "بلاك ريسيرف وسكي"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 40,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b066",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "Glass",
+        "ar": "كوب"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 45,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b067",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "Bottle",
+        "ar": "زجاجة"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 170,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b068",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "Rose Wine",
+        "ar": "خمر وردي"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 45,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b069",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "White Wine",
+        "ar": "خمر ابيض"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 45,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b070",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "Red Wine",
+        "ar": "خمر احمر"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 45,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b071",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "Rose Champagne",
+        "ar": "شمبانية وردية"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 120,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b072",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "Classic Champagne",
+        "ar": "شمبانية كلاسيكية"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 120,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b073",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "Beer",
+        "ar": "بيرة"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 50,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b074",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "Pina Colada",
+        "ar": "بينا كولادا"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 45,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b075",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "Margarita",
+        "ar": "مارغريتا"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 45,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b076",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "Sangria",
+        "ar": "سانغريا"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 45,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b077",
+       "group": "non-alcoholic-drinks",
+       "title": {
+        "en": "Strawberry Tonic",
+        "ar": "تونيك الفراولة"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 45,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b078",
+       "group": "hot-drinks",
+       "title": {
+        "en": "Espresso",
+        "ar": "اسبرسو"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 30,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b079",
+       "group": "hot-drinks",
+       "title": {
+        "en": "Espresso Double",
+        "ar": "دبل اسبرسو"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 30,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b080",
+       "group": "hot-drinks",
+       "title": {
+        "en": "Americano",
+        "ar": "اميريكانو"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 30,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b081",
+       "group": "hot-drinks",
+       "title": {
+        "en": "Café Macchiato",
+        "ar": "كافيه ماكياتو"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 30,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b082",
+       "group": "hot-drinks",
+       "title": {
+        "en": "Cappuccino",
+        "ar": "كبتشينو"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 30,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b083",
+       "group": "hot-drinks",
+       "title": {
+        "en": "Latte",
+        "ar": "لاتيه"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 30,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b084",
+       "group": "hot-drinks",
+       "title": {
+        "en": "Hot Chocolate",
+        "ar": "شوكولاتة ساخنة"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 30,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b085",
+       "group": "hot-drinks",
+       "title": {
+        "en": "Turkish Coffee",
+        "ar": "قهوة تركي"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 30,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b086",
+       "group": "tea",
+       "title": {
+        "en": "English Breakfast",
+        "ar": "فطار انجليزي"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 35,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b087",
+       "group": "tea",
+       "title": {
+        "en": "Green",
+        "ar": "شاي اخضر"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 35,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b088",
+       "group": "tea",
+       "title": {
+        "en": "Earl Grey",
+        "ar": "ايرل جراي"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 35,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b089",
+       "group": "tea",
+       "title": {
+        "en": "Jasmine",
+        "ar": "شاي الياسمين"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 35,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b090",
+       "group": "tea",
+       "title": {
+        "en": "Chamomile",
+        "ar": "كاموميل"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 35,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b091",
+       "group": "tea",
+       "title": {
+        "en": "Peppermint",
+        "ar": "نعناع"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 35,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "b092",
+       "group": "tea",
+       "title": {
+        "en": "Ginger, Lemon and Honey",
+        "ar": "زنجبيل بالليمون والعسل"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 35,
+       "photo": "",
+       "available": true
+      }
+     ]
+    },
+    {
+     "id": "cigar",
+     "name": {
+      "en": "Cigar",
+      "ar": "السيجار"
+     },
+     "groups": [
+      {
+       "id": "cigar",
+       "name": {
+        "en": "Cigar",
+        "ar": "سيجار"
+       }
+      }
+     ],
+     "items": [
+      {
+       "id": "c093",
+       "group": "cigar",
+       "title": {
+        "en": "Plasencia Black",
+        "ar": "بلاسينسيا بلاك"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 180,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "c094",
+       "group": "cigar",
+       "title": {
+        "en": "Plasencia Red",
+        "ar": "بلاسينسيا ريد"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 180,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "c095",
+       "group": "cigar",
+       "title": {
+        "en": "Bellas Artes White",
+        "ar": "بيلاس آرتس وايت"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 350,
+       "photo": "",
+       "available": true
+      },
+      {
+       "id": "c096",
+       "group": "cigar",
+       "title": {
+        "en": "Bellas Artes Red",
+        "ar": "بيلاس آرتس ريد"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 350,
+       "photo": "",
+       "available": true
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

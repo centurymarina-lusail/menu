@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Century Marina Hotel · Menus</title>
+<meta name="description" content="Restaurant menus at Century Marina Hotel, Lusail.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/menu.css">
+</head>
+<body data-theme="hotel">
+<header class="bar" id="bar">
+  <a class="bar-back" id="back" href="#/" hidden><span class="chev" aria-hidden="true"></span><span class="bar-back-label" id="backLabel">Back</span></a>
+  <a class="bar-mark" id="mark" href="#/" hidden></a>
+  <button class="bar-lang" id="lang" type="button" lang="ar">عربي</button>
+</header>
+<main id="view" tabindex="-1"><p class="state">Loading the menu…</p></main>
+<dialog class="zoom" id="zoom" aria-labelledby="zoomTitle">
+  <button class="zoom-close" id="zoomClose" type="button" aria-label="Close">&times;</button>
+  <img id="zoomImg" alt="">
+  <div class="zoom-tx"><h2 id="zoomTitle"></h2><p id="zoomDesc"></p><p class="price" id="zoomPrice"></p></div>
+</dialog>
+<script src="assets/menu.js" defer></script>
+</body>
+</html>
