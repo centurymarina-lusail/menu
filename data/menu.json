@@ -317,7 +317,7 @@
         "ar": "جمبري بنديك"
        },
        "desc": {
-        "en": "Pan-seared shrimp with hollandaise sauce and toasted brioche.",
+        "en": "Pan-seared shrimp with hollandaise sauce and toasted brioche.\nAllergens: Gluten, Shrimps, Celery.",
         "ar": "روبيان مع صلصة هولنديز وبريوش محمص"
        },
        "price": 90,
@@ -1778,5 +1778,5 @@
    ]
   }
  ],
- "updated": "2026-11-11T07:16:28.612Z"
+ "updated": "2026-11-11T07:22:32.552Z"
 }
