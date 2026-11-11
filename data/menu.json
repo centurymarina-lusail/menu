@@ -99,7 +99,7 @@
         "ar": ""
        },
        "price": 100,
-       "available": false
+       "available": true
       }
      ]
     },
@@ -1760,5 +1760,5 @@
    ]
   }
  ],
- "updated": "2026-11-11T07:15:30.148Z"
+ "updated": "2026-11-11T07:15:35.156Z"
 }
