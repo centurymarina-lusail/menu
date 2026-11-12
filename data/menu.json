@@ -3056,7 +3056,7 @@
         "ar": "خس روماني، صوص سيزر، جبن بارميزان وخبز محمص"
        },
        "price": 65,
-       "photo": "",
+       "photo": "images/knife/f001-caesar-salad.jpg",
        "available": true
       },
       {
@@ -3071,7 +3071,7 @@
         "ar": "أوراق الجرجير الصغيرة، شرائح التفاح، مشمش مشوي، شرائح الإجاص، رمان، كرز أسود، صلصة البلسمك الخاصة، الجوز المكرمل، جبنة فيتا"
        },
        "price": 70,
-       "photo": "",
+       "photo": "images/knife/f002-rocca.jpg",
        "available": true
       },
       {
@@ -3086,7 +3086,7 @@
         "ar": "شمندر كارباتشيو، جوز مفتت، بلسميك جليز، جبن الماعز، سبانخ صغيرة"
        },
        "price": 75,
-       "photo": "",
+       "photo": "images/knife/f003-carpaccio-beetroot-with-goat-cheese.jpg",
        "available": true
       },
       {
@@ -3101,7 +3101,7 @@
         "ar": "كينوا مطهو على البخار، غواكامولي، شريحة أفوكادو، جبنة فيتا. تقدم مع صلصة الليمون"
        },
        "price": 80,
-       "photo": "",
+       "photo": "images/knife/f004-quinoa-avocado-salmon-salad.jpg",
        "available": true
       },
       {
@@ -3131,7 +3131,7 @@
         "ar": "يقدم مع خبز فرنسي مخبوز مونتيري جاك"
        },
        "price": 50,
-       "photo": "",
+       "photo": "images/knife/f006-onion-soup.jpg",
        "available": true
       },
       {
@@ -3146,7 +3146,7 @@
         "ar": "روبيان مع صلصة هولنديز وبريوش محمص"
        },
        "price": 90,
-       "photo": "",
+       "photo": "images/knife/f007-shrimp-benedict.jpg",
        "available": true
       },
       {
@@ -3161,7 +3161,7 @@
         "ar": "بريسكيت محمص مذاب في صلصة باربيكيو، مغطى بخبز فرنسي، يقدم مع جبن بارميزان"
        },
        "price": 90,
-       "photo": "",
+       "photo": "images/knife/f008-bruschetta.jpg",
        "available": true
       },
       {
@@ -3176,7 +3176,7 @@
         "ar": "دجاج طري متبل طازج مع توابل الشيف بأسلوب مقرمش مع بطاطس رفيعة"
        },
        "price": 75,
-       "photo": "",
+       "photo": "images/knife/f009-crunchy-chicken-tender.jpg",
        "available": true
       },
       {
@@ -3206,7 +3206,7 @@
         "ar": "بيف برغر أنجوس، خبز بريوش، صلصة تيكس ميكس، جواكامولي الأفوكادو، مخلل هالبينو، جبنة مونتيري جاك، لولو روسو، طماطم. يقدم مع نايف صوص وبطاطا مقلية رفيعة"
        },
        "price": 110,
-       "photo": "",
+       "photo": "images/knife/f011-tix-mix-burger.jpg",
        "available": true
       },
       {
@@ -3221,7 +3221,7 @@
         "ar": "صدر دجاج مقلي، مخلل ملفوف أحمر، مايونيز مع الفلفل الحار، لولو روسو، طماطم. يقدم مع نايف صوص وبطاطا مقلية رفيعة"
        },
        "price": 110,
-       "photo": "",
+       "photo": "images/knife/f012-louisiana-chicken-burger.jpg",
        "available": true
       },
       {
@@ -3236,7 +3236,7 @@
         "ar": "برغر لحم البقر، أضلاع لحم البقر المطبوخة ببطء مع صلصة الباربكيو، بصل مقلي ذهبي، خبز بريوش، لولو روسو، طماطم. يقدم مع نايف صوص وبطاطا مقلية رفيعة"
        },
        "price": 110,
-       "photo": "",
+       "photo": "images/knife/f013-bbq-ribs-burger.jpg",
        "available": true
       },
       {
@@ -3251,7 +3251,7 @@
         "ar": "خبز البريوش، صوص الباربيكيو هويسن، مخلل شبت، كول سلو، بصل، جبنة شيدر، خس. يقدم مع بطاطا مهروسة مدخنة"
        },
        "price": 135,
-       "photo": "",
+       "photo": "images/knife/f014-steak-sandwich.jpg",
        "available": true
       },
       {
@@ -3266,7 +3266,7 @@
         "ar": "صدر دجاج مشوي بعناية ليحافظ على طراوته، يتبل بتوليفة من الأعشاب والبهارات، ويقدم مع صوص كريمي ماشروم. طبق متوازن وخفيف يناسب جميع الأذواق"
        },
        "price": 90,
-       "photo": "",
+       "photo": "images/knife/f015-golden-chicken-breast.jpg",
        "available": true
       },
       {
@@ -3281,7 +3281,7 @@
         "ar": "طبقات من الباستا الطازجة محشوة بلحم واغيو الفاخر المطهو ببطء مع صلصة طماطم إيطالية غنية، ومزيج من الجبن الذائب والبهارات العطرية. طبق كلاسيكي بلمسة فاخرة يذوب في الفم"
        },
        "price": 110,
-       "photo": "",
+       "photo": "images/knife/f016-wagyu-lasagna.jpg",
        "available": true
       },
       {
@@ -3296,7 +3296,7 @@
         "ar": "ريزوتو كريمي بالفطر البري والكمأة السوداء وجبن البارميزان، مزين بالفطر الطازج"
        },
        "price": 80,
-       "photo": "",
+       "photo": "images/knife/f017-truffle-mushroom-risotto.jpg",
        "available": true
       },
       {
@@ -3311,7 +3311,7 @@
         "ar": "طبقات من رقائق اللازانيا الطرية مع صلصة الطماطم الغنية، وصلصة البشاميل الكريمية، وتشكيلة لذيذة من الخضروات الطازجة، تعلوها طبقة من الجبن الذائب وتخبز حتى تكتسب لونا ذهبيا مثاليا"
        },
        "price": 80,
-       "photo": "",
+       "photo": "images/knife/f018-vegetarian-lasagna.jpg",
        "available": true
       },
       {
@@ -3326,7 +3326,7 @@
         "ar": "مكرونة ريجاتوني مطهوة في صلصة كريمية غنية مشبعة بالزعفران النقي، مما يضيف نكهة عطرية فاخرة ولونا ذهبيا مميزا. يقدم الطبق مع لمسة من جبن بارميزان وخضروات موسمية مختارة بعناية"
        },
        "price": 80,
-       "photo": "",
+       "photo": "images/knife/f019-rigatoni-saffron.jpg",
        "available": true
       },
       {
@@ -3356,7 +3356,7 @@
         "ar": "فيليه سمك سيباس طازج، يطهى بطريقة مثالية ليحافظ على قوامه الطري ونكهته البحرية، ويقدم مع خضار الراتاتوي الفرنسية. طبق خفيف، راق، وغني"
        },
        "price": 120,
-       "photo": "",
+       "photo": "images/knife/f021-seabass-delight.jpg",
        "available": true
       },
       {
@@ -3371,7 +3371,7 @@
         "ar": "ريزوتو كريمي مطهو ببطء مع مرق غني، يقدم مع لحم أضلاع بقرية طرية ومتفككة مطهية لمدة 12 ساعة، تتبل بتوابل خاصة تضيف نكهة عميقة ومميزة لكل قضمة. مزيج مثالي بين الطراوة والنعومة"
        },
        "price": 150,
-       "photo": "",
+       "photo": "images/knife/f022-ribs-risotto.jpg",
        "available": true
       },
       {
@@ -3386,7 +3386,7 @@
         "ar": "أكثر قطعة لحم لذيذة وطرية متاحة، 250 جرام بدرجة تداخل +5 (حبوب طبيعية)"
        },
        "price": 190,
-       "photo": "",
+       "photo": "images/knife/f023-black-angus-beef-tenderloin-steak.jpg",
        "available": true
       },
       {
@@ -3401,7 +3401,7 @@
         "ar": "بلاك أنجوس ريب آي، 350 جرام مع درجة تداخل دهنية +5 (حبوب طبيعية)"
        },
        "price": 175,
-       "photo": "",
+       "photo": "images/knife/f024-black-angus-ribeye-steak.jpg",
        "available": true
       },
       {
@@ -3416,7 +3416,7 @@
         "ar": "أشهى قطعة لحم طرية تحتوي على تداخل متوازن من الدهون ونسج العضلات، مما يمنحها مظهرا رخاميا ونكهة غنية"
        },
        "price": 330,
-       "photo": "",
+       "photo": "images/knife/f025-wagyu-beef-tenderloin-steak-mb-7-8.jpg",
        "available": true
       },
       {
@@ -3431,7 +3431,7 @@
         "ar": "قطعة لحم غنية بالعصارة والدهون المتوزعة بشكل مثالي، تشوى على اللهب لتعزيز النكهة وتقدم بدرجة الطهي التي تختارها. تتميز بطراوتها وطعمها القوي"
        },
        "price": 320,
-       "photo": "",
+       "photo": "images/knife/f026-wagyu-beef-ribeye-steak-mb-7-8.jpg",
        "available": true
       },
       {
@@ -3446,7 +3446,7 @@
         "ar": "تشيزكيك التوت البري يقدم مع صلصة التوت البري"
        },
        "price": 60,
-       "photo": "",
+       "photo": "images/knife/f027-cheesecake.jpg",
        "available": true
       },
       {
@@ -3461,7 +3461,7 @@
         "ar": "تراميسو فاخر بنكهة الإسبريسو والماسكاربوني، مغطى بالشوكولاتة والكاكاو، بتقديم أنيق"
        },
        "price": 60,
-       "photo": "",
+       "photo": "images/knife/f028-tiramisu.jpg",
        "available": true
       },
       {
@@ -3476,7 +3476,7 @@
         "ar": "كيك فاخر بطبقات غنية من الشوكولاتة والكراميل والمكسرات، بتوازن متناغم بين النعومة"
        },
        "price": 60,
-       "photo": "",
+       "photo": "images/knife/f029-london-cake.jpg",
        "available": true
       },
       {
@@ -3491,7 +3491,7 @@
         "ar": "فوندان الشوكولاتة المخبوز يقدم مع آيس كريم الفانيليا"
        },
        "price": 60,
-       "photo": "",
+       "photo": "images/knife/f030-chocolate-fondant.jpg",
        "available": true
       },
       {
@@ -3506,7 +3506,7 @@
         "ar": ""
        },
        "price": 25,
-       "photo": "",
+       "photo": "images/knife/f031-sweet-potato-fries.jpg",
        "available": true
       },
       {
@@ -3521,7 +3521,7 @@
         "ar": ""
        },
        "price": 25,
-       "photo": "",
+       "photo": "images/knife/f032-saut-ed-mushrooms.jpg",
        "available": true
       },
       {
@@ -3536,7 +3536,7 @@
         "ar": ""
        },
        "price": 25,
-       "photo": "",
+       "photo": "images/knife/f033-baby-potato.jpg",
        "available": true
       },
       {
@@ -3551,7 +3551,7 @@
         "ar": ""
        },
        "price": 25,
-       "photo": "",
+       "photo": "images/knife/f034-creamy-mashed-potato.jpg",
        "available": true
       },
       {
@@ -3566,7 +3566,7 @@
         "ar": ""
        },
        "price": 25,
-       "photo": "",
+       "photo": "images/knife/f035-french-fries.jpg",
        "available": true
       },
       {
@@ -3581,7 +3581,7 @@
         "ar": ""
        },
        "price": 25,
-       "photo": "",
+       "photo": "images/knife/f036-creamed-spinach.jpg",
        "available": true
       },
       {
