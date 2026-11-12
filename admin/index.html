@@ -25,7 +25,7 @@
       </div>
       <div class="photo-actions"><button class="link" type="button" id="photoRemove" hidden>Remove photo</button></div>
       <label class="field"><span>Title</span><input id="fTitleEn" type="text" maxlength="120" required autocomplete="off"></label>
-      <label class="field"><span>Description</span><textarea id="fDescEn" rows="3" maxlength="600"></textarea></label>
+      <label class="field"><span>Description</span><textarea id="fDescEn" rows="3" maxlength="2000"></textarea></label>
       <label class="field field--price"><span>Price (<span id="fCur">QAR</span>)</span><input id="fPrice" type="number" inputmode="decimal" min="0" step="0.01" required></label>
       <label class="field"><span>Menu group</span><select id="fGroup"></select><small>Groups are the headings inside a section, like Salads or Hot Drinks.</small></label>
       <div class="newgroup" id="newGroup" hidden>
@@ -35,9 +35,18 @@
       <details class="arabic" id="arabicBox">
         <summary>Arabic text (optional)</summary>
         <label class="field"><span>Title in Arabic</span><input id="fTitleAr" type="text" maxlength="120" dir="rtl" lang="ar" autocomplete="off"></label>
-        <label class="field"><span>Description in Arabic</span><textarea id="fDescAr" rows="3" maxlength="600" dir="rtl" lang="ar"></textarea></label>
+        <label class="field"><span>Description in Arabic</span><textarea id="fDescAr" rows="3" maxlength="2000" dir="rtl" lang="ar"></textarea></label>
       </details>
       <label class="check"><input id="fAvail" type="checkbox" checked><span>Available today</span></label>
+      <div class="mainbox">
+        <label class="check"><input id="fMain" type="checkbox"><span>Main plate</span></label>
+        <small class="hint">Shown large at the top of this section, with all its photos and the full description.</small>
+        <div class="extras" id="extrasBox" hidden>
+          <span class="extras-title">More photos for the main plate</span>
+          <div class="extras-grid" id="extrasGrid"></div>
+          <input type="file" id="extrasInput" accept="image/*" multiple hidden>
+        </div>
+      </div>
       <p class="form-error" id="productError" role="alert" hidden></p>
     </div>
     <footer class="dlg-foot">

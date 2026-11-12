@@ -26,20 +26,26 @@ body[data-theme="regions"]{
   --display:"Gilda Display","El Messiri",serif;--body:"Lora","Tajawal",serif;
 }
 body[data-theme="knife"]{
-  --bg:#220409;--panel:#2f0a11;--ink:#ecd6c8;--muted:#b89c8f;--accent:#d09e81;--red:#921d28;--line:rgba(208,158,129,.26);
-  --display:"Gloock","El Messiri",serif;--body:"Figtree","Tajawal",system-ui,sans-serif;
+  --bg:#ffffff;--panel:#f3eeee;--ink:#0a000a;--muted:#4d4548;--accent:#724b4e;--line:#e4dadb;
+  --bar-bg:#724b4e;--bar-ink:#ffffff;--bar-line:rgba(255,255,255,.45);
+  --display:"Nunito Sans","Tajawal",system-ui,sans-serif;--body:"Nunito Sans","Tajawal",system-ui,sans-serif;
+}
+body[data-theme="room"]{
+  --bg:#ffffff;--panel:#eef2f5;--ink:#1d3b55;--muted:#5f6f7c;--accent:#2b699b;--line:#dfe5ea;
+  --display:"Marcellus","El Messiri",serif;--body:"Figtree","Tajawal",system-ui,sans-serif;
 }
 
 /* ---------- top bar ---------- */
-.bar{position:sticky;top:0;z-index:20;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;min-height:56px;padding:8px max(16px,env(safe-area-inset-left)) 8px max(16px,env(safe-area-inset-right));padding-top:max(8px,env(safe-area-inset-top));background:var(--bg);transition:background-color .35s ease}
-.bar-back{justify-self:start;display:inline-flex;align-items:center;gap:10px;min-height:40px;padding-inline-end:10px;font-size:15px;color:var(--muted)}
+.bar{position:sticky;top:0;z-index:20;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;min-height:56px;padding:8px max(16px,env(safe-area-inset-left)) 8px max(16px,env(safe-area-inset-right));padding-top:max(8px,env(safe-area-inset-top));background:var(--bar-bg,var(--bg));color:var(--bar-ink,inherit);transition:background-color .35s ease}
+.bar-back{justify-self:start;display:inline-flex;align-items:center;gap:10px;min-height:40px;padding-inline-end:10px;font-size:15px;color:var(--bar-ink,var(--muted))}
 .bar-back[hidden],.bar-mark[hidden]{display:none}
 .chev{width:9px;height:9px;border-inline-start:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg)}
 [dir="rtl"] .chev{transform:rotate(-45deg)}
-.bar-mark{grid-column:2;display:flex;align-items:center}
-.bar-mark img{height:30px;width:auto}
-.bar-lang{grid-column:3;justify-self:end;min-height:40px;padding:0 14px;border:1px solid var(--line);border-radius:999px;font-size:14px;color:var(--ink);font-family:"Tajawal","Figtree",sans-serif}
-.bar-lang:hover{border-color:var(--accent)}
+.bar-mark{grid-column:2;display:flex;align-items:center;gap:10px;min-width:0}
+.bar-logo img{height:30px;width:auto}
+.bar-title{display:none}
+.bar-lang{grid-column:3;justify-self:end;min-height:40px;padding:0 14px;border:1px solid var(--bar-line,var(--line));border-radius:999px;font-size:14px;color:var(--bar-ink,var(--ink));font-family:"Tajawal","Figtree",sans-serif}
+.bar-lang:hover{border-color:var(--bar-ink,var(--accent))}
 
 .state{padding:25vh 24px;text-align:center;color:var(--muted)}
 .state button{display:block;margin:18px auto 0;padding:10px 22px;border:1px solid var(--accent);border-radius:999px;color:var(--accent)}
@@ -53,28 +59,34 @@ body[data-theme="knife"]{
 .home-lead{margin-top:14px;font-family:var(--display);font-size:19px;letter-spacing:.02em;color:var(--ink)}
 .doors{flex:1;display:flex;flex-direction:column}
 .door{position:relative;flex:1;min-height:136px;display:flex;align-items:center;justify-content:center;padding:38px 32px 22px;background:var(--door);isolation:isolate}
-.door img{max-height:100%;width:auto;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.door img{width:auto;height:auto;max-width:100%;max-height:var(--logo-h,70px);transition:transform .5s cubic-bezier(.2,.7,.2,1)}
 .door:hover img,.door:focus-visible img{transform:scale(1.04)}
 .door:focus-visible{outline-offset:-6px;outline-color:var(--door-focus,#fff)}
 /* the wave at the top of each door echoes the striped towers of the hotel mark */
 .door-wave{position:absolute;inset-inline:0;top:-1px;width:100%;height:22px;fill:var(--above);pointer-events:none}
-.door--north{--door:#163340;--above:#fff}
-.door--north img{height:66px}
-.door--regions{--door:#e9f0ed;--above:#163340;--door-focus:#437066}
-.door--regions img{height:58px}
-.door--knife{--door:#220409;--above:#e9f0ed}
-.door--knife img{height:88px}
+.door--north{--logo-h:66px}
+.door--regions{--logo-h:58px;--door-focus:#437066}
+.door--knife{--logo-h:88px}
+.door--room{--logo-h:104px;--door-focus:#2b699b}
+/* a restaurant that is not open yet: turquoise on beige, not a link */
+.door--soon{flex-direction:column}
+.soon{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;color:#147f84}
+.soon span{font-size:14px;letter-spacing:.04em;color:#5f6f63}
+.soon strong{font-family:var(--display);font-weight:400;font-size:34px;line-height:1.1;padding:10px 26px;border-block:1px solid #2aa6a6}
 .home .door{animation:doorIn .7s cubic-bezier(.2,.7,.2,1) both}
 .home .door:nth-child(2){animation-delay:.09s}
 .home .door:nth-child(3){animation-delay:.18s}
+.home .door:nth-child(4){animation-delay:.27s}
+.home .door:nth-child(5){animation-delay:.36s}
 @keyframes doorIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
 @media (min-width:860px){
   .home-top{padding-bottom:44px}
   .home-logo{width:250px}
   .doors{flex-direction:row}
   .door{min-height:420px}
-  .door--regions,.door--knife{--above:#fff}
-  .door--north img{height:96px}.door--regions img{height:84px}.door--knife img{height:150px}
+  .door{padding-inline:22px}
+  .door-wave{fill:#fff}
+  .door--north{--logo-h:96px}.door--regions{--logo-h:84px}.door--knife{--logo-h:150px}.door--room{--logo-h:150px}
 }
 
 /* ---------- restaurant: choose a section ---------- */
@@ -93,6 +105,8 @@ body[data-theme="knife"]{
 .chips::-webkit-scrollbar{display:none}
 .chip{flex:none;min-height:38px;padding:0 15px;border:1px solid var(--line);border-radius:999px;font-size:14px;white-space:nowrap;color:var(--muted);transition:color .2s,border-color .2s,background-color .2s}
 .chip[aria-current="true"]{color:var(--bg);background:var(--accent);border-color:var(--accent)}
+.search,.noresults{display:none}
+[hidden]{display:none!important}
 .group{scroll-margin-top:118px;padding-top:34px}
 .group-title{font-family:var(--display);font-weight:400;font-size:29px;line-height:1.15}
 .items{margin-top:10px}
@@ -122,19 +136,95 @@ body[data-theme="knife"]{
 .zoom-tx .price{margin-top:14px;font-size:22px;color:var(--accent)}
 .zoom-close{position:absolute;inset-block-start:10px;inset-inline-end:10px;width:40px;height:40px;border-radius:50%;background:rgba(0,0,0,.55);color:#fff;font-size:24px;line-height:1}
 
+/* ---------- main plate: one large product at the top of a section ---------- */
+.features{display:grid;gap:22px;margin-top:22px}
+.feature{overflow:hidden;background:var(--panel);border-radius:6px}
+.gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.gal::-webkit-scrollbar{display:none}
+.gal-ph{flex:0 0 100%;scroll-snap-align:center;aspect-ratio:4/3;overflow:hidden;background:var(--line)}
+.gal-ph img{width:100%;height:100%;object-fit:cover}
+.gal-dots{display:flex;justify-content:center;gap:7px;margin-top:12px}
+.gal-dots i{width:7px;height:7px;border-radius:50%;background:var(--muted);opacity:.35}
+.gal-dots i.on{background:var(--accent);opacity:1}
+.feature-tx{padding:18px 20px 22px}
+.feature-row{display:flex;align-items:baseline;gap:14px}
+.feature-name{font-family:var(--display);font-weight:400;font-size:30px;line-height:1.15;overflow-wrap:anywhere}
+.feature .price{font-size:24px}
+.feature-desc{margin-top:10px;font-size:16px;line-height:1.6;color:var(--muted);white-space:pre-line;overflow-wrap:anywhere}
+.item-off.feature .gal,.item-off .feature-name,.item-off .feature-desc{opacity:.5}
+
 /* =====================================================
-   KNIFE · steak & cigar. Oxblood and tan, like its printed menu.
+   KNIFE · steak & cigar. White page, mauve bar, photo tiles and cards.
    ===================================================== */
-[data-theme="knife"] .rest-logo{height:150px}
-[data-theme="knife"] .secs{gap:0;border-top:1px solid var(--line)}
-[data-theme="knife"] .sec{min-height:112px;border-bottom:1px solid var(--line);font-size:44px;color:var(--accent)}
-[data-theme="knife"] .sec-name{display:flex;align-items:center;gap:18px}
-[data-theme="knife"] .sec-name::before,[data-theme="knife"] .group-title::before{content:"";flex:none;width:13px;height:26px;border-radius:4px;background:var(--red) radial-gradient(circle,var(--accent) 0 1.6px,transparent 2px) center 6px/100% 6px repeat-y;background-size:100% 9px}
-[data-theme="knife"] .menu-head h1{color:var(--accent)}
-[data-theme="knife"] .group-title{display:flex;align-items:center;gap:14px;padding-bottom:14px;border-bottom:1px solid var(--accent);color:var(--accent)}
-[data-theme="knife"] .group-title::before{width:10px;height:22px}
-[data-theme="knife"] .item{border-bottom:1px solid var(--line)}
-[data-theme="knife"] .item:last-child{border-bottom:0}
+[data-theme="knife"] .bar{grid-template-columns:auto 1fr auto;min-height:60px}
+[data-theme="knife"] .bar-back-label{display:none}
+[data-theme="knife"] .bar-back{padding-inline-end:4px}
+[data-theme="knife"] .bar-mark{grid-column:2;justify-self:start}
+[data-theme="knife"] .bar-logo{display:flex;align-items:center;justify-content:center;flex:none;width:42px;height:42px;padding:5px;background:#fff;border-radius:6px}
+[data-theme="knife"] .bar-logo img{height:auto;max-height:100%;max-width:100%}
+[data-theme="knife"] .bar-title{display:flex;flex-direction:column;min-width:0;line-height:1.25;color:#fff}
+[data-theme="knife"] .bar-title b{font-size:16px;font-weight:700}
+[data-theme="knife"] .bar-title span{font-size:12px;opacity:.9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+[data-theme="knife"] .rest{padding-top:22px}
+[data-theme="knife"] .rest-logo{height:132px;margin:14px auto 34px}
+[data-theme="knife"] .secs{gap:16px}
+[data-theme="knife"] .sec{position:relative;justify-content:center;min-height:120px;overflow:hidden;border-radius:8px;background:var(--accent);color:#fff;font-weight:700;font-size:26px;box-shadow:0 3px 8px 2px rgba(0,0,0,.14)}
+[data-theme="knife"] .sec.has-img,[data-theme="knife"] .group-title.has-img,[data-theme="knife"] .chip.has-img{background-image:linear-gradient(rgba(20,8,10,.42),rgba(20,8,10,.42)),var(--img);background-size:cover;background-position:center}
+[data-theme="knife"] .sec .chev{display:none}
+[data-theme="knife"] .menu{padding-inline:12px}
+[data-theme="knife"] .menu-head{display:none}
+[data-theme="knife"] .chips{top:60px;gap:10px;margin:0 -12px;padding:10px 12px}
+[data-theme="knife"] .chip{display:flex;align-items:center;justify-content:center;width:104px;min-height:78px;padding:6px;border:0;border-radius:8px;background-color:var(--accent);color:#fff;font-weight:700;font-size:15px;line-height:1.2;white-space:normal;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,.18)}
+[data-theme="knife"] .chip[aria-current="true"]{color:#fff;background-color:var(--accent);outline:2px solid var(--accent);outline-offset:2px}
+[data-theme="knife"] .search{display:block;margin-top:2px}
+[data-theme="knife"] .search input{display:block;width:100%;min-height:40px;padding:0 16px 0 38px;border:1px solid var(--accent);border-radius:30px;background:rgba(0,0,0,.05) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%237b7f91' stroke-width='1.6'%3E%3Ccircle cx='9' cy='9' r='6'/%3E%3Cpath d='m14 14 4 4' stroke-linecap='round'/%3E%3C/svg%3E") 13px center/16px no-repeat;font:inherit;font-size:14px;color:var(--ink)}
+[dir="rtl"][data-theme="knife"] .search input{padding:0 38px 0 16px;background-position:calc(100% - 13px) center}
+[data-theme="knife"] .search input:focus{outline:2px solid var(--accent);outline-offset:1px}
+[data-theme="knife"] .noresults{display:block;padding:40px 10px;text-align:center;color:var(--muted)}
+[data-theme="knife"] .features{margin-top:14px}
+[data-theme="knife"] .feature{background:#fff;border-radius:8px;box-shadow:0 3px 8px 4px rgba(0,0,0,.15)}
+[data-theme="knife"] .feature-name{font-weight:700;font-size:24px}
+[data-theme="knife"] .feature .price,[data-theme="knife"] .price{display:inline-flex;flex-direction:row-reverse;gap:5px;font-weight:700;font-size:16px}
+[data-theme="knife"] .feature .price{font-size:19px}
+[data-theme="knife"] .price small{font-size:1em;letter-spacing:0;opacity:1}
+[data-theme="knife"] .group{padding-top:18px;scroll-margin-top:170px}
+[data-theme="knife"] .group-title{display:flex;align-items:center;justify-content:center;min-height:64px;padding:10px 14px;border-radius:8px;background-color:var(--accent);color:#fff;font-weight:700;font-size:23px;text-align:center}
+[data-theme="knife"] .group-title.has-img{min-height:132px}
+[data-theme="knife"] .items{display:grid;gap:18px;margin-top:18px}
+[data-theme="knife"] .item{gap:12px;min-height:96px;padding:12px;background:#fff;border-radius:8px;box-shadow:0 3px 8px 4px rgba(0,0,0,.15);cursor:pointer}
+[data-theme="knife"] .item-body{display:flex;flex-direction:column;order:1}
+[data-theme="knife"] .item-row{display:contents}
+[data-theme="knife"] .item-name{order:1;font-size:15px;font-weight:700}
+[data-theme="knife"] .item-desc{order:2;margin-top:3px;font-size:13px;line-height:1.4;color:var(--ink)}
+[data-theme="knife"] .item-flag{order:3;align-self:flex-start}
+[data-theme="knife"] .price{order:4;margin:auto 0 0;padding-top:10px;align-self:flex-start}
+[data-theme="knife"] .item-lead{display:none}
+[data-theme="knife"] .item-ph{order:2;width:46%;max-width:210px;height:auto;aspect-ratio:6/5;border-radius:8px}
+[data-theme="knife"] .foot{border-top:0}
+[data-theme="knife"] .zoom{border-radius:10px}
+[data-theme="knife"] .zoom-tx h2{font-weight:700;font-size:22px}
+[data-theme="knife"] .zoom-tx p{color:var(--ink);font-size:14px}
+[data-theme="knife"] .zoom-tx .price{font-size:18px}
+@media (min-width:700px){[data-theme="knife"] .items{grid-template-columns:1fr 1fr}}
+
+/* =====================================================
+   ROOM SERVICE · the hotel's own colours: white, marina blue, silver.
+   ===================================================== */
+[data-theme="room"] .rest-logo{height:170px;margin-bottom:40px}
+[data-theme="room"] .sec{justify-content:center;min-height:100px;border-block:1px solid var(--line);font-size:30px;letter-spacing:.06em;color:var(--accent)}
+[data-theme="room"] .secs{gap:0}
+[data-theme="room"] .sec+.sec{border-top:0}
+[data-theme="room"] .sec .chev{display:none}
+[data-theme="room"] .sec:hover{background:var(--panel)}
+[data-theme="room"] .menu-head{text-align:center}
+[data-theme="room"] .menu-head h1{color:var(--accent);letter-spacing:.04em}
+[data-theme="room"] .chips{justify-content:safe center}
+[data-theme="room"] .group-title{color:var(--accent);text-align:center;letter-spacing:.04em}
+[data-theme="room"] .group-title::after{content:"";display:block;width:64px;height:10px;margin:10px auto 0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 10' fill='none' stroke='%23b1b3b2' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M2 5q7.5-6 15 0t15 0 15 0 15 0'/%3E%3C/svg%3E") center/contain no-repeat}
+[data-theme="room"] .item{border-bottom:1px solid var(--line)}
+[data-theme="room"] .item:last-child{border-bottom:0}
+[data-theme="room"] .item-ph{border-radius:8px}
+[data-theme="room"] .feature{border-radius:10px}
 
 /* =====================================================
    24 NORTH · lobby lounge. Deep teal, compass gold, light geometric type.

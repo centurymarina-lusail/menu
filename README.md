@@ -59,7 +59,8 @@ browser; a wrong password simply fails to decrypt.
 
 Restaurant → section → **Add product**: photo, title, description, price,
 then **Publish**. Open any product to change its price, text or photo, to
-mark it *not available today*, or to delete it. Sections can be added,
+mark it *not available today*, or to delete it. Tick **Main plate** on a product to show it
+large at the top of its section with several photos and a long description. Sections can be added,
 renamed and deleted from the restaurant page. Changes reach the guest menu
 about a minute after publishing (the time GitHub Pages takes to refresh).
 

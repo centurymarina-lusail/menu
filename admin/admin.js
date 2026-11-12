@@ -249,6 +249,8 @@
     return { rid: p[0] || '', sid: p[1] || '' };
   }
   function photoSrc(path) { return freshPhotos[path] || ('../' + path); }
+  function photosOf(it) { return it.photos && it.photos.length ? it.photos : (it.photo ? [it.photo] : []); }
+  var MAX_EXTRA = 8;
 
   async function shrinkPhoto(file) {
     try {
@@ -375,6 +377,10 @@
 
   function viewDashboard() {
     var tiles = state.menu.restaurants.map(function (r) {
+      if (r.soon) {
+        return '<div class="tile tile--soon"><span class="tile-logo">Coming soon</span>' +
+          '<span class="tile-info"><strong>New restaurant</strong><span>Shown to guests as “Coming soon”. It opens here once the brand is ready.</span></span></div>';
+      }
       return '<a class="tile tile--' + esc(r.theme) + '" href="#/' + encodeURIComponent(r.id) + '">' +
         '<span class="tile-logo"><img src="../' + esc(r.logo) + '" alt=""></span>' +
         '<span class="tile-info"><strong>' + esc(en(r.name)) + '</strong><span>' + plural(countItems(r), 'product', 'products') + ' in ' + plural(r.sections.length, 'section', 'sections') + '</span></span></a>';
@@ -398,7 +404,7 @@
     var thumb = it.photo ? '<img src="' + esc(photoSrc(it.photo)) + '" alt="" loading="lazy">' : '<span class="nophoto">No photo</span>';
     return '<li class="row row--item' + (it.available === false ? ' is-off' : '') + '">' +
       '<button class="thumb" type="button" data-act="edit" data-id="' + esc(it.id) + '" aria-label="Edit ' + esc(en(it.title)) + '">' + thumb + '</button>' +
-      '<div class="row-text"><strong>' + esc(en(it.title)) + '</strong>' + (en(it.desc) ? '<span>' + esc(en(it.desc)) + '</span>' : '') + '</div>' +
+      '<div class="row-text"><strong>' + esc(en(it.title)) + (it.main ? '<span class="badge">Main plate</span>' : '') + '</strong>' + (en(it.desc) ? '<span class="row-desc">' + esc(en(it.desc)) + '</span>' : '') + '</div>' +
       '<span class="row-price">' + esc(money(it.price)) + ' <small>' + esc(cur) + '</small></span>' +
       '<label class="switch" title="Available today"><input type="checkbox" data-act="toggle" data-id="' + esc(it.id) + '"' + (it.available === false ? '' : ' checked') + '><span class="switch-ui"></span><span class="switch-label">Available</span></label>' +
       '<button class="btn btn--ghost btn--small" type="button" data-act="edit" data-id="' + esc(it.id) + '">Edit</button></li>';
@@ -406,10 +412,12 @@
   function viewSection(r, s) {
     var cur = en(state.menu.currency);
     var blocks = [];
-    var loose = s.items.filter(function (it) { return !it.group || !(s.groups || []).some(function (g) { return g.id === it.group; }); });
-    if (loose.length) blocks.push({ name: '', items: loose });
+    var mains = s.items.filter(function (it) { return it.main; });
+    if (mains.length) blocks.push({ name: 'Main plate (shown large at the top)', items: mains });
+    var loose = s.items.filter(function (it) { return !it.main && (!it.group || !(s.groups || []).some(function (g) { return g.id === it.group; })); });
+    if (loose.length) blocks.push({ name: mains.length ? 'No group' : '', items: loose });
     (s.groups || []).forEach(function (g) {
-      var list = s.items.filter(function (it) { return it.group === g.id; });
+      var list = s.items.filter(function (it) { return !it.main && it.group === g.id; });
       if (list.length) blocks.push({ name: en(g.name), items: list });
     });
     var body = blocks.map(function (b) {
@@ -424,6 +432,7 @@
     if (!state.menu) return;
     var rt = route();
     var r = rt.rid ? findRest(state.menu, rt.rid) : null;
+    if (r && r.soon) r = null;
     var s = r && rt.sid ? findSec(r, rt.sid) : null;
     var body;
     if (!rt.rid) body = viewDashboard();
@@ -468,7 +477,8 @@
     var rt = route(), r = findRest(state.menu, rt.rid), s = findSec(r, rt.sid);
     if (!s) return;
     var it = id ? s.items.filter(function (x) { return x.id === id; })[0] : null;
-    editing = { rid: r.id, sid: s.id, id: it ? it.id : null, photo: 'keep', file: null };
+    editing = { rid: r.id, sid: s.id, id: it ? it.id : null, photo: 'keep', file: null,
+      extras: it ? photosOf(it).slice(1).map(function (p) { return { path: p, url: photoSrc(p) }; }) : [] };
     $('productForm').reset();
     $('productTitle').textContent = it ? 'Edit product' : 'Add product';
     $('productSave').textContent = it ? 'Save changes' : 'Publish';
@@ -487,11 +497,38 @@
     $('fDescAr').value = it ? ((it.desc || {}).ar || '') : '';
     $('fPrice').value = it && it.price !== '' && it.price != null ? it.price : '';
     $('fAvail').checked = it ? it.available !== false : true;
+    $('fMain').checked = !!(it && it.main);
+    $('extrasBox').hidden = !$('fMain').checked;
+    drawExtras();
     $('arabicBox').open = !!(it && (it.title.ar || (it.desc || {}).ar));
     setPreview(it && it.photo ? photoSrc(it.photo) : '');
     openDlg($('productDlg'));
     if (!it) $('fTitleEn').focus();
   }
+  function drawExtras() {
+    if (!editing) return;
+    var html = editing.extras.map(function (x, i) {
+      return '<div class="extra"><img src="' + esc(x.url) + '" alt=""><button type="button" data-extra="' + i + '" aria-label="Remove this photo">&times;</button></div>';
+    }).join('');
+    if (editing.extras.length < MAX_EXTRA) html += '<button class="extra-add" type="button" id="extrasAdd">Add photos</button>';
+    $('extrasGrid').innerHTML = html;
+  }
+  $('fMain').addEventListener('change', function () { $('extrasBox').hidden = !this.checked; });
+  $('extrasGrid').addEventListener('click', function (ev) {
+    if (!editing) return;
+    if (ev.target.closest('#extrasAdd')) { $('extrasInput').click(); return; }
+    var rm = ev.target.closest('[data-extra]');
+    if (rm) { editing.extras.splice(Number(rm.dataset.extra), 1); drawExtras(); }
+  });
+  $('extrasInput').addEventListener('change', function () {
+    if (!editing) return;
+    var files = Array.prototype.slice.call(this.files || []);
+    for (var i = 0; i < files.length && editing.extras.length < MAX_EXTRA; i++) {
+      editing.extras.push({ file: files[i], url: URL.createObjectURL(files[i]) });
+    }
+    this.value = '';
+    drawExtras();
+  });
   $('fGroup').addEventListener('change', function () {
     var isNew = this.value === '__new';
     $('newGroup').hidden = !isNew;
@@ -520,6 +557,7 @@
     var titleEn = $('fTitleEn').value.trim(), priceRaw = $('fPrice').value.trim(), price = Math.round(Number(priceRaw) * 100) / 100;
     var picked = $('fGroup').value, group = picked, newEn = $('fGroupEn').value.trim(), newAr = $('fGroupAr').value.trim();
     var titleAr = $('fTitleAr').value.trim(), descEn = $('fDescEn').value.trim(), descAr = $('fDescAr').value.trim(), avail = $('fAvail').checked;
+    var isMain = $('fMain').checked, extras = isMain ? e.extras.slice() : [], uploaded = [], dropped = [];
     var problem = '';
     if (!titleEn) problem = 'Enter a title for the product.';
     else if (priceRaw === '' || !isFinite(price) || price < 0) problem = 'Enter the price as a number, for example 65.';
@@ -538,6 +576,17 @@
         newPath = 'images/' + e.rid + '/' + id + '-' + Date.now().toString(36) + '.jpg';
         await writeFile(newPath, small.bytes, 'Add photo for ' + titleEn);
         freshPhotos[newPath] = small.url;
+        uploaded.push(newPath);
+      }
+      var extraPaths = [];
+      for (var x = 0; x < extras.length; x++) {
+        if (extras[x].path) { extraPaths.push(extras[x].path); continue; }
+        var sm = await shrinkPhoto(extras[x].file);
+        var xp = 'images/' + e.rid + '/' + id + '-' + Date.now().toString(36) + '-' + (x + 1) + '.jpg';
+        await writeFile(xp, sm.bytes, 'Add photo for ' + titleEn);
+        freshPhotos[xp] = sm.url;
+        uploaded.push(xp);
+        extraPaths.push(xp);
       }
       await commit((e.id ? 'Update ' : 'Add ') + titleEn, function (m) {
         var s = findSec(findRest(m, e.rid), e.sid);
@@ -557,23 +606,29 @@
         if (e.id && !it) throw UserError('This product was deleted from another device.');
         if (!it) { it = { id: id, photo: '' }; s.items.push(it); }
         oldPath = it.photo || null;
+        var before = photosOf(it);
+        var cover = e.photo === 'new' ? newPath : (e.photo === 'remove' ? '' : (it.photo || ''));
+        var photos = (cover ? [cover] : []).concat(extraPaths);
+        dropped = before.filter(function (p) { return photos.indexOf(p) === -1; });
+        it.photo = photos[0] || '';
+        if (isMain) { it.main = true; it.photos = photos; } else { delete it.main; delete it.photos; }
         it.group = group;
         it.title = { en: titleEn, ar: titleAr };
         it.desc = { en: descEn, ar: descAr };
         it.price = price;
         it.available = avail;
-        if (e.photo === 'new') it.photo = newPath;
-        else if (e.photo === 'remove') it.photo = '';
       });
       lastGroup[e.rid + '/' + e.sid] = group;
-      if (oldPath && e.photo !== 'keep') removeFile(oldPath, 'Remove old photo');
+      dropped.forEach(function (p) { removeFile(p, 'Remove old photo'); });
       $('productDlg').close();
       render();
       toast(e.id ? 'Saved. The menu updates in about a minute.' : 'Published. It appears on the menu in about a minute.');
     } catch (x) {
       err.textContent = explain(x); err.hidden = false;
       /* the photo was uploaded but the product was not saved: do not leave the file behind */
-      if (newPath && !(findSec(findRest(state.menu, e.rid), e.sid) || { items: [] }).items.some(function (i) { return i.photo === newPath; })) removeFile(newPath, 'Remove unused photo');
+      var saved = (findSec(findRest(state.menu, e.rid), e.sid) || { items: [] }).items.filter(function (i) { return i.id === id; })[0];
+      var inUse = saved ? photosOf(saved) : [];
+      uploaded.forEach(function (p) { if (inUse.indexOf(p) === -1) removeFile(p, 'Remove unused photo'); });
     }
     saving = false;
     productBusy(false, doneLabel);
@@ -591,7 +646,7 @@
         var sec = findSec(findRest(m, e.rid), e.sid);
         sec.items = sec.items.filter(function (x) { return x.id !== e.id; });
       });
-      if (it.photo) removeFile(it.photo, 'Remove photo');
+      photosOf(it).forEach(function (p) { removeFile(p, 'Remove photo'); });
       $('productDlg').close();
       render();
       toast('Deleted.');
@@ -651,7 +706,7 @@
         var rest = findRest(m, rid);
         rest.sections = rest.sections.filter(function (x) { return x.id !== sid; });
       });
-      s.items.forEach(function (it) { if (it.photo) removeFile(it.photo, 'Remove photo'); });
+      s.items.forEach(function (it) { photosOf(it).forEach(function (p) { removeFile(p, 'Remove photo'); }); });
       render();
       toast('Section deleted.');
     } catch (x) { toast(explain(x), 'error'); }
@@ -673,7 +728,7 @@
   function openQr() {
     var base = siteUrl();
     $('qrTarget').innerHTML = '<option value="' + esc(base) + '">The hotel page with all restaurants</option>' +
-      state.menu.restaurants.map(function (r) { return '<option value="' + esc(base + '#/' + encodeURIComponent(r.id)) + '">' + esc(en(r.name)) + ' only</option>'; }).join('');
+      state.menu.restaurants.filter(function (r) { return !r.soon; }).map(function (r) { return '<option value="' + esc(base + '#/' + encodeURIComponent(r.id)) + '">' + esc(en(r.name)) + ' only</option>'; }).join('');
     drawQr();
     openDlg($('qrDlg'));
   }

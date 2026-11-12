@@ -1776,6 +1776,54 @@
      ]
     }
    ]
+  },
+  {
+   "id": "room-service",
+   "theme": "room",
+   "name": {
+    "en": "Room Service",
+    "ar": "خدمة الغرف"
+   },
+   "tagline": {
+    "en": "",
+    "ar": ""
+   },
+   "logo": "assets/logos/room-service.svg",
+   "sections": [
+    {
+     "id": "food",
+     "name": {
+      "en": "Food",
+      "ar": "المأكولات"
+     },
+     "groups": [],
+     "items": []
+    },
+    {
+     "id": "beverage",
+     "name": {
+      "en": "Beverage",
+      "ar": "المشروبات"
+     },
+     "groups": [],
+     "items": []
+    }
+   ]
+  },
+  {
+   "id": "coming-soon",
+   "theme": "soon",
+   "soon": true,
+   "name": {
+    "en": "Coming soon",
+    "ar": "قريباً"
+   },
+   "tagline": {
+    "en": "",
+    "ar": ""
+   },
+   "logo": "",
+   "sections": []
   }
  ],
  "updated": "2026-11-11T14:15:46.303Z"
