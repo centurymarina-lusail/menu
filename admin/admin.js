@@ -49,7 +49,7 @@
   function slug(s) {
     return String(s).toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40);
   }
-  function money(n) { var v = Number(n); return isFinite(v) ? (v % 1 === 0 ? String(v) : v.toFixed(2)) : ''; }
+  function money(n) { if (n === '' || n == null) return ''; var v = Number(n); return isFinite(v) ? (v % 1 === 0 ? String(v) : v.toFixed(2)) : ''; }
   function plural(n, one, many) { return n + ' ' + (n === 1 ? one : many); }
   function UserError(message) { var e = new Error(message); e.userMessage = message; return e; }
 
@@ -405,7 +405,7 @@
     return '<li class="row row--item' + (it.available === false ? ' is-off' : '') + '">' +
       '<button class="thumb" type="button" data-act="edit" data-id="' + esc(it.id) + '" aria-label="Edit ' + esc(en(it.title)) + '">' + thumb + '</button>' +
       '<div class="row-text"><strong>' + esc(en(it.title)) + (it.main ? '<span class="badge">Main plate</span>' : '') + '</strong>' + (en(it.desc) ? '<span class="row-desc">' + esc(en(it.desc)) + '</span>' : '') + '</div>' +
-      '<span class="row-price">' + esc(money(it.price)) + ' <small>' + esc(cur) + '</small></span>' +
+      '<span class="row-price">' + (money(it.price) === '' ? '<small>No price</small>' : esc(money(it.price)) + ' <small>' + esc(cur) + '</small>') + '</span>' +
       '<label class="switch" title="Available today"><input type="checkbox" data-act="toggle" data-id="' + esc(it.id) + '"' + (it.available === false ? '' : ' checked') + '><span class="switch-ui"></span><span class="switch-label">Available</span></label>' +
       '<button class="btn btn--ghost btn--small" type="button" data-act="edit" data-id="' + esc(it.id) + '">Edit</button></li>';
   }
