@@ -4881,7 +4881,7 @@
         "ar": "حمص، متبل، فتوش، يلانجي (ورق عنب محشو بالأرز والأعشاب)"
        },
        "price": 55,
-       "photo": "",
+       "photo": "images/room-service/rsf015-oriental-cold-mezzeh.jpg",
        "available": true
       },
       {
@@ -5031,7 +5031,7 @@
         "ar": "شريحة لحم، خبز برجر، جبن شيدر، خس، طماطم، بصل، مخلل، صلصة البرجر، فطر."
        },
        "price": 65,
-       "photo": "",
+       "photo": "images/room-service/rsf025-century-black-angus-burger.jpg",
        "available": true
       },
       {
@@ -5046,7 +5046,7 @@
         "ar": "شطيرة شرائح لحم البقر المشوية مع أوراق الجرجير الطازجة والبصل المكرمل."
        },
        "price": 65,
-       "photo": "",
+       "photo": "images/room-service/rsf026-ciabatta-steak-sandwich.jpg",
        "available": true
       },
       {
@@ -5076,7 +5076,7 @@
         "ar": "سمبوسك بالجبن، سمبوسك باللحم، سبرينغ رولز بالخضار، كبة باللحم."
        },
        "price": 55,
-       "photo": "",
+       "photo": "images/room-service/rsf028-arabic-hot-mezza.jpg",
        "available": true
       },
       {
@@ -5196,7 +5196,7 @@
         "ar": "شوربة العدس مع البطاطس والكراث والتوابل، تقدم مع قطع الخبز المحمص وشرائح الليمون."
        },
        "price": 35,
-       "photo": "",
+       "photo": "images/room-service/rsf036-lentil-soup.jpg",
        "available": true
       },
       {
@@ -5211,7 +5211,7 @@
         "ar": "لحم مقطع، حمص، شعيرية، زنجبيل، عدس أسود، طماطم، كزبرة، تقدم مع التمر وشرائح الليمون."
        },
        "price": 35,
-       "photo": "",
+       "photo": "images/room-service/rsf037-harira-soup.jpg",
        "available": true
       },
       {
@@ -5226,7 +5226,7 @@
         "ar": "فطر طازج، زبدة، ثوم، حليب طازج، كريمة طازجة، وصلصة بيستو على الوجه."
        },
        "price": 35,
-       "photo": "",
+       "photo": "images/room-service/rsf038-mushroom-soup.jpg",
        "available": true
       },
       {
@@ -5241,7 +5241,7 @@
         "ar": "تخلط المكونات مع صلصة السيزر المكونة من خردل ديجون، صلصة الخل (فينغريت)، المايونيز، الثوم، الأنشوجة والكبر."
        },
        "price": 45,
-       "photo": "",
+       "photo": "images/room-service/rsf039-crispy-caesar-salad.jpg",
        "available": true
       },
       {
@@ -5256,7 +5256,7 @@
         "ar": "طماطم، خيار، خبز مقلي، فليفلة، سماق، خس، نعناع، تتبيلة الليمون مع الرمان والنعناع، وشرائح الليمون على الوجه."
        },
        "price": 40,
-       "photo": "",
+       "photo": "images/room-service/rsf040-fattoush-salad.jpg",
        "available": true
       },
       {
@@ -5271,7 +5271,7 @@
         "ar": "مزيج من البقدونس المفروم، الطماطم، الكينوا المطهوة على البخار، البصل، النعناع، التوابل، الرمان، زيت الزيتون وتتبيلة الليمون."
        },
        "price": 40,
-       "photo": "",
+       "photo": "images/room-service/rsf041-qatari-quinoa-tabbouleh-salad.jpg",
        "available": true
       },
       {
@@ -5286,7 +5286,7 @@
         "ar": "سلمون مدخن، فطر طازج، تشكيلة أوراق خضراء، شمر، صلصة خل البلسميك."
        },
        "price": 60,
-       "photo": "",
+       "photo": "images/room-service/rsf042-smoked-salmon-salad.jpg",
        "available": true
       },
       {
@@ -5301,7 +5301,7 @@
         "ar": "جرجير طازج، فطر طازج، طماطم كرزية، جبن بارميزان، طماطم مجففة بالشمس، تقدم مع صلصة البلسميك الإيطالية."
        },
        "price": 45,
-       "photo": "",
+       "photo": "images/room-service/rsf043-rocca-salad.jpg",
        "available": true
       },
       {
@@ -5316,7 +5316,7 @@
         "ar": "جبنة الحلوم، خبز التشياباتا، طماطم طازجة، أوراق الجرجير، صلصة البيستو، زيت الزيتون"
        },
        "price": "",
-       "photo": "",
+       "photo": "images/room-service/rsf044-grilled-halloumi-with-pesto.jpg",
        "available": true
       },
       {
@@ -5331,7 +5331,7 @@
         "ar": "خبز التوست، صدر دجاج مشوي، ديك رومي مدخن، بيض مقلي، جبن شيدر، لحم بقري مقدد (بيكون)، طماطم، خس، صلصة، يقدم مع البطاطس المقلية."
        },
        "price": 50,
-       "photo": "",
+       "photo": "images/room-service/rsf045-club-sandwich.jpg",
        "available": true
       },
       {
@@ -5346,7 +5346,7 @@
         "ar": "220 غرام من فيليه لحم البقر، مع جزر وكوسا وبروكلي سوتيه، وبطاطس مهروسة، واختيارك من صلصة الفطر أو صلصة الفلفل."
        },
        "price": 150,
-       "photo": "",
+       "photo": "images/room-service/rsf046-beef-tenderloin.jpg",
        "available": true
       },
       {
@@ -5361,7 +5361,7 @@
         "ar": "طبقات من مكعبات الدجاج المشوي بالأعشاب والمطهو في صلصة البرياني مع أرز البسمتي، تعلوها طبقة من البصل المقلي والمكسرات والكزبرة، وتقدم مع صلصة الزبادي (الرايتا)."
        },
        "price": 80,
-       "photo": "",
+       "photo": "images/room-service/rsf047-chicken-biryani.jpg",
        "available": true
       },
       {
@@ -5376,7 +5376,7 @@
         "ar": "معكرونة بيني، زيت زيتون، طماطم، فلفل حار أخضر، ثوم، شرائح زيتون أسود، جبن بارميزان، طماطم مجففة، خبز بالثوم."
        },
        "price": 70,
-       "photo": "",
+       "photo": "images/room-service/rsf048-penne-arrabbiata.jpg",
        "available": true
       },
       {
@@ -5391,7 +5391,7 @@
         "ar": "معكرونة لينغويني، روبيان مشوح، صلصة بيضاء، صلصة بيستو، طماطم مجففة، جبن بارميزان، خبز بالثوم."
        },
        "price": 90,
-       "photo": "",
+       "photo": "images/room-service/rsf049-shrimp-linguini.jpg",
        "available": true
       },
       {
@@ -5406,7 +5406,7 @@
         "ar": "معكرونة فيتوتشيني مسلوقة، صدر دجاج متبل، صلصة بيضاء، فطر، زبدة، ثوم، جبن بارميزان، أوراق نعناع."
        },
        "price": 75,
-       "photo": "",
+       "photo": "images/room-service/rsf050-fettuccini-con-pollo-e-funghi.jpg",
        "available": true
       },
       {
@@ -5421,7 +5421,7 @@
         "ar": "معكرونة سباغيتي، كرات اللحم، صلصة الطماطم، زيت، ثوم، جبن بارميزان، أوراق النعناع، صلصة البيستو."
        },
        "price": 75,
-       "photo": "",
+       "photo": "images/room-service/rsf051-meatballs-spaghetti.jpg",
        "available": true
       },
       {
@@ -5436,7 +5436,7 @@
         "ar": "كرات الكبة المقلية في صلصة اللبن الحامض، تعلوها تشكيلة من النعناع والزيت الحار والمكسرات، وتقدم مع أرز بالشعيرية."
        },
        "price": 85,
-       "photo": "",
+       "photo": "images/room-service/rsf052-kibbeh-in-yogurt-sauce.jpg",
        "available": true
       },
       {
@@ -5451,7 +5451,7 @@
         "ar": "روبيان مقلي بخليط التمبورا مع صلصة الديناميت، يقدم فوق الجزر والملفوف الأحمر المقطعين."
        },
        "price": 65,
-       "photo": "",
+       "photo": "images/room-service/rsf053-dynamite-shrimp.jpg",
        "available": true
       },
       {
@@ -5466,7 +5466,7 @@
         "ar": "فيليه السلمون المتبل والمشوي، مع خضار سوتيه وصلصة البيستو الكريمية، ويقدم مع البطاطس المهروسة."
        },
        "price": 120,
-       "photo": "",
+       "photo": "images/room-service/rsf054-grilled-salmon-fillet.jpg",
        "available": true
       },
       {
@@ -5481,7 +5481,7 @@
         "ar": "صدر دجاج مشوي ومتبل مع خضار سوتيه، يقدم مع اختيارك من الصلصة والبطاطس المهروسة."
        },
        "price": 90,
-       "photo": "",
+       "photo": "images/room-service/rsf055-grilled-chicken-breast-250g.jpg",
        "available": true
       },
       {
@@ -5496,7 +5496,7 @@
         "ar": "5 قطع من صدور الدجاج المقطعة إلى شرائح، والمتبلة والمغطاة بالدقيق والبيض وفتات الخبز، ثم المقلية في زيت غزير حتى تكتسب لونا ذهبيا وتصبح مقرمشة."
        },
        "price": 65,
-       "photo": "",
+       "photo": "images/room-service/rsf056-chicken-tenders.jpg",
        "available": true
       },
       {
@@ -5511,7 +5511,7 @@
         "ar": "لحم ضأن طري مطهو في صلصة الجميد المتبلة، يقدم فوق أرز عطري وتضاف إليه لمسة نهائية من اللوز المحمص."
        },
        "price": 95,
-       "photo": "",
+       "photo": "images/room-service/rsf057-lamb-mansaf.jpg",
        "available": true
       },
       {
@@ -5541,7 +5541,7 @@
         "ar": "لحم ضأن، أرز بسمتي، بصل، طماطم، ثوم، فلفل أخضر حار، لومي (ليمون مجفف)، قرفة، هيل، قرنفل، ورق غار، بهارات مجبوس، كركم، ملح، فلفل أسود."
        },
        "price": 95,
-       "photo": "",
+       "photo": "images/room-service/rsf059-lamb-majbous.jpg",
        "available": true
       },
       {
@@ -5556,7 +5556,7 @@
         "ar": "تشيزكيك التوت البري يقدم مع صلصة التوت البري"
        },
        "price": 60,
-       "photo": "",
+       "photo": "images/room-service/rsf060-cheesecake.jpg",
        "available": true
       },
       {
@@ -5571,7 +5571,7 @@
         "ar": "تراميسو فاخر بنكهة الإسبريسو والماسكاربوني، مغطى بالشوكولاتة والكاكاو، بتقديم أنيق"
        },
        "price": 60,
-       "photo": "",
+       "photo": "images/room-service/rsf061-tiramisu.jpg",
        "available": true
       },
       {
@@ -5586,7 +5586,7 @@
         "ar": "كيك فاخر بطبقات غنية من الشوكولاتة والكراميل والمكسرات، بتوازن متناغم بين النعومة"
        },
        "price": 60,
-       "photo": "",
+       "photo": "images/room-service/rsf062-london-cake.jpg",
        "available": true
       },
       {
