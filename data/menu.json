@@ -2944,7 +2944,23 @@
       "ar": "فطور الصباح"
      },
      "groups": [],
-     "items": []
+     "items": [
+      {
+       "id": "p13b8e6c829",
+       "photo": "images/the-4-regions/p13b8e6c829-mweudiqf.jpg",
+       "group": "",
+       "title": {
+        "en": "Breakfast",
+        "ar": "فطور الصباح"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 65,
+       "available": true
+      }
+     ]
     },
     {
      "id": "lunch",
@@ -6254,5 +6270,5 @@
    "sections": []
   }
  ],
- "updated": "2026-11-11T14:15:46.303Z"
+ "updated": "2026-11-13T10:36:33.271Z"
 }
