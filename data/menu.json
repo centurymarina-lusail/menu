@@ -6251,6 +6251,15 @@
        "available": true
       }
      ]
+    },
+    {
+     "id": "breakfast",
+     "name": {
+      "en": "Breakfast",
+      "ar": "فطور الصباح"
+     },
+     "groups": [],
+     "items": []
     }
    ]
   },
@@ -6270,5 +6279,5 @@
    "sections": []
   }
  ],
- "updated": "2026-11-13T11:04:40.428Z"
+ "updated": "2026-11-13T11:08:18.341Z"
 }
