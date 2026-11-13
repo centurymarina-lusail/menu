@@ -2954,8 +2954,8 @@
         "ar": "فطور الصباح"
        },
        "desc": {
-        "en": "",
-        "ar": ""
+        "en": "A generous morning spread of Arabic and international favourites, with freshly baked pastries, hot and cold dishes, fresh fruit, juices and unlimited coffee and tea.",
+        "ar": "تشكيلة صباحية سخية من الأطباق العربية والعالمية، مع المعجنات الطازجة والأطباق الساخنة والباردة والفواكه الطازجة والعصائر والقهوة والشاي دون حدود."
        },
        "price": 65,
        "available": true
@@ -6270,5 +6270,5 @@
    "sections": []
   }
  ],
- "updated": "2026-11-13T10:36:33.271Z"
+ "updated": "2026-11-13T10:39:20.511Z"
 }
