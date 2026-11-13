@@ -6304,6 +6304,21 @@
        },
        "price": 120,
        "available": true
+      },
+      {
+       "id": "pea358dd343",
+       "photo": "",
+       "group": "",
+       "title": {
+        "en": "Healthy Breakfast",
+        "ar": "إفطار صحي"
+       },
+       "desc": {
+        "en": "All Bran or plain cereal with low-fat milk. Yoghurt: plain, fruit or low-calorie. Whole wheat bread with honey. Fresh juice: your choice of orange, carrot or mango. Hot beverage: your choice of tea, coffee or hot chocolate.",
+        "ar": "حبوب الإفطار أول بران أو حبوب سادة مع حليب قليل الدسم. زبادي: سادة، بنكهة الفواكه أو قليل السعرات الحرارية. خبز القمح الكامل مع العسل. عصير طازج: اختيارك من البرتقال أو الجزر أو المانجو. مشروب ساخن: اختيارك من الشاي أو القهوة أو الشوكولاتة الساخنة."
+       },
+       "price": 120,
+       "available": true
       }
      ]
     }
@@ -6325,5 +6340,5 @@
    "sections": []
   }
  ],
- "updated": "2026-11-13T12:15:18.027Z"
+ "updated": "2026-11-13T12:16:09.596Z"
 }
