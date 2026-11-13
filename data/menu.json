@@ -2940,8 +2940,8 @@
     {
      "id": "breakfast",
      "name": {
-      "en": "Breakfast from",
-      "ar": "فطور الصباح"
+      "en": "Breakfast 6:30 to 10:30",
+      "ar": "فطور الصباح 6:30 الى 10:30"
      },
      "groups": [],
      "items": [
@@ -6270,5 +6270,5 @@
    "sections": []
   }
  ],
- "updated": "2026-11-13T10:41:43.363Z"
+ "updated": "2026-11-13T10:42:48.171Z"
 }
