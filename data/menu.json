@@ -6259,7 +6259,23 @@
       "ar": "فطور الصباح"
      },
      "groups": [],
-     "items": []
+     "items": [
+      {
+       "id": "paa1cbf3689",
+       "photo": "",
+       "group": "",
+       "title": {
+        "en": "Arabic Breakfast from",
+        "ar": "إفطار عربي"
+       },
+       "desc": {
+        "en": "Selection of cold mezze: labneh or hummus, mixed pickles, tomato, cucumber, foul medammes, Arabic bread. Two fresh eggs cooked to your style, served with turkey, stuffed tomatoes, mushrooms and hash brown. Fresh juice: your choice of orange, carrot or mango. Hot beverage: your choice of tea, coffee or hot chocolate.",
+        "ar": "تشكيلة من المقبلات الباردة: لبنة أو حمص، مخللات مشكلة، طماطم، خيار، فول مدمس، خبز عربي. بيضتان طازجتان معدتان حسب رغبتك، تقدمان مع شرائح الديك الرومي، طماطم محشوة، فطر وبطاطس هاش براون. عصير طازج: اختيارك من البرتقال أو الجزر أو المانجو. مشروب ساخن: اختيارك من الشاي أو القهوة أو الشوكولاتة الساخنة."
+       },
+       "price": 130,
+       "available": true
+      }
+     ]
     }
    ]
   },
@@ -6279,5 +6295,5 @@
    "sections": []
   }
  ],
- "updated": "2026-11-13T11:08:18.341Z"
+ "updated": "2026-11-13T12:12:52.214Z"
 }
