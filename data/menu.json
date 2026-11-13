@@ -2940,7 +2940,7 @@
     {
      "id": "breakfast",
      "name": {
-      "en": "Breakfast",
+      "en": "Breakfast from",
       "ar": "فطور الصباح"
      },
      "groups": [],
@@ -6270,5 +6270,5 @@
    "sections": []
   }
  ],
- "updated": "2026-11-13T10:39:20.511Z"
+ "updated": "2026-11-13T10:41:43.363Z"
 }
