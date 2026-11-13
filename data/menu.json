@@ -4679,8 +4679,8 @@
        "id": "rsf001",
        "group": "breakfast",
        "title": {
-        "en": "Arabic Breakfast",
-        "ar": "إفطار عربي"
+        "en": "Arabic Breakfast from 6:30 to 11:00",
+        "ar": "إفطار عربي من الساعة :6:30 الى 11:00 صباحا"
        },
        "desc": {
         "en": "Selection of cold mezze: labneh or hummus, mixed pickles, tomato, cucumber, foul medammes, Arabic bread. Two fresh eggs cooked to your style, served with turkey, stuffed tomatoes, mushrooms and hash brown. Fresh juice: your choice of orange, carrot or mango. Hot beverage: your choice of tea, coffee or hot chocolate.",
@@ -6270,5 +6270,5 @@
    "sections": []
   }
  ],
- "updated": "2026-11-13T10:42:48.171Z"
+ "updated": "2026-11-13T11:04:40.428Z"
 }
