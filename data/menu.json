@@ -6274,6 +6274,21 @@
        },
        "price": 130,
        "available": true
+      },
+      {
+       "id": "paa3b7ad7ea",
+       "photo": "",
+       "group": "",
+       "title": {
+        "en": "Continental Breakfast",
+        "ar": "إفطار أوروبي"
+       },
+       "desc": {
+        "en": "Selection from the morning bakery basket: croissants, toast bread, Danish pastries, baked rolls. Cereal served with milk. Butter, jam and honey. Fresh juice: your choice of orange, carrot or mango. Hot beverage: your choice of tea, coffee or hot chocolate.",
+        "ar": "تشكيلة من مخبوزات الصباح: كرواسون، خبز محمص، معجنات دنماركية، لفائف مخبوزة. حبوب الإفطار تقدم مع الحليب. زبدة، مربى وعسل. عصير طازج: اختيارك من البرتقال أو الجزر أو المانجو. مشروب ساخن: اختيارك من الشاي أو القهوة أو الشوكولاتة الساخنة."
+       },
+       "price": 110,
+       "available": true
       }
      ]
     }
@@ -6295,5 +6310,5 @@
    "sections": []
   }
  ],
- "updated": "2026-11-13T12:12:52.214Z"
+ "updated": "2026-11-13T12:14:35.910Z"
 }
