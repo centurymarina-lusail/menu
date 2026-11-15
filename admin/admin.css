@@ -87,9 +87,20 @@ code{font-size:.92em;background:var(--blue-soft);padding:1px 5px;border-radius:4
 .tile--regions .tile-logo{background:#e9f0ed}
 .tile--knife .tile-logo{background:#220409}
 .tile--room .tile-logo{background:#f1f4f6}
-.tile--soon{cursor:default}
-.tile--soon:hover{border-color:var(--line);transform:none}
-.tile--soon .tile-logo{background:#efe6d3;color:#147f84;font-size:24px;font-weight:600}
+.tile--soon .tile-logo{background:#efe6d3;color:#147f84;font-size:24px;font-weight:600;text-align:center}
+.status{display:inline-block;margin-inline-start:8px;padding:1px 9px;border-radius:999px;font-size:12px;font-weight:600;vertical-align:2px;white-space:nowrap}
+.status--on{background:#e2f3ea;color:#14603b}
+.status--off{background:#eef0f2;color:#55636f}
+.brand{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:22px;padding:16px 18px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius)}
+.brand-logo{display:flex;align-items:center;justify-content:center;flex:none;width:112px;height:76px;padding:8px;background:#efe6d3;border-radius:8px;color:#147f84;font-size:12.5px;font-weight:600;text-align:center}
+.brand-logo img{max-width:100%;max-height:100%}
+.brand-text{flex:1;min-width:200px}
+.brand-text strong{display:block;font-size:16px}
+.brand-text span{display:block;font-size:14px;color:var(--muted)}
+.brand .switch{font-size:14.5px;color:var(--ink);font-weight:600}
+.field-label{display:block;margin-bottom:6px;font-size:14px;font-weight:600}
+.photo.photo--logo{aspect-ratio:16/8;background:#efe6d3}
+.photo.photo--logo img{object-fit:contain;padding:14px}
 .badge{display:inline-block;margin-inline-start:8px;padding:1px 8px;border-radius:999px;background:var(--blue-soft);color:var(--blue-dark);font-size:11.5px;font-weight:600;vertical-align:2px;white-space:nowrap}
 .tile-info{padding:14px 16px 16px}
 .tile-info strong{display:block;font-size:18px}

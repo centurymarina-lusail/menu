@@ -15,7 +15,7 @@
   var themeMeta = document.querySelector('meta[name="theme-color"]');
 
   /* browser bar colour and landing "door" colour for each look */
-  var THEME_COLOR = { hotel: '#ffffff', north: '#163340', regions: '#fbfbf8', knife: '#724b4e', room: '#ffffff' };
+  var THEME_COLOR = { hotel: '#ffffff', north: '#163340', regions: '#fbfbf8', knife: '#724b4e', room: '#ffffff', soon: '#f7f1e3' };
   var DOOR_COLOR = { north: '#163340', regions: '#e9f0ed', knife: '#220409', room: '#f1f4f6', soon: '#efe6d3' };
   /* looks that use photo tiles, banners, cards and a search box */
   var RICH = { knife: true };
@@ -126,7 +126,7 @@
     mark.hidden = !markRest;
     if (markRest) {
       mark.href = '#/' + encodeURIComponent(markRest.id);
-      mark.innerHTML = '<span class="bar-logo"><img src="' + esc(markRest.logo) + '" alt="' + esc(tx(markRest.name)) + '"></span>' +
+      mark.innerHTML = (markRest.logo ? '<span class="bar-logo"><img src="' + esc(markRest.logo) + '" alt="' + esc(tx(markRest.name)) + '"></span>' : '<span class="bar-name">' + esc(tx(markRest.name)) + '</span>') +
         '<span class="bar-title"><b>' + esc(tx(markRest.name)) + '</b><span>' + esc(subtitle || '') + '</span></span>';
     }
     document.title = title;
@@ -148,7 +148,7 @@
       }
       var label = tx(r.name) + (tx(r.tagline) ? ', ' + tx(r.tagline) : '');
       return '<a class="door door--' + esc(r.theme) + '" href="#/' + encodeURIComponent(r.id) + '"' + style + '>' + WAVE +
-        '<img src="' + esc(r.logo) + '" alt="' + esc(label) + '"></a>';
+        (r.logo ? '<img src="' + esc(r.logo) + '" alt="' + esc(label) + '">' : '<strong class="door-name">' + esc(tx(r.name)) + '</strong>') + '</a>';
     }).join('');
     return '<section class="home">' +
       '<div class="home-top"><h1 style="margin:0"><img class="home-logo" src="' + esc(hotel.logo) + '" alt="' + esc(tx(hotel.name)) + ', ' + esc(tx(hotel.place)) + '"></h1>' +
@@ -173,7 +173,7 @@
         '<span class="sec-name">' + esc(tx(s.name)) + '</span><span class="chev" aria-hidden="true"></span></a>';
     }).join('');
     if (!secs) secs = emptyHtml();
-    return '<section class="rest"><h1 style="margin:0"><img class="rest-logo" src="' + esc(r.logo) + '" alt="' + esc(label) + '"></h1>' +
+    return '<section class="rest"><h1 style="margin:0">' + (r.logo ? '<img class="rest-logo" src="' + esc(r.logo) + '" alt="' + esc(label) + '">' : '<span class="rest-name">' + esc(tx(r.name)) + '</span>') + '</h1>' +
       '<nav class="secs">' + secs + '</nav></section>';
   }
 

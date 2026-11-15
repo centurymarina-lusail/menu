@@ -30,6 +30,10 @@ body[data-theme="knife"]{
   --bar-bg:#724b4e;--bar-ink:#ffffff;--bar-line:rgba(255,255,255,.45);
   --display:"Nunito Sans","Tajawal",system-ui,sans-serif;--body:"Nunito Sans","Tajawal",system-ui,sans-serif;
 }
+body[data-theme="soon"]{
+  --bg:#f7f1e3;--panel:#efe6d3;--ink:#12403f;--muted:#5f6f63;--accent:#147f84;--line:#d6c9ab;
+  --display:"Marcellus","El Messiri",serif;--body:"Figtree","Tajawal",system-ui,sans-serif;
+}
 body[data-theme="room"]{
   --bg:#ffffff;--panel:#eef2f5;--ink:#1d3b55;--muted:#5f6f7c;--accent:#2b699b;--line:#dfe5ea;
   --display:"Marcellus","El Messiri",serif;--body:"Figtree","Tajawal",system-ui,sans-serif;
@@ -69,7 +73,10 @@ body[data-theme="room"]{
 .door--knife{--logo-h:88px}
 .door--room{--logo-h:104px;--door-focus:#2b699b}
 /* a restaurant that is not open yet: turquoise on beige, not a link */
-.door--soon{flex-direction:column}
+.door--soon{flex-direction:column;--logo-h:96px;--door-focus:#147f84}
+.door-name{font-family:var(--display);font-weight:400;font-size:32px;line-height:1.15;text-align:center;color:#147f84}
+.rest-name{display:block;margin:26px 0 40px;font-family:var(--display);font-weight:400;font-size:44px;line-height:1.1;text-align:center;color:var(--accent);overflow-wrap:anywhere}
+.bar-name{font-family:var(--display);font-size:18px;color:var(--bar-ink,var(--accent));white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:46vw}
 .soon{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;color:#147f84}
 .soon span{font-size:14px;letter-spacing:.04em;color:#5f6f63}
 .soon strong{font-family:var(--display);font-weight:400;font-size:34px;line-height:1.1;padding:10px 26px;border-block:1px solid #2aa6a6}
@@ -80,6 +87,7 @@ body[data-theme="room"]{
 .home .door:nth-child(5){animation-delay:.36s}
 @keyframes doorIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
 @media (min-width:860px){
+  .door--soon{--logo-h:140px}
   .home-top{padding-bottom:44px}
   .home-logo{width:250px}
   .doors{flex-direction:row}
@@ -210,6 +218,24 @@ body[data-theme="room"]{
 /* =====================================================
    ROOM SERVICE · the hotel's own colours: white, marina blue, silver.
    ===================================================== */
+/* =====================================================
+   THE NEW RESTAURANT · turquoise on beige, the colours of its "Coming soon" door.
+   ===================================================== */
+[data-theme="soon"] .rest-logo{height:auto;max-height:170px;max-width:78%;margin-bottom:40px}
+[data-theme="soon"] .secs{gap:16px}
+[data-theme="soon"] .sec{justify-content:center;min-height:100px;border-block:1px solid #2aa6a6;font-size:32px;color:var(--accent)}
+[data-theme="soon"] .sec .chev{display:none}
+[data-theme="soon"] .sec:hover{background:var(--panel)}
+[data-theme="soon"] .menu-head{text-align:center}
+[data-theme="soon"] .menu-head h1{color:var(--accent)}
+[data-theme="soon"] .chips{justify-content:safe center}
+[data-theme="soon"] .group-title{display:table;margin:0 auto;padding:8px 22px;border-block:1px solid #2aa6a6;color:var(--accent);text-align:center}
+[data-theme="soon"] .item{border-bottom:1px solid var(--line)}
+[data-theme="soon"] .item:last-child{border-bottom:0}
+[data-theme="soon"] .item-name{color:var(--ink)}
+[data-theme="soon"] .item-ph{border-radius:8px}
+[data-theme="soon"] .feature{border-radius:10px}
+
 [data-theme="room"] .rest-logo{height:170px;margin-bottom:40px}
 [data-theme="room"] .sec{justify-content:center;min-height:100px;border-block:1px solid var(--line);font-size:30px;letter-spacing:.06em;color:var(--accent)}
 [data-theme="room"] .secs{gap:0}

@@ -70,6 +70,25 @@
   </form>
 </dialog>
 
+<dialog class="dlg dlg--small" id="brandDlg" aria-labelledby="brandTitle">
+  <form id="brandForm" novalidate>
+    <header class="dlg-head"><h2 id="brandTitle">Restaurant details</h2><button class="x" type="button" data-close aria-label="Close">&times;</button></header>
+    <div class="dlg-body">
+      <label class="field"><span>Restaurant name</span><input id="bNameEn" type="text" maxlength="40" required autocomplete="off"></label>
+      <label class="field"><span>Restaurant name in Arabic (optional)</span><input id="bNameAr" type="text" maxlength="40" dir="rtl" lang="ar" autocomplete="off"></label>
+      <span class="field-label">Logo</span>
+      <div class="photo photo--logo" id="logoBox">
+        <img id="logoPreview" alt="" hidden>
+        <div class="photo-empty" id="logoEmpty"><strong>Add the logo</strong><span>PNG with a clear background looks best. Without a logo, guests see the name.</span></div>
+        <input type="file" id="logoInput" accept="image/png,image/jpeg,image/webp,image/svg+xml" aria-label="Restaurant logo">
+      </div>
+      <div class="photo-actions"><button class="link" type="button" id="logoRemove" hidden>Remove logo</button></div>
+      <p class="form-error" id="brandError" role="alert" hidden></p>
+    </div>
+    <footer class="dlg-foot"><span class="grow"></span><button class="btn btn--ghost" type="button" data-close>Cancel</button><button class="btn btn--primary" type="submit" id="brandSave">Save details</button></footer>
+  </form>
+</dialog>
+
 <dialog class="dlg dlg--small" id="confirmDlg" aria-labelledby="confirmTitle">
   <header class="dlg-head"><h2 id="confirmTitle"></h2></header>
   <div class="dlg-body"><p id="confirmText"></p></div>

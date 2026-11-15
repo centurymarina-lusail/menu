@@ -377,13 +377,11 @@
 
   function viewDashboard() {
     var tiles = state.menu.restaurants.map(function (r) {
-      if (r.soon) {
-        return '<div class="tile tile--soon"><span class="tile-logo">Coming soon</span>' +
-          '<span class="tile-info"><strong>New restaurant</strong><span>Shown to guests as “Coming soon”. It opens here once the brand is ready.</span></span></div>';
-      }
+      var logo = r.logo ? '<img src="' + esc(photoSrc(r.logo)) + '" alt="">' : esc(r.soon ? 'Coming soon' : en(r.name));
+      var status = r.theme === 'soon' ? (r.soon ? '<span class="status status--off">Closed</span>' : '<span class="status status--on">Open</span>') : '';
       return '<a class="tile tile--' + esc(r.theme) + '" href="#/' + encodeURIComponent(r.id) + '">' +
-        '<span class="tile-logo"><img src="../' + esc(r.logo) + '" alt=""></span>' +
-        '<span class="tile-info"><strong>' + esc(en(r.name)) + '</strong><span>' + plural(countItems(r), 'product', 'products') + ' in ' + plural(r.sections.length, 'section', 'sections') + '</span></span></a>';
+        '<span class="tile-logo">' + logo + '</span>' +
+        '<span class="tile-info"><strong>' + esc(r.theme === 'soon' && r.soon && en(r.name) === 'Coming soon' ? 'New restaurant' : en(r.name)) + status + '</strong><span>' + plural(countItems(r), 'product', 'products') + ' in ' + plural(r.sections.length, 'section', 'sections') + '</span></span></a>';
     }).join('');
     return '<main class="page"><h1>Restaurants</h1><p class="sub">Choose a restaurant to edit its menu.</p><div class="tiles">' + tiles + '</div>' +
       '<p class="note">Changes appear on the guest menu about a minute after you publish them.</p></main>';
@@ -395,9 +393,17 @@
         '<button class="link" type="button" data-act="rename-section" data-sid="' + esc(s.id) + '">Rename</button>' +
         '<button class="link link--danger" type="button" data-act="delete-section" data-sid="' + esc(s.id) + '">Delete</button></li>';
     }).join('');
+    var brand = '';
+    if (r.theme === 'soon') {
+      brand = '<section class="brand"><span class="brand-logo">' + (r.logo ? '<img src="' + esc(photoSrc(r.logo)) + '" alt="">' : 'No logo yet') + '</span>' +
+        '<div class="brand-text"><strong>' + (r.soon ? 'Closed: guests see “Coming soon”' : 'Open: guests can see this restaurant') + '</strong>' +
+        '<span>' + (r.soon ? 'Set the name and logo, build the menu, then switch it on.' : 'Switch it off to show “Coming soon” again. The menu is kept.') + '</span></div>' +
+        '<label class="switch"><input type="checkbox" data-act="toggle-open"' + (r.soon ? '' : ' checked') + '><span class="switch-ui"></span><span>Open to guests</span></label>' +
+        '<button class="btn btn--ghost btn--small" type="button" data-act="brand">Name and logo</button></section>';
+    }
     return '<main class="page"><a class="crumb" href="#/">All restaurants</a>' +
-      '<div class="page-head"><h1>' + esc(en(r.name)) + '</h1><button class="btn btn--primary" type="button" data-act="add-section">Add section</button></div>' +
-      '<p class="sub">Open a section to add or edit its products.</p>' +
+      '<div class="page-head"><h1>' + esc(r.theme === 'soon' && en(r.name) === 'Coming soon' ? 'New restaurant' : en(r.name)) + '</h1><button class="btn btn--primary" type="button" data-act="add-section">Add section</button></div>' +
+      '<p class="sub">Open a section to add or edit its products.</p>' + brand +
       (rows ? '<ul class="list">' + rows + '</ul>' : '<p class="blank">This restaurant has no sections yet. Add one to start its menu.</p>') + '</main>';
   }
   function itemRow(it, cur) {
@@ -432,7 +438,6 @@
     if (!state.menu) return;
     var rt = route();
     var r = rt.rid ? findRest(state.menu, rt.rid) : null;
-    if (r && r.soon) r = null;
     var s = r && rt.sid ? findSec(r, rt.sid) : null;
     var body;
     if (!rt.rid) body = viewDashboard();
@@ -712,6 +717,131 @@
     } catch (x) { toast(explain(x), 'error'); }
   }
 
+  /* the new restaurant: name, logo, and the switch that opens it to guests */
+  var brandEdit = null;   // { rid, logo: 'keep' | 'new' | 'remove', file }
+  function setLogoPreview(src) {
+    var img = $('logoPreview');
+    if (src) { img.src = src; img.hidden = false; $('logoEmpty').hidden = true; $('logoRemove').hidden = false; }
+    else { img.removeAttribute('src'); img.hidden = true; $('logoEmpty').hidden = false; $('logoRemove').hidden = true; }
+  }
+  function openBrand() {
+    var r = findRest(state.menu, route().rid);
+    if (!r) return;
+    brandEdit = { rid: r.id, logo: 'keep', file: null };
+    $('brandForm').reset();
+    $('brandError').hidden = true;
+    $('bNameEn').value = en(r.name) === 'Coming soon' ? '' : (r.name.en || '');
+    $('bNameAr').value = r.name.ar === 'قريباً' ? '' : (r.name.ar || '');
+    setLogoPreview(r.logo ? photoSrc(r.logo) : '');
+    openDlg($('brandDlg'));
+    $('bNameEn').focus();
+  }
+  $('logoInput').addEventListener('change', function () {
+    var f = this.files && this.files[0];
+    if (!f || !brandEdit) return;
+    brandEdit.logo = 'new'; brandEdit.file = f;
+    setLogoPreview(URL.createObjectURL(f));
+  });
+  $('logoRemove').addEventListener('click', function () {
+    if (!brandEdit) return;
+    brandEdit.logo = 'remove'; brandEdit.file = null; $('logoInput').value = '';
+    setLogoPreview('');
+  });
+  /* a logo keeps its clear background, so it is saved as PNG and never flattened onto white */
+  async function shrinkLogo(file) {
+    try {
+      var im = await new Promise(function (ok, bad) {
+        var el = new Image();
+        el.onload = function () { ok(el); };
+        el.onerror = function () { bad(new Error('unreadable')); };
+        el.src = URL.createObjectURL(file);
+      });
+      var w = im.naturalWidth || 600, h = im.naturalHeight || 300;
+      var k = Math.min(1, 800 / Math.max(w, h));
+      var c = document.createElement('canvas');
+      c.width = Math.max(1, Math.round(w * k));
+      c.height = Math.max(1, Math.round(h * k));
+      c.getContext('2d').drawImage(im, 0, 0, c.width, c.height);
+      var blob = await new Promise(function (ok) { c.toBlob(ok, 'image/png'); });
+      if (!blob) throw new Error('no blob');
+      return { bytes: new Uint8Array(await blob.arrayBuffer()), url: URL.createObjectURL(blob) };
+    } catch (e) {
+      throw UserError('This logo could not be read. Choose a PNG or JPG file.');
+    }
+  }
+  var brandSaving = false;
+  $('brandForm').addEventListener('submit', async function (ev) {
+    ev.preventDefault();
+    if (!brandEdit || brandSaving) return;
+    var e = brandEdit, nameEn = $('bNameEn').value.trim(), nameAr = $('bNameAr').value.trim(), err = $('brandError'), btn = $('brandSave');
+    err.hidden = true;
+    if (!nameEn) { err.textContent = 'Enter the name of the restaurant.'; err.hidden = false; return; }
+    brandSaving = true; btn.disabled = true; btn.textContent = 'Saving…';
+    var newPath = null, oldPath = null;
+    try {
+      if (e.logo === 'new') {
+        var small = await shrinkLogo(e.file);
+        newPath = 'images/' + e.rid + '/logo-' + Date.now().toString(36) + '.png';
+        await writeFile(newPath, small.bytes, 'Add logo for ' + nameEn);
+        freshPhotos[newPath] = small.url;
+      }
+      await commit('Update details of ' + nameEn, function (m) {
+        var r = findRest(m, e.rid);
+        if (!r) throw UserError('This restaurant no longer exists.');
+        oldPath = r.logo || null;
+        r.name = { en: nameEn, ar: nameAr };
+        if (!r.sections.length) {
+          r.sections = [
+            { id: 'food', name: { en: 'Food', ar: 'المأكولات' }, groups: [], items: [] },
+            { id: 'beverage', name: { en: 'Beverage', ar: 'المشروبات' }, groups: [], items: [] }
+          ];
+        }
+        if (e.logo === 'new') r.logo = newPath;
+        else if (e.logo === 'remove') r.logo = '';
+      });
+      if (oldPath && e.logo !== 'keep' && oldPath.indexOf('images/') === 0) removeFile(oldPath, 'Remove old logo');
+      $('brandDlg').close();
+      render();
+      toast('Saved. The menu updates in about a minute.');
+    } catch (x) {
+      err.textContent = explain(x); err.hidden = false;
+      var now = findRest(state.menu, e.rid);
+      if (newPath && !(now && now.logo === newPath)) removeFile(newPath, 'Remove unused logo');
+    }
+    brandSaving = false; btn.disabled = false; btn.textContent = 'Save details';
+  });
+  async function toggleOpen(box) {
+    var rid = route().rid, on = box.checked, r = findRest(state.menu, rid);
+    if (!r) return;
+    if (on && en(r.name) === 'Coming soon') {
+      box.checked = false;
+      toast('Add the restaurant name first.', 'error');
+      openBrand();
+      return;
+    }
+    box.disabled = true;
+    try {
+      await commit((on ? 'Open ' : 'Close ') + en(r.name), function (m) {
+        var rest = findRest(m, rid);
+        if (!rest) throw UserError('This restaurant no longer exists.');
+        if (on) {
+          delete rest.soon;
+          if (!rest.sections.length) {
+            rest.sections = [
+              { id: 'food', name: { en: 'Food', ar: 'المأكولات' }, groups: [], items: [] },
+              { id: 'beverage', name: { en: 'Beverage', ar: 'المشروبات' }, groups: [], items: [] }
+            ];
+          }
+        } else rest.soon = true;
+      });
+      render();
+      toast(on ? 'The restaurant is open. Guests see it in about a minute.' : 'Closed. Guests see “Coming soon” again in about a minute.');
+    } catch (x) {
+      box.checked = !on; box.disabled = false;
+      toast(explain(x), 'error');
+    }
+  }
+
   /* QR code */
   function drawQr() {
     var url = $('qrTarget').value;
@@ -772,6 +902,7 @@
     if (act === 'add') openProduct(null);
     else if (act === 'edit') openProduct(b.dataset.id);
     else if (act === 'add-section') openSection(null);
+    else if (act === 'brand') openBrand();
     else if (act === 'rename-section') openSection(b.dataset.sid);
     else if (act === 'delete-section') deleteSection(b.dataset.sid);
     else if (act === 'qr') openQr();
@@ -779,6 +910,8 @@
     else if (act === 'logout') { setSession(null); location.hash = ''; location.reload(); }
   });
   app.addEventListener('change', async function (ev) {
+    var open = ev.target.closest('input[data-act="toggle-open"]');
+    if (open) { toggleOpen(open); return; }
     var box = ev.target.closest('input[data-act="toggle"]');
     if (!box) return;
     var rt = route(), id = box.dataset.id, on = box.checked;
