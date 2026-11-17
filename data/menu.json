@@ -2969,7 +2969,23 @@
       "ar": "الغذاء"
      },
      "groups": [],
-     "items": []
+     "items": [
+      {
+       "id": "p237259820c",
+       "photo": "images/the-4-regions/p237259820c-mwkjphim.jpg",
+       "group": "",
+       "title": {
+        "en": "Lunch",
+        "ar": "الغذاء"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 75,
+       "available": true
+      }
+     ]
     },
     {
      "id": "dinner",
@@ -6340,5 +6356,5 @@
    "sections": []
   }
  ],
- "updated": "2026-11-13T12:21:24.768Z"
+ "updated": "2026-11-17T10:24:33.281Z"
 }
