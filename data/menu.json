@@ -6368,11 +6368,35 @@
       "en": "Beverage",
       "ar": "المشروبات"
      },
-     "groups": [],
-     "items": []
+     "groups": [
+      {
+       "id": "mocktails",
+       "name": {
+        "en": "Mocktails",
+        "ar": ""
+       }
+      }
+     ],
+     "items": [
+      {
+       "id": "pb63c79bde4",
+       "photo": "",
+       "group": "mocktails",
+       "title": {
+        "en": "Fennel Colada",
+        "ar": "فينل كولادا"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 45,
+       "available": true
+      }
+     ]
     }
    ]
   }
  ],
- "updated": "2026-11-22T08:57:27.804Z"
+ "updated": "2026-11-22T09:35:24.622Z"
 }
