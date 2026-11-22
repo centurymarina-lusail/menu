@@ -6343,7 +6343,6 @@
   {
    "id": "coming-soon",
    "theme": "soon",
-   "soon": true,
    "name": {
     "en": "The 19th",
     "ar": ""
@@ -6375,5 +6374,5 @@
    ]
   }
  ],
- "updated": "2026-11-22T08:54:46.702Z"
+ "updated": "2026-11-22T08:54:59.841Z"
 }
