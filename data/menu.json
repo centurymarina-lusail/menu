@@ -6345,16 +6345,35 @@
    "theme": "soon",
    "soon": true,
    "name": {
-    "en": "Coming soon",
-    "ar": "قريباً"
+    "en": "The 19th",
+    "ar": ""
    },
    "tagline": {
     "en": "",
     "ar": ""
    },
-   "logo": "",
-   "sections": []
+   "logo": "images/coming-soon/logo-mwrlpagt.png",
+   "sections": [
+    {
+     "id": "food",
+     "name": {
+      "en": "Food",
+      "ar": "المأكولات"
+     },
+     "groups": [],
+     "items": []
+    },
+    {
+     "id": "beverage",
+     "name": {
+      "en": "Beverage",
+      "ar": "المشروبات"
+     },
+     "groups": [],
+     "items": []
+    }
+   ]
   }
  ],
- "updated": "2026-11-17T10:24:33.281Z"
+ "updated": "2026-11-22T08:54:46.702Z"
 }
