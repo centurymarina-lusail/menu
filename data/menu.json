@@ -6392,11 +6392,26 @@
        },
        "price": 45,
        "available": true
+      },
+      {
+       "id": "pd3a23a5672",
+       "photo": "",
+       "group": "mocktails",
+       "title": {
+        "en": "Strawberry Fizz",
+        "ar": "ستروبيري فيز"
+       },
+       "desc": {
+        "en": "Muddled strawberry with fresh orange and pineapple juice and a splash of peach",
+        "ar": ""
+       },
+       "price": 45,
+       "available": true
       }
      ]
     }
    ]
   }
  ],
- "updated": "2026-11-22T09:35:24.622Z"
+ "updated": "2026-11-22T09:38:05.685Z"
 }
