@@ -6387,6 +6387,13 @@
         "en": "APPETIZERS",
         "ar": ""
        }
+      },
+      {
+       "id": "tacos-nachos",
+       "name": {
+        "en": "TACOS & NACHOS",
+        "ar": ""
+       }
       }
      ],
      "items": [
@@ -6674,6 +6681,21 @@
        },
        "price": 120,
        "available": true
+      },
+      {
+       "id": "p741b311700",
+       "photo": "",
+       "group": "tacos-nachos",
+       "title": {
+        "en": "Classic Nachos",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Crunchy tortilla chips topped with melted cheese, jalapeños and fresh pico de gallo, served with sour cream and salsa.",
+        "ar": ""
+       },
+       "price": 60,
+       "available": true
       }
      ]
     },
@@ -6737,5 +6759,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:42:56.998Z"
+ "updated": "2026-11-24T08:43:52.823Z"
 }
