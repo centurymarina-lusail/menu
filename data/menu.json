@@ -6629,6 +6629,21 @@
        },
        "price": 65,
        "available": true
+      },
+      {
+       "id": "pe30a201c00",
+       "photo": "",
+       "group": "appetizers",
+       "title": {
+        "en": "Fish & Chips",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Golden crispy battered fish fillet with thick-cut chips, tartar sauce and a fresh lemon wedge.",
+        "ar": ""
+       },
+       "price": 70,
+       "available": true
       }
      ]
     },
@@ -6692,5 +6707,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:41:52.472Z"
+ "updated": "2026-11-24T08:42:14.800Z"
 }
