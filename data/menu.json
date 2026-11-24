@@ -6398,6 +6398,21 @@
        },
        "price": 40,
        "available": true
+      },
+      {
+       "id": "pbbcf0c3dc2",
+       "photo": "",
+       "group": "cold-starters",
+       "title": {
+        "en": "Trio Mezza",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Three of our signature dips served together with warm Arabic bread and crisp vegetable sticks. Perfect for sharing.",
+        "ar": ""
+       },
+       "price": 50,
+       "available": true
       }
      ]
     },
@@ -6461,5 +6476,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T07:49:14.383Z"
+ "updated": "2026-11-24T07:49:38.583Z"
 }
