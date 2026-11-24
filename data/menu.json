@@ -6525,15 +6525,15 @@
       },
       {
        "id": "p3da75a70d6",
-       "photo": "",
+       "photo": "images/coming-soon/p3da75a70d6-mwujj6in.jpg",
        "group": "sandwiches",
        "title": {
         "en": "Classic Beef Burger",
-        "ar": ""
+        "ar": "برجر اللحم الكلاسيكي"
        },
        "desc": {
-        "en": "Juicy grilled beef patty with melted cheddar, lettuce, tomato, pickles and house sauce in a toasted brioche bun, served with fries.",
-        "ar": ""
+        "en": "Juicy grilled beef patty with melted cheddar, lettuce, tomato, pickles and house sauce in a toasted brioche bun, served with fries.\n\nAllergens: 🌾 Gluten · 🥚 Eggs · 🥛 Milk · 🟡 Mustard",
+        "ar": "قطعة لحم بقري مشوية طرية مع جبن شيدر ذائب وخس وطماطم ومخلل وصلصة البيت في خبز بريوش محمّص، تُقدَّم مع البطاطس المقلية.\nمسببات الحساسية:‏ ‏🌾‏ الغلوتين ‏·‏ ‏🥚‏ البيض ‏·‏ ‏🥛‏ الحليب ‏·‏ ‏🟡‏ الخردل"
        },
        "price": 75,
        "available": true
@@ -6930,5 +6930,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T10:16:02.444Z"
+ "updated": "2026-11-24T10:17:20.702Z"
 }
