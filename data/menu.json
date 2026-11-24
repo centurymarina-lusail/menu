@@ -6383,6 +6383,21 @@
        },
        "price": 40,
        "available": true
+      },
+      {
+       "id": "ped58ec873b",
+       "photo": "",
+       "group": "cold-starters",
+       "title": {
+        "en": "Beetroot Mutabal",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Smoked aubergine and roasted beetroot whipped with tahini and lemon into a vibrant, earthy dip, served with warm Arabic bread.",
+        "ar": ""
+       },
+       "price": 40,
+       "available": true
       }
      ]
     },
@@ -6446,5 +6461,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T07:48:32.065Z"
+ "updated": "2026-11-24T07:49:14.383Z"
 }
