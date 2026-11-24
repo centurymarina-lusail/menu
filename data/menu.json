@@ -6822,6 +6822,21 @@
        },
        "price": 55,
        "available": true
+      },
+      {
+       "id": "p93c4a44fce",
+       "photo": "",
+       "group": "desserts",
+       "title": {
+        "en": "Chocolate Fondue",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Warm, fudgy chocolate brownie topped with a scoop of vanilla ice cream and a drizzle of chocolate sauce.",
+        "ar": ""
+       },
+       "price": 50,
+       "available": true
       }
      ]
     },
@@ -6885,5 +6900,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T09:07:57.369Z"
+ "updated": "2026-11-24T09:08:16.995Z"
 }
