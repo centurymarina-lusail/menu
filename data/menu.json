@@ -6380,6 +6380,13 @@
         "en": "SIZZLIN & FAJITAS",
         "ar": ""
        }
+      },
+      {
+       "id": "appetizers",
+       "name": {
+        "en": "APPETIZERS",
+        "ar": ""
+       }
       }
      ],
      "items": [
@@ -6611,7 +6618,7 @@
       {
        "id": "p0c89c0bfc9",
        "photo": "",
-       "group": "sizzlin-fajitas",
+       "group": "appetizers",
        "title": {
         "en": "Buffalo Chicken Wings",
         "ar": ""
@@ -6685,5 +6692,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:41:29.448Z"
+ "updated": "2026-11-24T08:41:52.472Z"
 }
