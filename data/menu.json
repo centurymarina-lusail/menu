@@ -6696,6 +6696,21 @@
        },
        "price": 60,
        "available": true
+      },
+      {
+       "id": "p47582701cf",
+       "photo": "",
+       "group": "tacos-nachos",
+       "title": {
+        "en": "Sharing Super Nachos",
+        "ar": ""
+       },
+       "desc": {
+        "en": "A generous tower of crisp tortilla chips loaded with melted cheese, seasoned meat, jalapeños, guacamole, sour cream and salsa. Made for sharing.",
+        "ar": ""
+       },
+       "price": 85,
+       "available": true
       }
      ]
     },
@@ -6759,5 +6774,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:43:52.823Z"
+ "updated": "2026-11-24T08:44:15.160Z"
 }
