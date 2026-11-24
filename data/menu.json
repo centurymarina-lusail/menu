@@ -6607,6 +6607,21 @@
        },
        "price": 80,
        "available": true
+      },
+      {
+       "id": "p0c89c0bfc9",
+       "photo": "",
+       "group": "sizzlin-fajitas",
+       "title": {
+        "en": "Buffalo Chicken Wings",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Crispy wings tossed in tangy, fiery buffalo sauce, served with crunchy celery sticks and a cool ranch dip.",
+        "ar": ""
+       },
+       "price": 65,
+       "available": true
       }
      ]
     },
@@ -6670,5 +6685,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:40:34.088Z"
+ "updated": "2026-11-24T08:41:29.448Z"
 }
