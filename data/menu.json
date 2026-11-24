@@ -6770,6 +6770,21 @@
        },
        "price": 130,
        "available": true
+      },
+      {
+       "id": "p7d1250f5fe",
+       "photo": "",
+       "group": "from-the-charcoal",
+       "title": {
+        "en": "Classic Shish Taouk",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Marinated chicken cubes in yogurt, lemon and garlic, grilled over charcoal and served with garlic sauce, fries and warm bread.",
+        "ar": ""
+       },
+       "price": 85,
+       "available": true
       }
      ]
     },
@@ -6833,5 +6848,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:49:14.735Z"
+ "updated": "2026-11-24T08:49:32.764Z"
 }
