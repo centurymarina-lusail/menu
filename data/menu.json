@@ -6443,6 +6443,21 @@
        },
        "price": 55,
        "available": true
+      },
+      {
+       "id": "pa32e6ad747",
+       "photo": "",
+       "group": "cold-starters",
+       "title": {
+        "en": "Avocado Shrimp Garden Salad",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Succulent shrimps and creamy avocado on fresh garden leaves with cherry tomato and cucumber, tossed in a light citrus dressing.",
+        "ar": ""
+       },
+       "price": 55,
+       "available": true
       }
      ]
     },
@@ -6506,5 +6521,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T07:50:51.733Z"
+ "updated": "2026-11-24T07:51:45.524Z"
 }
