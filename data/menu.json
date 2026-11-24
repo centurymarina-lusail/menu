@@ -6510,6 +6510,21 @@
        },
        "price": 70,
        "available": true
+      },
+      {
+       "id": "p2c69922e3b",
+       "photo": "",
+       "group": "sandwiches",
+       "title": {
+        "en": "Philly Cheese Steak Sandwich",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Thinly sliced beef sauteed with onions and peppers, smothered in melted cheese and tucked into a warm toasted roll, served with fries.",
+        "ar": ""
+       },
+       "price": 85,
+       "available": true
       }
      ]
     },
@@ -6573,5 +6588,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:36:51.003Z"
+ "updated": "2026-11-24T08:37:10.473Z"
 }
