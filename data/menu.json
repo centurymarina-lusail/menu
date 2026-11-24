@@ -6592,6 +6592,21 @@
        },
        "price": 85,
        "available": true
+      },
+      {
+       "id": "p2e0fb17ccd",
+       "photo": "",
+       "group": "sizzlin-fajitas",
+       "title": {
+        "en": "Chicken Quesadilla",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Grilled tortilla filled with seasoned chicken and melted cheese, served with guacamole, sour cream and salsa.",
+        "ar": ""
+       },
+       "price": 80,
+       "available": true
       }
      ]
     },
@@ -6655,5 +6670,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:40:19.825Z"
+ "updated": "2026-11-24T08:40:34.088Z"
 }
