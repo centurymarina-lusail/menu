@@ -6562,6 +6562,21 @@
        },
        "price": 80,
        "available": true
+      },
+      {
+       "id": "p124044e12b",
+       "photo": "",
+       "group": "sizzlin-fajitas",
+       "title": {
+        "en": "Shrimp",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Juicy spiced shrimp served sizzling with caramelized peppers and onions, warm tortillas, guacamole, sour cream and salsa.",
+        "ar": ""
+       },
+       "price": 85,
+       "available": true
       }
      ]
     },
@@ -6625,5 +6640,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:38:11.964Z"
+ "updated": "2026-11-24T08:39:59.721Z"
 }
