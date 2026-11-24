@@ -6401,6 +6401,13 @@
         "en": "PASTA",
         "ar": ""
        }
+      },
+      {
+       "id": "from-the-charcoal",
+       "name": {
+        "en": "FROM THE CHARCOAL",
+        "ar": ""
+       }
       }
      ],
      "items": [
@@ -6748,6 +6755,21 @@
        },
        "price": 65,
        "available": true
+      },
+      {
+       "id": "p16b5aaf1d3",
+       "photo": "",
+       "group": "from-the-charcoal",
+       "title": {
+        "en": "Oriental Mix Grill",
+        "ar": ""
+       },
+       "desc": {
+        "en": "A generous selection of charcoal-grilled kebab, shish taouk and lamb, served with grilled tomato, onion, garlic sauce and warm bread.",
+        "ar": ""
+       },
+       "price": 130,
+       "available": true
       }
      ]
     },
@@ -6811,5 +6833,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:48:41.607Z"
+ "updated": "2026-11-24T08:49:14.735Z"
 }
