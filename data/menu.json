@@ -6800,6 +6800,21 @@
        },
        "price": 85,
        "available": true
+      },
+      {
+       "id": "pc38709548d",
+       "photo": "",
+       "group": "from-the-charcoal",
+       "title": {
+        "en": "Brownies with Vanilla Ice Cream",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Warm, fudgy chocolate brownie topped with a scoop of vanilla ice cream and a drizzle of chocolate sauce.",
+        "ar": ""
+       },
+       "price": 55,
+       "available": true
       }
      ]
     },
@@ -6863,5 +6878,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:49:49.004Z"
+ "updated": "2026-11-24T09:07:34.780Z"
 }
