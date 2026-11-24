@@ -6659,6 +6659,21 @@
        },
        "price": 70,
        "available": true
+      },
+      {
+       "id": "p81ad383609",
+       "photo": "",
+       "group": "appetizers",
+       "title": {
+        "en": "Sharing Game Platter",
+        "ar": ""
+       },
+       "desc": {
+        "en": "The ultimate match-day board of our crowd favorites, including wings, crispy chicken and mozzarella sticks, with dips for the table",
+        "ar": ""
+       },
+       "price": 120,
+       "available": true
       }
      ]
     },
@@ -6722,5 +6737,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:42:42.088Z"
+ "updated": "2026-11-24T08:42:56.998Z"
 }
