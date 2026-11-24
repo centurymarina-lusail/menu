@@ -6408,6 +6408,13 @@
         "en": "FROM THE CHARCOAL",
         "ar": ""
        }
+      },
+      {
+       "id": "desserts",
+       "name": {
+        "en": "DESSERTS",
+        "ar": ""
+       }
       }
      ],
      "items": [
@@ -6804,7 +6811,7 @@
       {
        "id": "pc38709548d",
        "photo": "",
-       "group": "from-the-charcoal",
+       "group": "desserts",
        "title": {
         "en": "Brownies with Vanilla Ice Cream",
         "ar": ""
@@ -6878,5 +6885,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T09:07:34.780Z"
+ "updated": "2026-11-24T09:07:57.369Z"
 }
