@@ -6413,6 +6413,21 @@
        },
        "price": 50,
        "available": true
+      },
+      {
+       "id": "pbc1bd1a45b",
+       "photo": "",
+       "group": "cold-starters",
+       "title": {
+        "en": "Chicken Caesar Salad",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Crisp romaine, shaved parmesan and garlic croutons in creamy Caesar dressing, topped with golden crispy chicken.",
+        "ar": ""
+       },
+       "price": 55,
+       "available": true
       }
      ]
     },
@@ -6476,5 +6491,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T07:49:38.583Z"
+ "updated": "2026-11-24T07:50:21.630Z"
 }
