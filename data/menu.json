@@ -6495,6 +6495,21 @@
        },
        "price": 75,
        "available": true
+      },
+      {
+       "id": "p9762134e64",
+       "photo": "",
+       "group": "sandwiches",
+       "title": {
+        "en": "Crispy Chicken Burger",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Golden crispy chicken fillet with crunchy lettuce, pickles and creamy mayo in a toasted brioche bun, served with fries.",
+        "ar": ""
+       },
+       "price": 70,
+       "available": true
       }
      ]
     },
@@ -6558,5 +6573,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T07:53:16.450Z"
+ "updated": "2026-11-24T08:36:51.003Z"
 }
