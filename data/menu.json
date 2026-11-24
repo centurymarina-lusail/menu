@@ -6487,8 +6487,8 @@
         "ar": "سلطة سيزر بالروبيان"
        },
        "desc": {
-        "en": "Crisp romaine, shaved parmesan and garlic croutons in creamy Caesar dressing, topped with golden crispy shrimps.",
-        "ar": "خس روماني مقرمش وجبن بارميزان مبشور وقطع خبز محمّصة بالثوم مع صلصة سيزر الكريمية، مع روبيان مشوية مقرمشة."
+        "en": "Crisp romaine, shaved parmesan and garlic croutons in creamy Caesar dressing, topped with golden crispy shrimps.\n\nAllergens: 🌾 Gluten · 🥚 Eggs · 🥛 Milk · 🐟 Fish · 🟡 Mustard · 🦐 Crustaceans",
+        "ar": "خس روماني مقرمش وجبن بارميزان مبشور وقطع خبز محمّصة بالثوم مع صلصة سيزر الكريمية، مع روبيان مشوية مقرمشة.\n\nمسببات الحساسية:‏ ‏🌾‏ الغلوتين ‏·‏ ‏🥚‏ البيض ‏·‏ ‏🥛‏ الحليب ‏·‏ ‏🐟‏ الأسماك ‏·‏ ‏🟡‏ الخردل ‏·‏ ‏🦐‏ القشريات"
        },
        "price": 55,
        "available": true
@@ -6930,5 +6930,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T10:15:14.493Z"
+ "updated": "2026-11-24T10:16:02.444Z"
 }
