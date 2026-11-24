@@ -6517,8 +6517,8 @@
         "ar": "سلطة فتوش"
        },
        "desc": {
-        "en": "Garden-fresh vegetables and mint in a tangy sumac and pomegranate dressing, topped with crunchy toasted pita.",
-        "ar": "خضار طازجة من الحديقة مع النعناع وصلصة السماق والرمان المنعشة، تعلوها قطع خبز بيتا محمّصة ومقرمشة."
+        "en": "Garden-fresh vegetables and mint in a tangy sumac and pomegranate dressing, topped with crunchy toasted pita.\n\nAllergens: 🌾 Gluten   |   🌱 Vegan",
+        "ar": "خضار طازجة من الحديقة مع النعناع وصلصة السماق والرمان المنعشة، تعلوها قطع خبز بيتا محمّصة ومقرمشة.\nمسببات الحساسية:‏ ‏🌾‏ الغلوتين ‏|‏ ‏🌱‏ نباتي"
        },
        "price": 40,
        "available": true
@@ -6930,5 +6930,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T09:50:12.126Z"
+ "updated": "2026-11-24T09:51:08.309Z"
 }
