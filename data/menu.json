@@ -6525,6 +6525,21 @@
        },
        "price": 85,
        "available": true
+      },
+      {
+       "id": "p554c101183",
+       "photo": "",
+       "group": "sandwiches",
+       "title": {
+        "en": "Club Sandwich",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Triple-decker toasted bread layered with grilled chicken, egg, fresh lettuce and tomato, served with fries.",
+        "ar": ""
+       },
+       "price": 70,
+       "available": true
       }
      ]
     },
@@ -6588,5 +6603,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:37:10.473Z"
+ "updated": "2026-11-24T08:37:24.956Z"
 }
