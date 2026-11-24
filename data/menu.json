@@ -6394,6 +6394,13 @@
         "en": "TACOS & NACHOS",
         "ar": ""
        }
+      },
+      {
+       "id": "pasta",
+       "name": {
+        "en": "PASTA",
+        "ar": ""
+       }
       }
      ],
      "items": [
@@ -6711,6 +6718,21 @@
        },
        "price": 85,
        "available": true
+      },
+      {
+       "id": "pcb24a6cdf8",
+       "photo": "",
+       "group": "pasta",
+       "title": {
+        "en": "Shrimp Linguine",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Succulent shrimps tossed with linguine in a light garlic butter sauce with cherry tomato, fresh parsley and a hint of chili.",
+        "ar": ""
+       },
+       "price": 70,
+       "available": true
       }
      ]
     },
@@ -6774,5 +6796,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:44:15.160Z"
+ "updated": "2026-11-24T08:48:14.473Z"
 }
