@@ -6409,9 +6409,18 @@
        "available": true
       }
      ]
+    },
+    {
+     "id": "shisha",
+     "name": {
+      "en": "Shisha",
+      "ar": "شيشة"
+     },
+     "groups": [],
+     "items": []
     }
    ]
   }
  ],
- "updated": "2026-11-22T09:38:05.685Z"
+ "updated": "2026-11-24T07:45:11.870Z"
 }
