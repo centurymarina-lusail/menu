@@ -6428,6 +6428,21 @@
        },
        "price": 55,
        "available": true
+      },
+      {
+       "id": "pea44d60f76",
+       "photo": "",
+       "group": "cold-starters",
+       "title": {
+        "en": "Shrimps Caeser Salad",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Crisp romaine, shaved parmesan and garlic croutons in creamy Caesar dressing, topped with golden crispy shrimps.",
+        "ar": ""
+       },
+       "price": 55,
+       "available": true
       }
      ]
     },
@@ -6491,5 +6506,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T07:50:21.630Z"
+ "updated": "2026-11-24T07:50:51.733Z"
 }
