@@ -6366,6 +6366,13 @@
         "en": "Cold Starters",
         "ar": "مقبلات باردة"
        }
+      },
+      {
+       "id": "sandwiches",
+       "name": {
+        "en": "SANDWICHES",
+        "ar": ""
+       }
       }
      ],
      "items": [
@@ -6473,6 +6480,21 @@
        },
        "price": 40,
        "available": true
+      },
+      {
+       "id": "p3da75a70d6",
+       "photo": "",
+       "group": "sandwiches",
+       "title": {
+        "en": "Classic Beef Burger",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Juicy grilled beef patty with melted cheddar, lettuce, tomato, pickles and house sauce in a toasted brioche bun, served with fries.",
+        "ar": ""
+       },
+       "price": 75,
+       "available": true
       }
      ]
     },
@@ -6536,5 +6558,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T07:52:01.109Z"
+ "updated": "2026-11-24T07:53:16.450Z"
 }
