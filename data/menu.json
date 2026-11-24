@@ -6458,6 +6458,21 @@
        },
        "price": 55,
        "available": true
+      },
+      {
+       "id": "p598196a7b0",
+       "photo": "",
+       "group": "cold-starters",
+       "title": {
+        "en": "Fattoush Salad",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Garden-fresh vegetables and mint in a tangy sumac and pomegranate dressing, topped with crunchy toasted pita.",
+        "ar": ""
+       },
+       "price": 40,
+       "available": true
       }
      ]
     },
@@ -6521,5 +6536,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T07:51:45.524Z"
+ "updated": "2026-11-24T07:52:01.109Z"
 }
