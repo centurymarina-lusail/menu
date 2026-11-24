@@ -6784,11 +6784,11 @@
        "group": "from-the-charcoal",
        "title": {
         "en": "Classic Shish Taouk",
-        "ar": ""
+        "ar": "شيش طاووق كلاسيك"
        },
        "desc": {
-        "en": "Marinated chicken cubes in yogurt, lemon and garlic, grilled over charcoal and served with garlic sauce, fries and warm bread.",
-        "ar": ""
+        "en": "Marinated chicken cubes in yogurt, lemon and garlic, grilled over charcoal and served with garlic sauce, fries and warm bread.\n\nAllergens: 🥛 Milk · 🥚 Eggs · 🌾 Gluten",
+        "ar": "مكعبات دجاج متبّلة بالزبادي والليمون والثوم، مشوية على الفحم وتُقدَّم مع صلصة الثوم والبطاطس المقلية والخبز الدافئ.\n\nمسببات الحساسية:‏ ‏🥛‏ الحليب ‏·‏ ‏🥚‏ البيض ‏·‏ ‏🌾‏ الغلوتين"
        },
        "price": 85,
        "available": true
@@ -6930,5 +6930,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T11:05:24.037Z"
+ "updated": "2026-11-24T11:06:13.282Z"
 }
