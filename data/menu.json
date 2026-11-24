@@ -6837,6 +6837,21 @@
        },
        "price": 50,
        "available": true
+      },
+      {
+       "id": "p14032d793d",
+       "photo": "",
+       "group": "desserts",
+       "title": {
+        "en": "San Sebastian",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Silky melted chocolate served warm with fresh fruit, marshmallows and biscuits for dipping. Perfect for sharing.",
+        "ar": ""
+       },
+       "price": 55,
+       "available": true
       }
      ]
     },
@@ -6900,5 +6915,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T09:08:16.995Z"
+ "updated": "2026-11-24T09:08:35.178Z"
 }
