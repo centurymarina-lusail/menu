@@ -6733,6 +6733,21 @@
        },
        "price": 70,
        "available": true
+      },
+      {
+       "id": "p7a57b95a5f",
+       "photo": "",
+       "group": "pasta",
+       "title": {
+        "en": "Creamy Chicken Penne",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Tender grilled chicken and penne in a rich, silky parmesan cream sauce with sauteed mushrooms and fresh herbs.",
+        "ar": ""
+       },
+       "price": 65,
+       "available": true
       }
      ]
     },
@@ -6796,5 +6811,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:48:14.473Z"
+ "updated": "2026-11-24T08:48:41.607Z"
 }
