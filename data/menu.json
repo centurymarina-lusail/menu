@@ -6577,6 +6577,21 @@
        },
        "price": 85,
        "available": true
+      },
+      {
+       "id": "p18711ed898",
+       "photo": "",
+       "group": "sizzlin-fajitas",
+       "title": {
+        "en": "Marinated Steak",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Slow-marinated strips of steak served sizzling with caramelized peppers and onions, warm tortillas, guacamole, sour cream and salsa.",
+        "ar": ""
+       },
+       "price": 85,
+       "available": true
       }
      ]
     },
@@ -6640,5 +6655,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:39:59.721Z"
+ "updated": "2026-11-24T08:40:19.825Z"
 }
