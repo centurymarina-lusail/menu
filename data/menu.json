@@ -6359,8 +6359,32 @@
       "en": "Food",
       "ar": "المأكولات"
      },
-     "groups": [],
-     "items": []
+     "groups": [
+      {
+       "id": "cold-starters",
+       "name": {
+        "en": "Cold Starters",
+        "ar": "مقبلات باردة"
+       }
+      }
+     ],
+     "items": [
+      {
+       "id": "p66f5116d8e",
+       "photo": "",
+       "group": "cold-starters",
+       "title": {
+        "en": "Pesto Hummus",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Creamy hummus swirled with fresh basil pesto and topped with toasted pine nuts, served with warm Arabic bread.",
+        "ar": ""
+       },
+       "price": 40,
+       "available": true
+      }
+     ]
     },
     {
      "id": "beverage",
@@ -6422,5 +6446,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T07:45:11.870Z"
+ "updated": "2026-11-24T07:48:32.065Z"
 }
