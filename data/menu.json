@@ -6785,6 +6785,21 @@
        },
        "price": 85,
        "available": true
+      },
+      {
+       "id": "p69a6c42cc1",
+       "photo": "",
+       "group": "from-the-charcoal",
+       "title": {
+        "en": "Lebanese Kebab",
+        "ar": ""
+       },
+       "desc": {
+        "en": "Juicy skewers of minced beef and lamb with parsley and onion, charcoal-grilled and served with grilled tomato and warm bread.",
+        "ar": ""
+       },
+       "price": 85,
+       "available": true
       }
      ]
     },
@@ -6848,5 +6863,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T08:49:32.764Z"
+ "updated": "2026-11-24T08:49:49.004Z"
 }
