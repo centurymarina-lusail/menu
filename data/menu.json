@@ -6754,11 +6754,11 @@
        "group": "pasta",
        "title": {
         "en": "Creamy Chicken Penne",
-        "ar": ""
+        "ar": "بيني بالدجاج الكريمي"
        },
        "desc": {
-        "en": "Tender grilled chicken and penne in a rich, silky parmesan cream sauce with sauteed mushrooms and fresh herbs.",
-        "ar": ""
+        "en": "Tender grilled chicken and penne in a rich, silky parmesan cream sauce with sauteed mushrooms and fresh herbs.\nAllergens: 🌾 Gluten · 🥛 Milk",
+        "ar": "دجاج مشوي طري وبيني في صلصة بارميزان كريمية غنية وناعمة مع الفطر المسوّى والأعشاب الطازجة.\n\nمسببات الحساسية:‏ ‏🌾‏ الغلوتين ‏·‏ ‏🥛‏ الحليب"
        },
        "price": 65,
        "available": true
@@ -6930,5 +6930,5 @@
    ]
   }
  ],
- "updated": "2026-11-24T10:47:23.160Z"
+ "updated": "2026-11-24T10:48:46.071Z"
 }
