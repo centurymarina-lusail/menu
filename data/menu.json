@@ -6967,6 +6967,21 @@
        },
        "price": 30,
        "available": true
+      },
+      {
+       "id": "p8d8152b647",
+       "photo": "",
+       "group": "ice-tea",
+       "title": {
+        "en": "Lemon Mint Classic",
+        "ar": "شاي مثلج بالليمون والنعناع"
+       },
+       "desc": {
+        "en": "Classic iced tea brightened with fresh lemon and cool mint.\nAllergens: ✔ None declared",
+        "ar": "شاي مثلج كلاسيكي بنكهة الليمون المنعشة والنعناع البارد.\n\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 30,
+       "available": true
       }
      ]
     },
@@ -7216,5 +7231,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T08:34:06.135Z"
+ "updated": "2026-11-25T08:54:54.528Z"
 }
