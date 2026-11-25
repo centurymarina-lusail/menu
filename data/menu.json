@@ -6924,11 +6924,35 @@
       "en": "Shisha",
       "ar": "شيشة"
      },
-     "groups": [],
-     "items": []
+     "groups": [
+      {
+       "id": "shisha",
+       "name": {
+        "en": "Shisha",
+        "ar": "شيشة"
+       }
+      }
+     ],
+     "items": [
+      {
+       "id": "p2599d76c01",
+       "photo": "",
+       "group": "shisha",
+       "title": {
+        "en": "Double Apple",
+        "ar": "تفاحتين"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 89,
+       "available": true
+      }
+     ]
     }
    ]
   }
  ],
- "updated": "2026-11-25T07:13:08.686Z"
+ "updated": "2026-11-25T07:56:54.320Z"
 }
