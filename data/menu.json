@@ -6906,14 +6906,14 @@
        "photo": "",
        "group": "mocktails",
        "title": {
-        "en": "Strawberry Fizz",
-        "ar": "ستروبيري فيز"
+        "en": "Cucumber & Lemon grass Mojito",
+        "ar": "موهيتو الخيار وعشبة الليمون"
        },
        "desc": {
-        "en": "Muddled strawberry with fresh orange and pineapple juice and a splash of peach",
-        "ar": ""
+        "en": "A refreshing blend of muddled cucumber, mint, lime, and lemongrass syrup topped with soda over crushed ice, garnished with mint and cucumber.\n\nAllergens: ✔ None declared",
+        "ar": "مزيج منعش من الخيار المهروس والنعناع والليمون الأخضر وشراب عشبة الليمون تعلوه المياه الغازية فوق الثلج المجروش، ويُزيَّن بالنعناع والخيار.\n\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
        },
-       "price": 45,
+       "price": 40,
        "available": true
       }
      ]
@@ -7164,5 +7164,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T08:24:43.134Z"
+ "updated": "2026-11-25T08:25:52.439Z"
 }
