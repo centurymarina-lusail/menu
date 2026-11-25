@@ -6825,15 +6825,15 @@
       },
       {
        "id": "p93c4a44fce",
-       "photo": "",
+       "photo": "images/coming-soon/p93c4a44fce-mwvs8jqa.jpg",
        "group": "desserts",
        "title": {
         "en": "Chocolate Fondue",
-        "ar": ""
+        "ar": "فوندو الشوكولاتة"
        },
        "desc": {
-        "en": "Warm, fudgy chocolate brownie topped with a scoop of vanilla ice cream and a drizzle of chocolate sauce.",
-        "ar": ""
+        "en": "Warm, fudgy chocolate brownie topped with a scoop of vanilla ice cream and a drizzle of chocolate sauce.\n\nAllergens: 🌾 Gluten · 🥛 Milk",
+        "ar": "شوكولاتة ذائبة حريرية تُقدَّم دافئة مع الفواكه الطازجة والمارشميلو والبسكويت للغمس. مثالية للمشاركة.\n\nمسببات الحساسية:‏ ‏🌾‏ الغلوتين ‏·‏ ‏🥛‏ الحليب"
        },
        "price": 50,
        "available": true
@@ -6930,5 +6930,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T07:06:41.252Z"
+ "updated": "2026-11-25T07:08:47.078Z"
 }
