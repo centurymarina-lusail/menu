@@ -6890,6 +6890,13 @@
         "en": "Ice Tea",
         "ar": "شاي مثلج"
        }
+      },
+      {
+       "id": "fresh-juices",
+       "name": {
+        "en": "Fresh Juices",
+        "ar": "عصائر طازجة"
+       }
       }
      ],
      "items": [
@@ -6994,6 +7001,21 @@
        "desc": {
         "en": "Smooth iced tea with sweet, juicy peach, served ice cold.\n\nAllergens: ✔ None declared",
         "ar": "شاي مثلج ناعم بنكهة الخوخ الحلوة والعصيرية، يُقدَّم بارداً جداً.\n\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 30,
+       "available": true
+      },
+      {
+       "id": "p4f9e86b7fc",
+       "photo": "",
+       "group": "fresh-juices",
+       "title": {
+        "en": "Orange Juice",
+        "ar": "عصير برتقال"
+       },
+       "desc": {
+        "en": "Freshly squeezed orange juice served chilled.",
+        "ar": "عصير برتقال طازج معصور عند الطلب، يُقدَّم بارداً.\n\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
        },
        "price": 30,
        "available": true
@@ -7246,5 +7268,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T08:58:39.479Z"
+ "updated": "2026-11-25T09:00:09.958Z"
 }
