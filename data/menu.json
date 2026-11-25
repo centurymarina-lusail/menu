@@ -6993,11 +6993,26 @@
        },
        "price": 89,
        "available": true
+      },
+      {
+       "id": "pfd722899d0",
+       "photo": "",
+       "group": "shisha",
+       "title": {
+        "en": "Blueberry",
+        "ar": "توت أزرق"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 89,
+       "available": true
       }
      ]
     }
    ]
   }
  ],
- "updated": "2026-11-25T07:58:34.728Z"
+ "updated": "2026-11-25T07:59:45.839Z"
 }
