@@ -6897,6 +6897,13 @@
         "en": "Fresh Juices",
         "ar": "عصائر طازجة"
        }
+      },
+      {
+       "id": "coffees",
+       "name": {
+        "en": "Coffees",
+        "ar": "قهوة"
+       }
       }
      ],
      "items": [
@@ -7063,6 +7070,21 @@
         "ar": "فراولة ناضجة مخفوقة في عصير ناعم وحلو بشكل طبيعي.\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
        },
        "price": 30,
+       "available": true
+      },
+      {
+       "id": "p21776f9dfd",
+       "photo": "",
+       "group": "coffees",
+       "title": {
+        "en": "Americano",
+        "ar": "أمريكانو"
+       },
+       "desc": {
+        "en": "Allergens: ✔ None declared",
+        "ar": "مسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 25,
        "available": true
       }
      ]
@@ -7313,5 +7335,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:28:54.291Z"
+ "updated": "2026-11-25T09:33:36.983Z"
 }
