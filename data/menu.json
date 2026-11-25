@@ -7377,6 +7377,21 @@
        },
        "price": 25,
        "available": true
+      },
+      {
+       "id": "p3ce4fc6d46",
+       "photo": "",
+       "group": "soft-drinks",
+       "title": {
+        "en": "Red Bull Energy Drinks",
+        "ar": "ريد بول مشروب الطاقة"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 35,
+       "available": true
       }
      ]
     },
@@ -7626,5 +7641,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T11:02:42.462Z"
+ "updated": "2026-11-25T11:04:07.955Z"
 }
