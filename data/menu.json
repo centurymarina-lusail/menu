@@ -6948,11 +6948,26 @@
        },
        "price": 89,
        "available": true
+      },
+      {
+       "id": "paead31c0da",
+       "photo": "",
+       "group": "shisha",
+       "title": {
+        "en": "Lemon Mint",
+        "ar": "ليمون و نعنع"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 89,
+       "available": true
       }
      ]
     }
    ]
   }
  ],
- "updated": "2026-11-25T07:56:54.320Z"
+ "updated": "2026-11-25T07:57:25.703Z"
 }
