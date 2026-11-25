@@ -7258,6 +7258,21 @@
        },
        "price": 35,
        "available": true
+      },
+      {
+       "id": "p9dff1b3705",
+       "photo": "",
+       "group": "tea",
+       "title": {
+        "en": "Pure Green",
+        "ar": "الشاي الأخضر الطبيعي"
+       },
+       "desc": {
+        "en": "Light, fresh green tea with a clean, gentle taste.",
+        "ar": "شاي أخضر خفيف ومنعش بمذاق نقي ولطيف.\n\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 35,
+       "available": true
       }
      ]
     },
@@ -7507,5 +7522,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:49:56.918Z"
+ "updated": "2026-11-25T09:50:40.197Z"
 }
