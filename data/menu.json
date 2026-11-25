@@ -6963,11 +6963,26 @@
        },
        "price": 89,
        "available": true
+      },
+      {
+       "id": "p93a24c6eae",
+       "photo": "",
+       "group": "shisha",
+       "title": {
+        "en": "Mint",
+        "ar": "نعنع"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 89,
+       "available": true
       }
      ]
     }
    ]
   }
  ],
- "updated": "2026-11-25T07:57:25.703Z"
+ "updated": "2026-11-25T07:58:00.088Z"
 }
