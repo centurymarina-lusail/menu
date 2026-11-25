@@ -6918,6 +6918,13 @@
         "en": "Water",
         "ar": "مياه"
        }
+      },
+      {
+       "id": "soft-drinks",
+       "name": {
+        "en": "Soft drinks",
+        "ar": "مشروبات غازية"
+       }
       }
      ],
      "items": [
@@ -7355,6 +7362,21 @@
        },
        "price": 28,
        "available": true
+      },
+      {
+       "id": "p1199205e42",
+       "photo": "",
+       "group": "soft-drinks",
+       "title": {
+        "en": "Soda",
+        "ar": "صودا"
+       },
+       "desc": {
+        "en": "Pepsi, Diet Pepsi, Miranda orange, Ginger ale, Tonic water, Soda water, 7up, 7Diet 7up.",
+        "ar": "بيبسي، بيبسي دايت، ميرندا برتقال، جينجر أيل، ماء التونيك، مياه صودا، سفن أب، سفن أب دايت."
+       },
+       "price": 25,
+       "available": true
       }
      ]
     },
@@ -7604,5 +7626,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:59:58.973Z"
+ "updated": "2026-11-25T11:02:42.462Z"
 }
