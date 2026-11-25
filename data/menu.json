@@ -7325,6 +7325,21 @@
        },
        "price": 28,
        "available": true
+      },
+      {
+       "id": "p7b0819b0d2",
+       "photo": "",
+       "group": "water",
+       "title": {
+        "en": "Voss Sparkling water small",
+        "ar": "مياه فوس الغازية – صغيرة"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 18,
+       "available": true
       }
      ]
     },
@@ -7574,5 +7589,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:55:19.762Z"
+ "updated": "2026-11-25T09:56:03.810Z"
 }
