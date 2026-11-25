@@ -7146,6 +7146,21 @@
        },
        "price": 30,
        "available": true
+      },
+      {
+       "id": "pc6ff94ad95",
+       "photo": "",
+       "group": "coffees",
+       "title": {
+        "en": "Cafe Latte",
+        "ar": "لاتيه"
+       },
+       "desc": {
+        "en": "Allergens: 🥛 Milk",
+        "ar": "مسببات الحساسية:‏ ‏🥛‏ الحليب"
+       },
+       "price": 35,
+       "available": true
       }
      ]
     },
@@ -7395,5 +7410,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:38:58.574Z"
+ "updated": "2026-11-25T09:40:11.915Z"
 }
