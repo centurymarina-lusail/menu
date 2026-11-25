@@ -7053,11 +7053,26 @@
        },
        "price": 89,
        "available": true
+      },
+      {
+       "id": "p3b31024c2a",
+       "photo": "",
+       "group": "shisha",
+       "title": {
+        "en": "Citrus Ruby",
+        "ar": "سيتروس روبي"
+       },
+       "desc": {
+        "en": "Raspberry, Lemon & Grapefruit",
+        "ar": "توت بري, ليمون و ليمون هندي"
+       },
+       "price": 109,
+       "available": true
       }
      ]
     }
    ]
   }
  ],
- "updated": "2026-11-25T08:01:35.790Z"
+ "updated": "2026-11-25T08:05:15.297Z"
 }
