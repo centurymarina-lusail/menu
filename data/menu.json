@@ -7176,6 +7176,21 @@
        },
        "price": 35,
        "available": true
+      },
+      {
+       "id": "pc181fb67b7",
+       "photo": "",
+       "group": "coffees",
+       "title": {
+        "en": "Turkish Coffee",
+        "ar": "قهوة تركية"
+       },
+       "desc": {
+        "en": "Allergens: ✔ None declared",
+        "ar": "مسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 35,
+       "available": true
       }
      ]
     },
@@ -7425,5 +7440,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:40:50.851Z"
+ "updated": "2026-11-25T09:42:42.561Z"
 }
