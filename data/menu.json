@@ -7049,6 +7049,21 @@
        },
        "price": 30,
        "available": true
+      },
+      {
+       "id": "pa3a33a1c49",
+       "photo": "",
+       "group": "fresh-juices",
+       "title": {
+        "en": "Strawberry",
+        "ar": "عصير فراولة"
+       },
+       "desc": {
+        "en": "Ripe strawberries blended into a smooth, naturally sweet juice.\nAllergens: ✔ None declared",
+        "ar": "فراولة ناضجة مخفوقة في عصير ناعم وحلو بشكل طبيعي.\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 30,
+       "available": true
       }
      ]
     },
@@ -7298,5 +7313,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:27:26.788Z"
+ "updated": "2026-11-25T09:28:54.291Z"
 }
