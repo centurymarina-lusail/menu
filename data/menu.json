@@ -7340,6 +7340,21 @@
        },
        "price": 18,
        "available": true
+      },
+      {
+       "id": "pe6c89b291e",
+       "photo": "",
+       "group": "water",
+       "title": {
+        "en": "Voss sparkling water large",
+        "ar": "مياه فوس الغازية – كبيرة"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 28,
+       "available": true
       }
      ]
     },
@@ -7589,5 +7604,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:56:03.810Z"
+ "updated": "2026-11-25T09:56:36.409Z"
 }
