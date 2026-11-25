@@ -6930,6 +6930,21 @@
        },
        "price": 40,
        "available": true
+      },
+      {
+       "id": "p72b3141ce3",
+       "photo": "",
+       "group": "mocktails",
+       "title": {
+        "en": "Basil Nojito",
+        "ar": "نوخيتو الريحان"
+       },
+       "desc": {
+        "en": "A crisp swizzle of cucumber, basil leaves, lime wedges, and simple syrup topped with soda water over crushed ice, garnished with cucumber and a basil leaf.\n\nAllergens: ✔ None declared",
+        "ar": "مشروب منعش من الخيار وأوراق الريحان وشرائح الليمون الأخضر وشراب السكر تعلوه مياه الصودا فوق الثلج المجروش، ويُزيَّن بالخيار وورقة ريحان.\n\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 40,
+       "available": true
       }
      ]
     },
@@ -7179,5 +7194,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T08:30:11.430Z"
+ "updated": "2026-11-25T08:32:27.825Z"
 }
