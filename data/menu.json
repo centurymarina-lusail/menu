@@ -6883,6 +6883,13 @@
         "en": "Mocktails",
         "ar": ""
        }
+      },
+      {
+       "id": "ice-tea",
+       "name": {
+        "en": "Ice Tea",
+        "ar": "شاي مثلج"
+       }
       }
      ],
      "items": [
@@ -6944,6 +6951,21 @@
         "ar": "مشروب منعش من الخيار وأوراق الريحان وشرائح الليمون الأخضر وشراب السكر تعلوه مياه الصودا فوق الثلج المجروش، ويُزيَّن بالخيار وورقة ريحان.\n\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
        },
        "price": 40,
+       "available": true
+      },
+      {
+       "id": "pe2cc819b99",
+       "photo": "",
+       "group": "ice-tea",
+       "title": {
+        "en": "Infused Red Fruit & Passion Fruit",
+        "ar": "شاي مثلج بالفواكه الحمراء والباشن فروت"
+       },
+       "desc": {
+        "en": "Chilled tea infused with red berries and tangy passion fruit, served over ice.\n\nAllergens: ✔ None declared",
+        "ar": "شاي مثلج منقوع بالفواكه الحمراء والباشن فروت المنعش، يُقدَّم فوق الثلج.\n\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 30,
        "available": true
       }
      ]
@@ -7194,5 +7216,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T08:32:27.825Z"
+ "updated": "2026-11-25T08:34:06.135Z"
 }
