@@ -7273,6 +7273,21 @@
        },
        "price": 35,
        "available": true
+      },
+      {
+       "id": "p2fb05e143a",
+       "photo": "",
+       "group": "tea",
+       "title": {
+        "en": "Moroccan tea",
+        "ar": "شاي مغربي"
+       },
+       "desc": {
+        "en": "Green tea infused with fresh mint, brewed in the traditional Moroccan style.\n\nAllergens: ✔ None declared",
+        "ar": "شاي أخضر منقوع بالنعناع الطازج ومحضّر على الطريقة المغربية التقليدية.\n\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 35,
+       "available": true
       }
      ]
     },
@@ -7522,5 +7537,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:50:40.197Z"
+ "updated": "2026-11-25T09:52:08.980Z"
 }
