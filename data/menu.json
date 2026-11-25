@@ -7086,6 +7086,21 @@
        },
        "price": 25,
        "available": true
+      },
+      {
+       "id": "p9339b5db0e",
+       "photo": "",
+       "group": "coffees",
+       "title": {
+        "en": "Espresso",
+        "ar": "إسبريسو"
+       },
+       "desc": {
+        "en": "Allergens: ✔ None declared",
+        "ar": "مسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 25,
+       "available": true
       }
      ]
     },
@@ -7335,5 +7350,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:33:36.983Z"
+ "updated": "2026-11-25T09:34:32.438Z"
 }
