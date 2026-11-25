@@ -6810,15 +6810,15 @@
       },
       {
        "id": "pc38709548d",
-       "photo": "",
+       "photo": "images/coming-soon/pc38709548d-mwvs5upm.jpg",
        "group": "desserts",
        "title": {
         "en": "Brownies with Vanilla Ice Cream",
-        "ar": ""
+        "ar": "براوني مع آيس كريم الفانيلا"
        },
        "desc": {
-        "en": "Warm, fudgy chocolate brownie topped with a scoop of vanilla ice cream and a drizzle of chocolate sauce.",
-        "ar": ""
+        "en": "Warm, fudgy chocolate brownie topped with a scoop of vanilla ice cream and a drizzle of chocolate sauce.\n\nAllergens: 🌾 Gluten · 🥚 Eggs · 🥛 Milk",
+        "ar": "براوني شوكولاتة دافئ وغني تعلوه كرة آيس كريم فانيلا ورذاذ من صلصة الشوكولاتة.\nمسببات الحساسية:‏ ‏🌾‏ الغلوتين ‏·‏ ‏🥚‏ البيض ‏·‏ ‏🥛‏ الحليب"
        },
        "price": 55,
        "available": true
@@ -6930,5 +6930,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T07:05:20.331Z"
+ "updated": "2026-11-25T07:06:41.252Z"
 }
