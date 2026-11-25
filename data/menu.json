@@ -7143,11 +7143,26 @@
        },
        "price": 250,
        "available": true
+      },
+      {
+       "id": "p6045c65f2f",
+       "photo": "",
+       "group": "shisha",
+       "title": {
+        "en": "Signature flavor",
+        "ar": "نكهتنا المميزة"
+       },
+       "desc": {
+        "en": "Beach Drink with Melon, Watermelon, Passionfruit and Mint.",
+        "ar": "مشروب شاطئي منعش بالشمام والبطيخ والباشن فروت والنعناع."
+       },
+       "price": 129,
+       "available": true
       }
      ]
     }
    ]
   }
  ],
- "updated": "2026-11-25T08:12:59.633Z"
+ "updated": "2026-11-25T08:14:37.508Z"
 }
