@@ -7243,6 +7243,21 @@
        },
        "price": 35,
        "available": true
+      },
+      {
+       "id": "p29b13bc941",
+       "photo": "",
+       "group": "tea",
+       "title": {
+        "en": "Earl Gray",
+        "ar": "شاي إيرل غراي"
+       },
+       "desc": {
+        "en": "Fine black tea scented with fragrant bergamot.",
+        "ar": "شاي أسود فاخر معطّر بالبرغموت العطري.\n\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 35,
+       "available": true
       }
      ]
     },
@@ -7492,5 +7507,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:47:38.836Z"
+ "updated": "2026-11-25T09:49:56.918Z"
 }
