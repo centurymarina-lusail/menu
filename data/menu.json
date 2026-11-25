@@ -7228,6 +7228,21 @@
        },
        "price": 35,
        "available": true
+      },
+      {
+       "id": "p70bfe0397a",
+       "photo": "",
+       "group": "tea",
+       "title": {
+        "en": "Pure Chamomile Flowers",
+        "ar": "شاي زهور البابونج الطبيعية"
+       },
+       "desc": {
+        "en": "A soothing, caffeine-free infusion of whole chamomile flowers.\n\nAllergens: ✔ None declared",
+        "ar": "منقوع مهدّئ خالٍ من الكافيين من زهور البابونج الكاملة.\n\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 35,
+       "available": true
       }
      ]
     },
@@ -7477,5 +7492,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:46:20.335Z"
+ "updated": "2026-11-25T09:47:38.836Z"
 }
