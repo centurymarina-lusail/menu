@@ -7101,6 +7101,21 @@
        },
        "price": 25,
        "available": true
+      },
+      {
+       "id": "p4d632285b2",
+       "photo": "",
+       "group": "coffees",
+       "title": {
+        "en": "Double Espresso",
+        "ar": "إسبريسو دبل"
+       },
+       "desc": {
+        "en": "Allergens: ✔ None declared",
+        "ar": "مسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 25,
+       "available": true
       }
      ]
     },
@@ -7350,5 +7365,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:34:32.438Z"
+ "updated": "2026-11-25T09:37:28.918Z"
 }
