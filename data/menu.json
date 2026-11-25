@@ -6911,6 +6911,13 @@
         "en": "Tea",
         "ar": "شاي"
        }
+      },
+      {
+       "id": "water",
+       "name": {
+        "en": "Water",
+        "ar": "مياه"
+       }
       }
      ],
      "items": [
@@ -7288,6 +7295,21 @@
        },
        "price": 35,
        "available": true
+      },
+      {
+       "id": "pb61a02c800",
+       "photo": "",
+       "group": "water",
+       "title": {
+        "en": "Voss Still water small",
+        "ar": "مياه فوس الساكنة – صغيرة"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 18,
+       "available": true
       }
      ]
     },
@@ -7537,5 +7559,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:52:08.980Z"
+ "updated": "2026-11-25T09:53:22.115Z"
 }
