@@ -7128,11 +7128,26 @@
        },
        "price": 109,
        "available": true
+      },
+      {
+       "id": "p47f95e6bf7",
+       "photo": "",
+       "group": "shisha",
+       "title": {
+        "en": "Choose your favorite flavor",
+        "ar": "مذاقك المفضل"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 250,
+       "available": true
       }
      ]
     }
    ]
   }
  ],
- "updated": "2026-11-25T08:11:44.755Z"
+ "updated": "2026-11-25T08:12:59.633Z"
 }
