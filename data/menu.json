@@ -6896,7 +6896,7 @@
        },
        "desc": {
         "en": "A creamy, blended tropical drink of pineapple, mango, coconut milk, and fresh cream over crushed ice, served in a coconut tiki glass with powdered sugar and an edible flower.\n\nAllergens: 🥛 Milk   |   🥥 Coconut",
-        "ar": "مشروب استوائي كريمي مخفوق من الأناناس والمانجو وحليب جوز الهند والقشدة الطازجة فوق الثلج المجروش، يُقدَّم في كأس تيكي من جوز الهند مع السكر البودرة وزهرة صالحة للأكل.\n\nمسببات الحساسية:‏ ‏🥛‏ الحليب ‏|‏ ‏🥥‏ جوز الهند"
+        "ar": "مشروب استوائي كريمي مخفوق من الأناناس والمانجو وحليب جوز الهند والقشدة الطازجة فوق الثلج المجروش، يُقدَّم في كأس تيكي من جوز الهند مع السكر البودرة.\n\nمسببات الحساسية:‏ ‏🥛‏ الحليب ‏|‏ ‏🥥‏ جوز الهند"
        },
        "price": 40,
        "available": true
@@ -7164,5 +7164,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T08:24:12.895Z"
+ "updated": "2026-11-25T08:24:43.134Z"
 }
