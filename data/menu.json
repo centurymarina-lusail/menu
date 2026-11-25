@@ -6978,11 +6978,26 @@
        },
        "price": 89,
        "available": true
+      },
+      {
+       "id": "paed741a3c5",
+       "photo": "",
+       "group": "shisha",
+       "title": {
+        "en": "Grape",
+        "ar": "عنب"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 89,
+       "available": true
       }
      ]
     }
    ]
   }
  ],
- "updated": "2026-11-25T07:58:00.088Z"
+ "updated": "2026-11-25T07:58:34.728Z"
 }
