@@ -7038,11 +7038,26 @@
        },
        "price": 89,
        "available": true
+      },
+      {
+       "id": "p3c490db261",
+       "photo": "",
+       "group": "shisha",
+       "title": {
+        "en": "Cinnamon & Gum",
+        "ar": "قرفة و علكة"
+       },
+       "desc": {
+        "en": "",
+        "ar": ""
+       },
+       "price": 89,
+       "available": true
       }
      ]
     }
    ]
   }
  ],
- "updated": "2026-11-25T08:00:56.181Z"
+ "updated": "2026-11-25T08:01:35.790Z"
 }
