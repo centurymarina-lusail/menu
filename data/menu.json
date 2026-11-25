@@ -7068,11 +7068,26 @@
        },
        "price": 109,
        "available": true
+      },
+      {
+       "id": "pa6bd00eca9",
+       "photo": "",
+       "group": "shisha",
+       "title": {
+        "en": "LSD",
+        "ar": "أل أس دي"
+       },
+       "desc": {
+        "en": "Lychee and Sweet Dragon fruit.",
+        "ar": "ليتشي وفاكهة التنين الحلوة."
+       },
+       "price": 109,
+       "available": true
       }
      ]
     }
    ]
   }
  ],
- "updated": "2026-11-25T08:05:15.297Z"
+ "updated": "2026-11-25T08:07:11.885Z"
 }
