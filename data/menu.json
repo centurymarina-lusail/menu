@@ -7034,6 +7034,21 @@
        },
        "price": 30,
        "available": true
+      },
+      {
+       "id": "p4d314e2356",
+       "photo": "",
+       "group": "fresh-juices",
+       "title": {
+        "en": "Pineapple",
+        "ar": "عصير أناناس"
+       },
+       "desc": {
+        "en": "Sweet, tropical pineapple juice, served chilled.\n\nAllergens: ✔ None declared",
+        "ar": "عصير أناناس استوائي حلو الطعم، يُقدَّم بارداً.\n\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 30,
+       "available": true
       }
      ]
     },
@@ -7283,5 +7298,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:26:27.589Z"
+ "updated": "2026-11-25T09:27:26.788Z"
 }
