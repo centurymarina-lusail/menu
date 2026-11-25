@@ -7161,6 +7161,21 @@
        },
        "price": 35,
        "available": true
+      },
+      {
+       "id": "p62618003a7",
+       "photo": "",
+       "group": "coffees",
+       "title": {
+        "en": "Hot Chocolate",
+        "ar": "شوكولاتة ساخنة"
+       },
+       "desc": {
+        "en": "Rich, creamy chocolate blended with steamed milk.",
+        "ar": "مسببات الحساسية:‏ ‏🥛‏ الحليب"
+       },
+       "price": 35,
+       "available": true
       }
      ]
     },
@@ -7410,5 +7425,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:40:11.915Z"
+ "updated": "2026-11-25T09:40:50.851Z"
 }
