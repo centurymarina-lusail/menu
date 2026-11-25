@@ -7113,11 +7113,26 @@
        },
        "price": 109,
        "available": true
+      },
+      {
+       "id": "pbda714b0b8",
+       "photo": "",
+       "group": "shisha",
+       "title": {
+        "en": "Viva La Vida",
+        "ar": "فيفا لا فيدا"
+       },
+       "desc": {
+        "en": "A lively blend of watermelon, lemon, and a smooth hint of vanilla.",
+        "ar": "مزيج من البطيخ والليمون مع لمسة ناعمة من الفانيليا."
+       },
+       "price": 109,
+       "available": true
       }
      ]
     }
    ]
   }
  ],
- "updated": "2026-11-25T08:10:26.099Z"
+ "updated": "2026-11-25T08:11:44.755Z"
 }
