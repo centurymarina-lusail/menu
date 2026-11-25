@@ -6915,6 +6915,21 @@
        },
        "price": 40,
        "available": true
+      },
+      {
+       "id": "p35e9c5f941",
+       "photo": "",
+       "group": "mocktails",
+       "title": {
+        "en": "Sailors Navy",
+        "ar": "سيلورز نيفي"
+       },
+       "desc": {
+        "en": "A fruity swizzle of blackberry, raspberries, passion fruit puree, pineapple juice, vanilla syrup, and mint over crushed ice, garnished with mint sprigs, dehydrated berries, and powdered sugar.\nAllergens: ✔ None declared",
+        "ar": "مشروب فواكه منعش من التوت الأسود والتوت الأحمر وهريس الباشن فروت وعصير الأناناس وشراب الفانيلا والنعناع فوق الثلج المجروش، يُزيَّن بأغصان النعناع والتوت المجفف والسكر البودرة.\n\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 40,
+       "available": true
       }
      ]
     },
@@ -7164,5 +7179,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T08:25:52.439Z"
+ "updated": "2026-11-25T08:30:11.430Z"
 }
