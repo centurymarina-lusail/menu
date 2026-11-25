@@ -6904,6 +6904,13 @@
         "en": "Coffees",
         "ar": "قهوة"
        }
+      },
+      {
+       "id": "tea",
+       "name": {
+        "en": "Tea",
+        "ar": "شاي"
+       }
       }
      ],
      "items": [
@@ -7206,6 +7213,21 @@
        },
        "price": 35,
        "available": true
+      },
+      {
+       "id": "pe5fcb03e67",
+       "photo": "",
+       "group": "tea",
+       "title": {
+        "en": "English breakfast",
+        "ar": "شاي بريكفاست الإنجليزي"
+       },
+       "desc": {
+        "en": "A classic, robust black tea blend with a bold, full flavour.\n\nAllergens: ✔ None declared",
+        "ar": "مزيج كلاسيكي من الشاي الأسود القوي بنكهة غنية.\n\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 35,
+       "available": true
       }
      ]
     },
@@ -7455,5 +7477,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:43:33.001Z"
+ "updated": "2026-11-25T09:46:20.335Z"
 }
