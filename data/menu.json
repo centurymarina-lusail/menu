@@ -7019,6 +7019,21 @@
        },
        "price": 30,
        "available": true
+      },
+      {
+       "id": "p1c4ff663d4",
+       "photo": "",
+       "group": "fresh-juices",
+       "title": {
+        "en": "Lemon with mint",
+        "ar": "ليمون بالنعناع"
+       },
+       "desc": {
+        "en": "Fresh lemon juice blended with mint leaves, tangy and refreshing.\n\nAllergens: ✔ None declared",
+        "ar": "عصير ليمون طازج ممزوج بأوراق النعناع، منعش وبطعم حامض لذيذ.\n\nمسببات الحساسية:‏ ‏✔‏ لا يوجد"
+       },
+       "price": 30,
+       "available": true
       }
      ]
     },
@@ -7268,5 +7283,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:00:09.958Z"
+ "updated": "2026-11-25T09:26:27.589Z"
 }
