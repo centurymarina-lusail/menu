@@ -6795,15 +6795,15 @@
       },
       {
        "id": "p69a6c42cc1",
-       "photo": "",
+       "photo": "images/coming-soon/p69a6c42cc1-mwvs448b.jpg",
        "group": "from-the-charcoal",
        "title": {
         "en": "Lebanese Kebab",
-        "ar": ""
+        "ar": "كباب لبناني"
        },
        "desc": {
-        "en": "Juicy skewers of minced beef and lamb with parsley and onion, charcoal-grilled and served with grilled tomato and warm bread.",
-        "ar": ""
+        "en": "Juicy skewers of minced beef and lamb with parsley and onion, charcoal-grilled and served with grilled tomato and warm bread.\n\nAllergens: 🌾 Gluten",
+        "ar": "أسياخ طرية من اللحم البقري والضأن المفروم مع البقدونس والبصل، مشوية على الفحم وتُقدَّم مع الطماطم المشوية والخبز الدافئ.\n\nمسببات الحساسية:‏ ‏🌾‏ الغلوتين"
        },
        "price": 85,
        "available": true
@@ -6930,5 +6930,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T07:03:54.434Z"
+ "updated": "2026-11-25T07:05:20.331Z"
 }
