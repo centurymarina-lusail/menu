@@ -7191,6 +7191,21 @@
        },
        "price": 35,
        "available": true
+      },
+      {
+       "id": "pcedcb835ec",
+       "photo": "",
+       "group": "coffees",
+       "title": {
+        "en": "Spanish Latte",
+        "ar": "سبانش لاتيه"
+       },
+       "desc": {
+        "en": "Allergens: 🥛 Milk",
+        "ar": "مسببات الحساسية:‏ ‏🥛‏ الحليب"
+       },
+       "price": 35,
+       "available": true
       }
      ]
     },
@@ -7440,5 +7455,5 @@
    ]
   }
  ],
- "updated": "2026-11-25T09:42:42.561Z"
+ "updated": "2026-11-25T09:43:33.001Z"
 }
