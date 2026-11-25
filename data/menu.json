@@ -7098,11 +7098,26 @@
        },
        "price": 109,
        "available": true
+      },
+      {
+       "id": "p33fcf4108e",
+       "photo": "",
+       "group": "shisha",
+       "title": {
+        "en": "Mc Stone Ice",
+        "ar": "ماك ستون أيس"
+       },
+       "desc": {
+        "en": "An exciting blend of Macintosh Apples and Ripe Stone Peaches.",
+        "ar": "مزيج رائع من تفاح ماكنتوش والخوخ الناضج"
+       },
+       "price": 109,
+       "available": true
       }
      ]
     }
    ]
   }
  ],
- "updated": "2026-11-25T08:08:38.443Z"
+ "updated": "2026-11-25T08:10:26.099Z"
 }
