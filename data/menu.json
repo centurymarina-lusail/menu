@@ -3777,7 +3777,7 @@
        },
        "price": 25,
        "photo": "",
-       "available": false
+       "available": true
       },
       {
        "id": "b042",
@@ -7633,5 +7633,5 @@
    ]
   }
  ],
- "updated": "2026-11-28T12:20:06.529Z"
+ "updated": "2026-11-28T12:20:11.624Z"
 }
