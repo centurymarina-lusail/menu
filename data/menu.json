@@ -3648,13 +3648,6 @@
      },
      "groups": [
       {
-       "id": "signatures",
-       "name": {
-        "en": "Signatures",
-        "ar": "اختصاصنا"
-       }
-      },
-      {
        "id": "relaxing",
        "name": {
         "en": "Relaxing",
@@ -3719,21 +3712,6 @@
       }
      ],
      "items": [
-      {
-       "id": "b039",
-       "group": "signatures",
-       "title": {
-        "en": "Strawberry Feez",
-        "ar": "فراولة فييز"
-       },
-       "desc": {
-        "en": "Muddled strawberry with fresh orange and pineapple juice, with a splash of peach.",
-        "ar": "فراولة مخلوطة مع برتقال طازج وعصير أناناس مع طعم خوخ"
-       },
-       "price": 45,
-       "photo": "",
-       "available": false
-      },
       {
        "id": "b040",
        "group": "relaxing",
@@ -7498,5 +7476,5 @@
    ]
   }
  ],
- "updated": "2026-11-28T12:25:21.190Z"
+ "updated": "2026-11-28T12:25:27.135Z"
 }
