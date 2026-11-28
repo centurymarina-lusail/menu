@@ -3073,6 +3073,13 @@
         "en": "Other Selections",
         "ar": "أصناف أخرى"
        }
+      },
+      {
+       "id": "vegetarian-meals",
+       "name": {
+        "en": "Vegetarian meals",
+        "ar": "أطباق نباتية"
+       }
       }
      ],
      "items": [
@@ -3333,7 +3340,7 @@
       },
       {
        "id": "f018",
-       "group": "main-courses",
+       "group": "vegetarian-meals",
        "title": {
         "en": "Vegetarian Lasagna",
         "ar": "لازانيا نباتية"
@@ -7626,5 +7633,5 @@
    ]
   }
  ],
- "updated": "2026-11-28T11:55:09.914Z"
+ "updated": "2026-11-28T11:57:25.172Z"
 }
