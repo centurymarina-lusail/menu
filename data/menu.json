@@ -3768,12 +3768,12 @@
        "id": "b041",
        "group": "soft-drinks",
        "title": {
-        "en": "Pepsi",
-        "ar": "كوكاكولا"
+        "en": "Soda",
+        "ar": "مشريوب غازي"
        },
        "desc": {
-        "en": "",
-        "ar": ""
+        "en": "Pepsi, Diet Pepsi, Miranda orange, Ginger ale, Tonic water, Soda water, 7up, 7Diet 7up.",
+        "ar": "بيبسي، بيبسي دايت، ميرندا برتقال، جينجر أيل، ماء التونيك، مياه صودا، سفن أب، سفن أب دايت."
        },
        "price": 25,
        "photo": "",
@@ -7633,5 +7633,5 @@
    ]
   }
  ],
- "updated": "2026-11-28T12:19:24.695Z"
+ "updated": "2026-11-28T12:20:06.529Z"
 }
