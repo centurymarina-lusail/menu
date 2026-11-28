@@ -3630,21 +3630,6 @@
        "price": 25,
        "photo": "",
        "available": true
-      },
-      {
-       "id": "pee92006933",
-       "photo": "images/knife/pee92006933-mwbalxwm.jpg",
-       "group": "salads",
-       "title": {
-        "en": "pasta test 1",
-        "ar": ""
-       },
-       "desc": {
-        "en": "twst",
-        "ar": ""
-       },
-       "price": 99,
-       "available": true
       }
      ]
     },
@@ -7641,5 +7626,5 @@
    ]
   }
  ],
- "updated": "2026-11-28T11:43:51.387Z"
+ "updated": "2026-11-28T11:44:03.623Z"
 }
