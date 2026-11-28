@@ -3421,8 +3421,8 @@
         "ar": "بلاك أنجوس بيف تندرلوين ستيك"
        },
        "desc": {
-        "en": "The most delicious and tender piece of meat available. 250 grams with a marbling score of 5+ (natural grains).",
-        "ar": "أكثر قطعة لحم لذيذة وطرية متاحة، 250 جرام بدرجة تداخل +5 (حبوب طبيعية)"
+        "en": "250 grams with a marbling score of 5+ (natural grains). The most delicious and tender piece of meat available.",
+        "ar": "250 جرام بدرجة تداخل +5 أكثر قطعة لحم لذيذة وطرية متاحة، (حبوب طبيعية)"
        },
        "price": 190,
        "photo": "images/knife/f023-mx0d5h96.jpg",
@@ -7476,5 +7476,5 @@
    ]
   }
  ],
- "updated": "2026-11-28T14:17:52.565Z"
+ "updated": "2026-11-28T14:19:26.100Z"
 }
