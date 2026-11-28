@@ -3780,21 +3780,6 @@
        "available": true
       },
       {
-       "id": "b046",
-       "group": "soft-drinks",
-       "title": {
-        "en": "Fanta",
-        "ar": "فانتا"
-       },
-       "desc": {
-        "en": "",
-        "ar": ""
-       },
-       "price": 25,
-       "photo": "",
-       "available": false
-      },
-      {
        "id": "b047",
        "group": "soft-drinks",
        "title": {
@@ -7573,5 +7558,5 @@
    ]
   }
  ],
- "updated": "2026-11-28T12:22:10.888Z"
+ "updated": "2026-11-28T12:22:41.810Z"
 }
