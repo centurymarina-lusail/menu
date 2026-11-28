@@ -3325,7 +3325,7 @@
       },
       {
        "id": "f017",
-       "group": "main-courses",
+       "group": "vegetarian-meals",
        "title": {
         "en": "Truffle Mushroom Risotto",
         "ar": "ريزوتو الترافل"
@@ -7633,5 +7633,5 @@
    ]
   }
  ],
- "updated": "2026-11-28T11:57:25.172Z"
+ "updated": "2026-11-28T11:57:58.481Z"
 }
