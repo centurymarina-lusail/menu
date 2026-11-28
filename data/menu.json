@@ -3780,21 +3780,6 @@
        "available": true
       },
       {
-       "id": "b049",
-       "group": "soft-drinks",
-       "title": {
-        "en": "Soda Water",
-        "ar": "مياه صودا"
-       },
-       "desc": {
-        "en": "",
-        "ar": ""
-       },
-       "price": 25,
-       "photo": "",
-       "available": false
-      },
-      {
        "id": "b050",
        "group": "energy-drinks",
        "title": {
@@ -7528,5 +7513,5 @@
    ]
   }
  ],
- "updated": "2026-11-28T12:23:04.775Z"
+ "updated": "2026-11-28T12:23:37.775Z"
 }
