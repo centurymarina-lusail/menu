@@ -3780,21 +3780,6 @@
        "available": true
       },
       {
-       "id": "b043",
-       "group": "soft-drinks",
-       "title": {
-        "en": "Coca-Cola Zero",
-        "ar": "كوكاكولا زيرو"
-       },
-       "desc": {
-        "en": "",
-        "ar": ""
-       },
-       "price": 25,
-       "photo": "",
-       "available": false
-      },
-      {
        "id": "b044",
        "group": "soft-drinks",
        "title": {
@@ -7618,5 +7603,5 @@
    ]
   }
  ],
- "updated": "2026-11-28T12:21:38.881Z"
+ "updated": "2026-11-28T12:21:45.081Z"
 }
