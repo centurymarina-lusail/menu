@@ -3720,21 +3720,6 @@
      ],
      "items": [
       {
-       "id": "b038",
-       "group": "signatures",
-       "title": {
-        "en": "Fennel Colada",
-        "ar": "كولادا فينيل"
-       },
-       "desc": {
-        "en": "Fennel seeds blended with fresh pineapple and lemon juice over ice. Finished with a top-up of soda and a rose water spray.",
-        "ar": "بذور الشمر ممزوجة مع الأناناس الطازج وعصير الليمون فوق الثلج، مع إضافة الصودا ورذاذ ماء الورد"
-       },
-       "price": 45,
-       "photo": "",
-       "available": false
-      },
-      {
        "id": "b039",
        "group": "signatures",
        "title": {
@@ -7513,5 +7498,5 @@
    ]
   }
  ],
- "updated": "2026-11-28T12:23:37.775Z"
+ "updated": "2026-11-28T12:25:21.190Z"
 }
